@@ -1,0 +1,25 @@
+{
+  "name": "jdp-website-2.0",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/NappyNexus/jdp-website-2.0#readme",
+  "bugs": {
+    "url": "https://github.com/NappyNexus/jdp-website-2.0/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NappyNexus/jdp-website-2.0.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch"
+  },
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.2",
+    "tailwindcss": "^4.1.2"
+  }
+}
