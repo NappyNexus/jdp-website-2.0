@@ -5,14 +5,15 @@
 
 @import "tailwindcss";
 
+
 @theme{
     /*FONTS*/
     --font-roboto: "Roboto", sans-serif;
     --font-montserrat: "Montserrat", sans-serif;
     --font-poppins: "Poppins", sans-serif;
     /*COLORS*/
-    --color-djporange: #e67e22;
-    --color-djpblue: #00255b;
+    --color-jdporange: #e67e22;
+    --color-jdpblue: #00255b;
     --color-yellowish: #fdc800;
     --color-yellowish: #fdc800;
     --color-blueish: #002147;
