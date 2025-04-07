@@ -1,4 +1,4 @@
-{/* <script>
+
   const mobileMenuButton = document.getElementById('mobile-menu-button');
   const mobileMenu = document.getElementById('mobile-menu');
   const openIcon = mobileMenuButton.querySelector('svg:first-child');
@@ -9,4 +9,3 @@
     openIcon.classList.toggle('hidden');
     closeIcon.classList.toggle('hidden');
   });
-</script> */}
