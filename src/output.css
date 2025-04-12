@@ -34,6 +34,8 @@
     --text-base--line-height: calc(1.5 / 1);
     --text-lg: 1.125rem;
     --text-lg--line-height: calc(1.75 / 1.125);
+    --text-xl: 1.25rem;
+    --text-xl--line-height: calc(1.75 / 1.25);
     --text-2xl: 1.5rem;
     --text-2xl--line-height: calc(2 / 1.5);
     --text-3xl: 1.875rem;
@@ -296,6 +298,9 @@
   .mr-5 {
     margin-right: calc(var(--spacing) * 5);
   }
+  .mb-2 {
+    margin-bottom: calc(var(--spacing) * 2);
+  }
   .mb-3 {
     margin-bottom: calc(var(--spacing) * 3);
   }
@@ -307,6 +312,9 @@
   }
   .mb-7 {
     margin-bottom: calc(var(--spacing) * 7);
+  }
+  .mb-10 {
+    margin-bottom: calc(var(--spacing) * 10);
   }
   .mb-12 {
     margin-bottom: calc(var(--spacing) * 12);
@@ -339,8 +347,23 @@
     width: calc(var(--spacing) * 4);
     height: calc(var(--spacing) * 4);
   }
+  .h-7 {
+    height: calc(var(--spacing) * 7);
+  }
   .h-16 {
     height: calc(var(--spacing) * 16);
+  }
+  .h-20 {
+    height: calc(var(--spacing) * 20);
+  }
+  .h-36 {
+    height: calc(var(--spacing) * 36);
+  }
+  .h-44 {
+    height: calc(var(--spacing) * 44);
+  }
+  .h-56 {
+    height: calc(var(--spacing) * 56);
   }
   .h-64 {
     height: calc(var(--spacing) * 64);
@@ -353,6 +376,12 @@
   }
   .h-96 {
     height: calc(var(--spacing) * 96);
+  }
+  .h-\[5vh\] {
+    height: 5vh;
+  }
+  .h-\[20vh\] {
+    height: 20vh;
   }
   .h-fit {
     height: fit-content;
@@ -447,11 +476,17 @@
   .gap-24 {
     gap: calc(var(--spacing) * 24);
   }
+  .gap-32 {
+    gap: calc(var(--spacing) * 32);
+  }
   .gap-36 {
     gap: calc(var(--spacing) * 36);
   }
   .gap-44 {
     gap: calc(var(--spacing) * 44);
+  }
+  .gap-64 {
+    gap: calc(var(--spacing) * 64);
   }
   .gap-\[2vw\] {
     gap: 2vw;
@@ -524,6 +559,9 @@
   .bg-\[url\(\'\/assets\/Group1\.png\'\)\] {
     background-image: url('/assets/Group1.png');
   }
+  .bg-\[url\(\'\/assets\/Group2\.jpg\'\)\] {
+    background-image: url('/assets/Group2.jpg');
+  }
   .bg-\[url\(\'\/assets\/pexels-chuchuphinh-1164572\.jpg\'\)\] {
     background-image: url('/assets/pexels-chuchuphinh-1164572.jpg');
   }
@@ -533,8 +571,14 @@
   .bg-cover {
     background-size: cover;
   }
+  .bg-bottom {
+    background-position: bottom;
+  }
   .bg-center {
     background-position: center;
+  }
+  .bg-top {
+    background-position: top;
   }
   .fill-jdporange {
     fill: var(--color-jdporange);
@@ -553,6 +597,9 @@
   }
   .px-7 {
     padding-inline: calc(var(--spacing) * 7);
+  }
+  .py-0 {
+    padding-block: calc(var(--spacing) * 0);
   }
   .py-1 {
     padding-block: calc(var(--spacing) * 1);
@@ -595,6 +642,10 @@
     font-size: var(--text-3xl);
     line-height: var(--tw-leading, var(--text-3xl--line-height));
   }
+  .text-5xl {
+    font-size: var(--text-5xl);
+    line-height: var(--tw-leading, var(--text-5xl--line-height));
+  }
   .text-7xl {
     font-size: var(--text-7xl);
     line-height: var(--tw-leading, var(--text-7xl--line-height));
@@ -610,6 +661,10 @@
   .text-sm {
     font-size: var(--text-sm);
     line-height: var(--tw-leading, var(--text-sm--line-height));
+  }
+  .text-xl {
+    font-size: var(--text-xl);
+    line-height: var(--tw-leading, var(--text-xl--line-height));
   }
   .font-black {
     --tw-font-weight: var(--font-weight-black);
