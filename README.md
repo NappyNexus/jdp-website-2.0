@@ -11,7 +11,7 @@ The landing page serves as an online introduction to the school, offering visito
 
 - 📘 School Overview & Vision  
 - 👩‍🏫 Number of professional instructors  
-- 📚 Courses and learning opportunities  
+- 📚 Reinforcement and learning opportunities  
 - 🧒 Registered students and live lesson stats  
 - 📞 Contact information & quick links
 
@@ -23,18 +23,6 @@ The landing page serves as an online introduction to the school, offering visito
 - **Tailwind CSS** – for utility-first styling
 - **Custom SVG Icons** – for enhanced visual communication
 - **Responsive Design** – optimized for all screen sizes
-
----
-
-## 🖼️ Preview
-
-Here’s a sneak peek of the landing page layout:
-
-- Hero section with welcome message and image  
-- Informational stats section  
-- Contact & quick links in the footer  
-
-> Full design reflects the school’s identity and values.
 
 ---
 
