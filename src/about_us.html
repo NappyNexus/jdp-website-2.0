@@ -4,9 +4,105 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./output.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/yourkit.js" crossorigin="anonymous"></script>
     <title>Document</title>
 </head>
-<body>
+<body class="box-border">
+     <!-- md:px-28 lg:px-16 xl:px-20 2xl:px-56 -->
+     <header class="bg-jdpblue justify-around gap-44 flex ">
+        <div class="flex gap-6 lg:gap-16">
+        <div class="flex items-center gap-1.5 ml-5">
+            <svg id="Layer_3" class="w-4 md:w-5" fill="#e67e22" viewBox="0 0 32 32"  xmlns="http://www.w3.org/2000/svg" data-name="Layer 3"><path d="m30.035 22.6c-.082-.065-6.035-4.356-7.669-4.048-.78.138-1.226.67-2.121 1.735-.144.172-.49.584-.759.877a12.517 12.517 0 0 1 -1.651-.672 13.7 13.7 0 0 1 -6.321-6.321 12.458 12.458 0 0 1 -.672-1.651c.294-.27.706-.616.882-.764 1.06-.89 1.593-1.336 1.731-2.118.283-1.62-4.005-7.614-4.05-7.668a2.289 2.289 0 0 0 -1.705-.97c-1.738 0-6.7 6.437-6.7 7.521 0 .063.091 6.467 7.988 14.5 8.025 7.888 14.428 7.979 14.491 7.979 1.085 0 7.521-4.962 7.521-6.7a2.283 2.283 0 0 0 -.965-1.7z"/></svg>
+            <a href="#" class="text-white text-sm md:text-base font-roboto hover:text-jdporange whitespace-nowrap">+1 806-636-1065</a>
+        </div>
+        <div class="flex items-center gap-2.5">
+            <svg class="sm:block hidden w-5" fill="#e67e22" id="Capa_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+        viewBox="0 0 512 512" xml:space="preserve">
+        <path d="M331.756,277.251l-42.881,43.026c-17.389,17.45-47.985,17.826-65.75,0l-42.883-43.026L26.226,431.767
+            C31.959,434.418,38.28,436,45,436h422c6.72,0,13.039-1.58,18.77-4.232L331.756,277.251z"/>
+        <path d="M467,76H45c-6.72,0-13.041,1.582-18.772,4.233l164.577,165.123c0.011,0.011,0.024,0.013,0.035,0.024		c0.011,0.011,0.013,0.026,0.013,0.026l53.513,53.69c5.684,5.684,17.586,5.684,23.27,0l53.502-53.681c0,0,0.013-0.024,0.024-0.035
+            c0,0,0.024-0.013,0.035-0.024L485.77,80.232C480.039,77.58,473.72,76,467,76z"/>
+        <path d="M4.786,101.212C1.82,107.21,0,113.868,0,121v270c0,7.132,1.818,13.79,4.785,19.788l154.283-154.783L4.786,101.212z"/>
+        <path d="M507.214,101.21L352.933,256.005L507.214,410.79C510.18,404.792,512,398.134,512,391V121
+            C512,113.866,510.18,107.208,507.214,101.21z"/>
+        </svg>
+            <a href="mailto:jardindeprincipes7@gmail.com" class="sm:block hidden text-white text-sm md:text-base font-roboto hover:text-jdporange whitespace-nowrap">jardindeprincipes7@gmail.com</a>
+        </div>
+        </div>
+         <button class="whitespace-nowrap py-1.5 px-4 mr-5 font-montserrat font-medium text-white bg-jdporange border-2 border-jdporange hover:border-yellowish hover:bg-jdpblue hover:text-white transition duration-500">Apply Now</button>
+    </header>
+
+    <nav class="flex items-center justify-around gap-24 bg-white py-4 relative max-sm:items-end">
+        <a class="font-freshman text-jdpblue text-2xl whitespace-nowrap " href="#">JARDIN DE PRINCIPES</a>
+        <button id="mobile-menu-button" class="py-2.5 px-4 rounded-md bg-jdporange cursor-pointer hover:bg-jdpblue min-[990px]:hidden">
+            <svg id="iconShown" class="size-4 fill-white" enable-background="new 0 0 464.205 464.205"  viewBox="0 0 464.205 464.205"  xmlns="http://www.w3.org/2000/svg"><g><g id="grip-solid-horizontal_1_"><path d="m435.192 406.18h-406.179c-16.024 0-29.013-12.99-29.013-29.013s12.989-29.013 29.013-29.013h406.18c16.023 0 29.013 12.99 29.013 29.013-.001 16.023-12.99 29.013-29.014 29.013z"/><path d="m435.192 261.115h-406.179c-16.024 0-29.013-12.989-29.013-29.012s12.989-29.013 29.013-29.013h406.18c16.023 0 29.013 12.989 29.013 29.013s-12.99 29.012-29.014 29.012z"/><path d="m435.192 116.051h-406.179c-16.024 0-29.013-12.989-29.013-29.013s12.989-29.013 29.013-29.013h406.18c16.023 0 29.013 12.989 29.013 29.013s-12.99 29.013-29.014 29.013z"/></g></g></svg>
+            <svg id="iconHidden" class="size-4 fill-white hidden" viewBox="0 0 329.26933 329" xmlns="http://www.w3.org/2000/svg"><path d="m194.800781 164.769531 128.210938-128.214843c8.34375-8.339844 8.34375-21.824219 0-30.164063-8.339844-8.339844-21.824219-8.339844-30.164063 0l-128.214844 128.214844-128.210937-128.214844c-8.34375-8.339844-21.824219-8.339844-30.164063 0-8.34375 8.339844-8.34375 21.824219 0 30.164063l128.210938 128.214843-128.210938 128.214844c-8.34375 8.339844-8.34375 21.824219 0 30.164063 4.15625 4.160156 9.621094 6.25 15.082032 6.25 5.460937 0 10.921875-2.089844 15.082031-6.25l128.210937-128.214844 128.214844 128.214844c4.160156 4.160156 9.621094 6.25 15.082032 6.25 5.460937 0 10.921874-2.089844 15.082031-6.25 8.34375-8.339844 8.34375-21.824219 0-30.164063zm0 0"/></svg>
+        </button>
+        <div id="mobile-menu" class="hidden min-[990px]:block max-[990px]:absolute max-[990px]:top-full max-[990px]:left-0 max-[990px]:w-full max-[990px]:bg-jdpblue z-10"> 
+            <ul class="flex items-center justify-center gap-[2vw] max-[990px]:text-white max-[990px]:gap-2 max-[990px]:flex-col max-[990px]:h-36" >
+                <li> <a class="hover:text-jdporange active:text-jdporange font-roboto text-lg" href="/src/index.html">Inicio</a> </li>
+                <li> <a class="hover:text-jdporange active:text-jdporange font-roboto text-lg" href="/src/about_us.html">Nosotros</a> </li>
+                <li> <a class="hover:text-jdporange active:text-jdporange font-roboto text-lg" href="/src/contact.html">Contactanos</a> </li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+
+    </main>
+
+
+    <footer class="bg-jdpblue">
+        <!-- flex container -->
+        <div class="flex flex-col lg:flex-row justify-between gap-10 lg:gap-56 p-10 max-w-5xl mx-auto">
+            <!-- Contactanos -->
+            <div class="flex flex-col gap-3">
+                <h1 class="text-white font-roboto text-xl font-semibold mb-4">Contáctanos</h1>
+    
+                <div class="flex items-start gap-2 max-w-md">
+                    <svg class="fill-jdporange w-7 shrink-0" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M256,0C153.755,0,70.573,83.182,70.573,185.426c0,126.888,165.939,313.167,173.004,321.035c6.636,7.391,18.222,7.378,24.846,0c7.065-7.868,173.004-194.147,173.004-321.035C441.425,83.182,358.244,0,256,0z M256,278.719c-51.442,0-93.292-41.851-93.292-93.293S204.559,92.134,256,92.134s93.291,41.851,93.291,93.293S307.441,278.719,256,278.719z"/>
+                    </svg>
+                    <p class="text-white font-roboto">Jardines del norte, C. Luxemburgo, #5A, Santo Domingo D.N.</p>
+                </div>
+    
+                <div class="flex items-center gap-2">
+                    <svg class="w-5 fill-jdporange" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path d="m30.035 22.6c-.082-.065-6.035-4.356-7.669-4.048-.78.138-1.226.67-2.121 1.735-.144.172-.49.584-.759.877a12.517 12.517 0 0 1 -1.651-.672 13.7 13.7 0 0 1 -6.321-6.321 12.458 12.458 0 0 1 -.672-1.651c.294-.27.706-.616.882-.764 1.06-.89 1.593-1.336 1.731-2.118.283-1.62-4.005-7.614-4.05-7.668a2.289 2.289 0 0 0 -1.705-.97c-1.738 0-6.7 6.437-6.7 7.521 0 .063.091 6.467 7.988 14.5 8.025 7.888 14.428 7.979 14.491 7.979 1.085 0 7.521-4.962 7.521-6.7a2.283 2.283 0 0 0 -.965-1.7z"/></svg>
+                    <p class="text-white font-roboto">+1 806-636-1065</p>
+                </div>
+    
+                <div class="flex items-center gap-2">
+                    <svg class="fill-jdporange w-5" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M331.756,277.251l-42.881,43.026c-17.389,17.45-47.985,17.826-65.75,0l-42.883-43.026L26.226,431.767C31.959,434.418,38.28,436,45,436h422c6.72,0,13.039-1.58,18.77-4.232L331.756,277.251z"/>
+                        <path d="M467,76H45c-6.72,0-13.041,1.582-18.772,4.233l164.577,165.123c0.011,0.011,0.024,0.013,0.035,0.024		c0.011,0.011,0.013,0.026,0.013,0.026l53.513,53.69c5.684,5.684,17.586,5.684,23.27,0l53.502-53.681c0,0,0.013-0.024,0.024-0.035
+                            c0,0,0.024-0.013,0.035-0.024L485.77,80.232C480.039,77.58,473.72,76,467,76z"/>
+                        <path d="M4.786,101.212C1.82,107.21,0,113.868,0,121v270c0,7.132,1.818,13.79,4.785,19.788l154.283-154.783L4.786,101.212z"/>
+                        <path d="M507.214,101.21L352.933,256.005L507.214,410.79C510.18,404.792,512,398.134,512,391V121
+                            C512,113.866,510.18,107.208,507.214,101.21z"/>
+                    </svg>
+                    <p class="text-white font-roboto">jardindeprincipes7@gmail.com</p>
+                </div>
+            </div>
+    
+            <!-- Quick Links -->
+            <div>
+                <h1 class="text-white font-roboto text-xl font-semibold mb-5">Enlaces Rápidos</h1>
+                <ul class="space-y-2.5">
+                    <li><a class="text-white font-roboto hover:text-jdporange" href="/src/index.html">Inicio</a></li>
+                    <li><a class="text-white font-roboto hover:text-jdporange" href="/src/about_us.html">Nosotros</a></li>
+                    <li><a class="text-white font-roboto hover:text-jdporange" href="/src/contact.html">Contáctanos</a></li>
+                </ul>
+            </div>
+        </div>
+    
+        <!-- Divider -->
+        <hr class="mx-10 lg:mx-96 border border-gray-700">
+    
+        <!-- Copyright -->
+        <div class="flex justify-center items-center mt-8 px-4 text-center">
+            <p class="font-roboto text-gray-300 text-sm">&copy; 2025 Copyright. All rights reserved | Diseñado por Gabriel Soriano</p>
+        </div>
+    </footer>
     
 </body>
 </html>
