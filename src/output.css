@@ -511,6 +511,12 @@
   .gap-24 {
     gap: calc(var(--spacing) * 24);
   }
+  .gap-36 {
+    gap: calc(var(--spacing) * 36);
+  }
+  .gap-40 {
+    gap: calc(var(--spacing) * 40);
+  }
   .gap-44 {
     gap: calc(var(--spacing) * 44);
   }
