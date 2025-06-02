@@ -5,6 +5,12 @@
 @import url(/fonts/Freshman.ttf);
 
 @import "tailwindcss";
+@tailwind utilities;
+
+@import "flowbite/src/themes/default";
+@plugin "flowbite/plugin";
+@source "./node_modules/flowbite";
+
 
 @font-face {
     font-family: 'Freshman'; /* Choose a name for your font */
