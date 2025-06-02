@@ -2834,6 +2834,11 @@
       color: var(--color-blue-700);
     }
   }
+  .md\:text-jdporange {
+    @media (width >= 48rem) {
+      color: var(--color-jdporange);
+    }
+  }
   .md\:hover\:bg-transparent {
     @media (width >= 48rem) {
       &:hover {
