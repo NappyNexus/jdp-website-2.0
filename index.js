@@ -9,3 +9,4 @@
     openIcon.classList.toggle('hidden');
     closeIcon.classList.toggle('hidden');
   });
+
