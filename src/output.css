@@ -21,6 +21,8 @@
     --color-yellow-600: #D97706;
     --color-green-600: #059669;
     --color-green-700: #047857;
+    --color-blue-200: #BFDBFE;
+    --color-blue-300: #93C5FD;
     --color-blue-400: #60A5FA;
     --color-blue-500: #3B82F6;
     --color-blue-600: #2563EB;
@@ -1999,6 +2001,9 @@
   .bg-yellow-400 {
     background-color: var(--color-yellow-400);
   }
+  .bg-yellow-500 {
+    background-color: var(--color-yellow-500);
+  }
   .dark {
     & .selectedCell {
       background-color: var(--color-gray-700);
@@ -2010,6 +2015,9 @@
   .bg-\[url\(\'\/assets\/pexels-chuchuphinh-1164572\.jpg\'\)\] {
     background-image: url('/assets/pexels-chuchuphinh-1164572.jpg');
   }
+  .bg-\[url\(\'your-image-url\.jpg\'\)\] {
+    background-image: url('your-image-url.jpg');
+  }
   .bg-cover {
     background-size: cover;
   }
@@ -2018,6 +2026,9 @@
   }
   .bg-top {
     background-position: top;
+  }
+  .bg-no-repeat {
+    background-repeat: no-repeat;
   }
   .apexcharts-datalabels-group {
     & .apexcharts-text.apexcharts-datalabel-value {
@@ -2162,6 +2173,9 @@
   }
   .py-4 {
     padding-block: calc(var(--spacing) * 4);
+  }
+  .py-8 {
+    padding-block: calc(var(--spacing) * 8);
   }
   .py-10 {
     padding-block: calc(var(--spacing) * 10);
@@ -2367,8 +2381,17 @@
       color: white;
     }
   }
+  .text-blue-200 {
+    color: var(--color-blue-200);
+  }
+  .text-blue-300 {
+    color: var(--color-blue-300);
+  }
   .text-blue-600 {
     color: var(--color-blue-600);
+  }
+  .text-blue-900 {
+    color: var(--color-blue-900);
   }
   .text-gray-300 {
     color: var(--color-gray-300);
@@ -2474,6 +2497,13 @@
       }
     }
   }
+  .hover\:bg-yellow-600 {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-yellow-600);
+      }
+    }
+  }
   .hover\:text-jdporange {
     &:hover {
       @media (hover: hover) {
@@ -2516,6 +2546,17 @@
   .focus\:ring-jdporange {
     &:focus {
       --tw-ring-color: var(--color-jdporange);
+    }
+  }
+  .focus\:ring-yellow-400 {
+    &:focus {
+      --tw-ring-color: var(--color-yellow-400);
+    }
+  }
+  .focus\:ring-offset-2 {
+    &:focus {
+      --tw-ring-offset-width: 2px;
+      --tw-ring-offset-shadow: var(--tw-ring-inset,) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
     }
   }
   .focus\:outline-none {
@@ -2599,6 +2640,11 @@
       height: 40vh;
     }
   }
+  .sm\:w-auto {
+    @media (width >= 40rem) {
+      width: auto;
+    }
+  }
   .sm\:grid-cols-2 {
     @media (width >= 40rem) {
       grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -2614,6 +2660,17 @@
       gap: calc(var(--spacing) * 20);
     }
   }
+  .sm\:px-6 {
+    @media (width >= 40rem) {
+      padding-inline: calc(var(--spacing) * 6);
+    }
+  }
+  .sm\:text-3xl {
+    @media (width >= 40rem) {
+      font-size: var(--text-3xl);
+      line-height: var(--tw-leading, var(--text-3xl--line-height));
+    }
+  }
   .sm\:text-6xl {
     @media (width >= 40rem) {
       font-size: var(--text-6xl);
@@ -2624,6 +2681,12 @@
     @media (width >= 40rem) {
       font-size: var(--text-base);
       line-height: var(--tw-leading, var(--text-base--line-height));
+    }
+  }
+  .sm\:text-xl {
+    @media (width >= 40rem) {
+      font-size: var(--text-xl);
+      line-height: var(--tw-leading, var(--text-xl--line-height));
     }
   }
   .md\:col-span-2 {
@@ -2881,6 +2944,16 @@
       margin-top: calc(var(--spacing) * -28);
     }
   }
+  .lg\:mr-8 {
+    @media (width >= 64rem) {
+      margin-right: calc(var(--spacing) * 8);
+    }
+  }
+  .lg\:mb-0 {
+    @media (width >= 64rem) {
+      margin-bottom: calc(var(--spacing) * 0);
+    }
+  }
   .lg\:mb-14 {
     @media (width >= 64rem) {
       margin-bottom: calc(var(--spacing) * 14);
@@ -2926,6 +2999,11 @@
       flex-direction: row;
     }
   }
+  .lg\:justify-between {
+    @media (width >= 64rem) {
+      justify-content: space-between;
+    }
+  }
   .lg\:gap-16 {
     @media (width >= 64rem) {
       gap: calc(var(--spacing) * 16);
@@ -2946,6 +3024,11 @@
       padding-inline: calc(var(--spacing) * 6);
     }
   }
+  .lg\:px-12 {
+    @media (width >= 64rem) {
+      padding-inline: calc(var(--spacing) * 12);
+    }
+  }
   .lg\:px-16 {
     @media (width >= 64rem) {
       padding-inline: calc(var(--spacing) * 16);
@@ -2961,6 +3044,11 @@
       padding-block: calc(var(--spacing) * 4);
     }
   }
+  .lg\:text-left {
+    @media (width >= 64rem) {
+      text-align: left;
+    }
+  }
   .lg\:text-base {
     @media (width >= 64rem) {
       font-size: var(--text-base);
@@ -2970,6 +3058,11 @@
   .xl\:ml-64 {
     @media (width >= 80rem) {
       margin-left: calc(var(--spacing) * 64);
+    }
+  }
+  .xl\:block {
+    @media (width >= 80rem) {
+      display: block;
     }
   }
   .xl\:h-\[65vh\] {
