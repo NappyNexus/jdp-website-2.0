@@ -65,8 +65,6 @@
     --text-5xl--line-height: 1;
     --text-6xl: 3.75rem;
     --text-6xl--line-height: 1;
-    --text-7xl: 4.5rem;
-    --text-7xl--line-height: 1;
     --font-weight-light: 300;
     --font-weight-normal: 400;
     --font-weight-medium: 500;
@@ -78,7 +76,6 @@
     --radius-sm: 0.25rem;
     --radius-md: 0.375rem;
     --radius-lg: 0.5rem;
-    --radius-xl: 0.75rem;
     --radius-2xl: 1rem;
     --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
     --default-transition-duration: 150ms;
@@ -245,598 +242,6 @@
   .pointer-events-none {
     pointer-events: none;
   }
-  .invisible {
-    visibility: hidden;
-  }
-  .datatable-wrapper {
-    width: 100%;
-    & .datatable-top {
-      display: flex;
-      justify-content: space-between;
-      flex-direction: column-reverse;
-      align-items: start;
-      gap: 1rem;
-      margin-bottom: 1rem;
-      @media (min-width: 640px) {
-        flex-direction: row-reverse;
-        align-items: center;
-      }
-    }
-    & .datatable-search .datatable-input {
-      color: var(--color-gray-900);
-      font-size: 0.875rem;
-      border: 1px solid var(--color-gray-300);
-      border-radius: 0.5rem;
-      background-color: var(--color-gray-50);
-      min-width: 16rem;
-    }
-    & .datatable-input {
-      color: var(--color-gray-900);
-      font-size: 0.875rem;
-      border: 1px solid var(--color-gray-300);
-      border-radius: 0.5rem;
-      background-color: var(--color-gray-50);
-      min-width: 16rem;
-    }
-    .dark & .datatable-search .datatable-input {
-      color: white;
-      background-color: var(--color-gray-800);
-      border: 1px solid var(--color-gray-700);
-    }
-    .dark & .datatable-input {
-      color: white;
-      background-color: var(--color-gray-800);
-      border: 1px solid var(--color-gray-700);
-    }
-    & thead th .datatable-input {
-      background-color: white;
-      font-weight: 400;
-      color: var(--color-gray-900);
-      padding-top: .35rem;
-      padding-bottom: .35rem;
-      min-width: 0;
-    }
-    .dark & thead th .datatable-input {
-      background-color: var(--color-gray-700);
-      border-color: var(--color-gray-600);
-      color: white;
-    }
-    & .datatable-top .datatable-dropdown {
-      color: var(--color-gray-500);
-      font-size: 0.875rem;
-    }
-    .dark & .datatable-top .datatable-dropdown {
-      color: var(--color-gray-400);
-    }
-    & .datatable-top .datatable-dropdown .datatable-selector {
-      background-color: var(--color-gray-50);
-      color: var(--color-gray-900);
-      font-size: 0.875rem;
-      border: 1px solid var(--color-gray-300);
-      border-radius: 0.5rem;
-      margin-right: 0.25rem;
-      min-width: 4rem;
-    }
-    .dark & .datatable-top .datatable-dropdown .datatable-selector {
-      background-color: var(--color-gray-800);
-      border: 1px solid var(--color-gray-700);
-      color: white;
-    }
-    & .datatable-container thead tr.search-filtering-row th {
-      padding-top: 0;
-    }
-    & .datatable-search .datatable-input:focus {
-      border-color: var(--color-blue-600);
-    }
-    & .datatable-container {
-      overflow-x: auto;
-    }
-    & .datatable-table {
-      width: 100%;
-      font-size: 0.875rem;
-      color: var(--color-gray-500);
-      text-align: left;
-    }
-    .dark & .datatable-table {
-      color: var(--color-gray-400);
-    }
-    & .datatable-table thead {
-      font-size: 0.75rem;
-      color: var(--color-gray-500);
-      background-color: var(--color-gray-50);
-    }
-    .dark & .datatable-table thead {
-      color: var(--color-gray-400);
-      background-color: var(--color-gray-800);
-    }
-    & .datatable-table thead th {
-      white-space: nowrap;
-    }
-    & .datatable-table thead th {
-      width: auto !important;
-      padding-top: 0.75rem;
-      padding-bottom: 0.75rem;
-      padding-left: 1.5rem;
-      padding-right: 1.5rem;
-    }
-    & .datatable-table tbody th {
-      width: auto !important;
-      padding-top: 0.75rem;
-      padding-bottom: 0.75rem;
-      padding-left: 1.5rem;
-      padding-right: 1.5rem;
-    }
-    & .datatable-table tbody td {
-      width: auto !important;
-      padding-top: 0.75rem;
-      padding-bottom: 0.75rem;
-      padding-left: 1.5rem;
-      padding-right: 1.5rem;
-    }
-    & .datatable-table thead th .datatable-sorter {
-      text-transform: uppercase;
-    }
-    & .datatable-table thead th {
-      text-transform: uppercase;
-    }
-    & .datatable-table thead th .datatable-sorter:hover {
-      color: var(--color-gray-900);
-    }
-    & .datatable-table thead th.datatable-ascending .datatable-sorter {
-      color: var(--color-gray-900);
-    }
-    & .datatable-table thead th.datatable-descending .datatable-sorter {
-      color: var(--color-gray-900);
-    }
-    .dark & .datatable-table thead th .datatable-sorter:hover {
-      color: white;
-    }
-    .dark & .datatable-table thead th.datatable-ascending .datatable-sorter {
-      color: white;
-    }
-    .dark & .datatable-table thead th.datatable-descending .datatable-sorter {
-      color: white;
-    }
-    & .datatable-table tbody tr.selected {
-      background-color: var(--color-gray-100);
-    }
-    .dark & .datatable-table tbody tr.selected {
-      background-color: var(--color-gray-700);
-    }
-    & .datatable-table tbody tr {
-      border-bottom: 1px solid var(--color-gray-200);
-    }
-    .dark & .datatable-table tbody tr {
-      border-bottom: 1px solid var(--color-gray-700);
-    }
-    & .datatable-table .datatable-empty {
-      text-align: center;
-    }
-    & .datatable-bottom {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      align-items: start;
-      margin-top: 1rem;
-      gap: 1rem;
-      @media (min-width: 640px) {
-        flex-direction: row;
-        align-items: center;
-      }
-    }
-    & .datatable-bottom .datatable-info {
-      color: var(--color-gray-500);
-      font-size: 0.875rem;
-    }
-    .dark & .datatable-bottom .datatable-info {
-      color: var(--color-gray-400);
-    }
-    & .datatable-bottom .datatable-pagination .datatable-pagination-list {
-      display: flex;
-      align-items: center;
-      height: 2rem;
-      font-size: 0.875rem;
-    }
-    & .datatable-bottom .datatable-pagination .datatable-pagination-list-item-link {
-      display: flex;
-      align-items: center;
-      color: var(--color-gray-500);
-      font-weight: 500;
-      padding-left: 0.75rem;
-      padding-right: 0.75rem;
-      height: 2rem;
-      font-size: 0.875rem;
-      border-top: 1px solid var(--color-gray-300);
-      border-bottom: 1px solid var(--color-gray-300);
-      border-right: 1px solid var(--color-gray-300);
-    }
-    .dark & .datatable-bottom .datatable-pagination .datatable-pagination-list-item-link {
-      color: var(--color-gray-400);
-      border-color: var(--color-gray-700);
-    }
-    & .datatable-bottom .datatable-pagination .datatable-pagination-list-item:first-of-type {
-      position: relative;
-    }
-    & .datatable-bottom .datatable-pagination .datatable-pagination-list-item:last-of-type {
-      position: relative;
-    }
-    & .datatable-bottom .datatable-pagination .datatable-pagination-list-item:first-of-type .datatable-pagination-list-item-link {
-      color: transparent;
-    }
-    & .datatable-bottom .datatable-pagination .datatable-pagination-list-item:last-of-type .datatable-pagination-list-item-link {
-      color: transparent;
-    }
-    .dark & .datatable-bottom .datatable-pagination .datatable-pagination-list-item:first-of-type .datatable-pagination-list-item-link {
-      color: transparent;
-    }
-    .dark & .datatable-bottom .datatable-pagination .datatable-pagination-list-item:last-of-type .datatable-pagination-list-item-link {
-      color: transparent;
-    }
-    & .datatable-bottom .datatable-pagination .datatable-pagination-list-item:first-of-type .datatable-pagination-list-item-link::after {
-      content: url("data:image/svg+xml,%3csvg aria-hidden='true' xmlns='http://www.w3.org/2000/svg' width='20' height='20' fill='none' viewBox='0 0 24 24'%3e %3cpath stroke='%236B7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m14 8-4 4 4 4'/%3e %3c/svg%3e");
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      width: 1.3rem;
-      height: 1.3rem;
-      transform: translate(-50%, -50%);
-    }
-    & .datatable-bottom .datatable-pagination .datatable-pagination-list-item:first-of-type .datatable-pagination-list-item-link:hover::after {
-      content: url("data:image/svg+xml,%3csvg aria-hidden='true' xmlns='http://www.w3.org/2000/svg' width='20' height='20' fill='none' viewBox='0 0 24 24'%3e %3cpath stroke='%23111827' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m14 8-4 4 4 4'/%3e %3c/svg%3e");
-    }
-    .dark & .datatable-bottom .datatable-pagination .datatable-pagination-list-item:first-of-type .datatable-pagination-list-item-link::after {
-      content: url("data:image/svg+xml,%3csvg aria-hidden='true' xmlns='http://www.w3.org/2000/svg' width='20' height='20' fill='none' viewBox='0 0 24 24'%3e %3cpath stroke='%239CA3AF' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m14 8-4 4 4 4'/%3e %3c/svg%3e");
-    }
-    .dark & .datatable-bottom .datatable-pagination .datatable-pagination-list-item:first-of-type .datatable-pagination-list-item-link:hover::after {
-      content: url("data:image/svg+xml,%3csvg aria-hidden='true' xmlns='http://www.w3.org/2000/svg' width='20' height='20' fill='none' viewBox='0 0 24 24'%3e %3cpath stroke='white' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m14 8-4 4 4 4'/%3e %3c/svg%3e");
-    }
-    & .datatable-bottom .datatable-pagination .datatable-pagination-list-item:last-of-type .datatable-pagination-list-item-link::after {
-      content: url("data:image/svg+xml,%3csvg aria-hidden='true' xmlns='http://www.w3.org/2000/svg' width='20' height='20' fill='none' viewBox='0 0 24 24'%3e %3cpath stroke='%236B7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m10 16 4-4-4-4'/%3e %3c/svg%3e");
-      position: absolute;
-      top: 50%;
-      right: 50%;
-      width: 1.3rem;
-      height: 1.3rem;
-      transform: translate(50%, -50%);
-    }
-    & .datatable-bottom .datatable-pagination .datatable-pagination-list-item:last-of-type .datatable-pagination-list-item-link:hover::after {
-      content: url("data:image/svg+xml,%3csvg aria-hidden='true' xmlns='http://www.w3.org/2000/svg' width='20' height='20' fill='none' viewBox='0 0 24 24'%3e %3cpath stroke='%23111827' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m10 16 4-4-4-4'/%3e %3c/svg%3e");
-    }
-    .dark & .datatable-bottom .datatable-pagination .datatable-pagination-list-item:last-of-type .datatable-pagination-list-item-link::after {
-      content: url("data:image/svg+xml,%3csvg aria-hidden='true' xmlns='http://www.w3.org/2000/svg' width='20' height='20' fill='none' viewBox='0 0 24 24'%3e %3cpath stroke='%239CA3AF' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m10 16 4-4-4-4'/%3e %3c/svg%3e");
-    }
-    .dark & .datatable-bottom .datatable-pagination .datatable-pagination-list-item:last-of-type .datatable-pagination-list-item-link:hover::after {
-      content: url("data:image/svg+xml,%3csvg aria-hidden='true' xmlns='http://www.w3.org/2000/svg' width='20' height='20' fill='none' viewBox='0 0 24 24'%3e %3cpath stroke='white' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m10 16 4-4-4-4'/%3e %3c/svg%3e");
-    }
-    & .datatable-bottom .datatable-pagination .datatable-pagination-list-item:first-of-type .datatable-pagination-list-item-link {
-      border-top-left-radius: 0.5rem;
-      border-bottom-left-radius: 0.5rem;
-      border-left: 1px solid var(--color-gray-300);
-    }
-    .dark & .datatable-bottom .datatable-pagination .datatable-pagination-list-item:first-of-type .datatable-pagination-list-item-link {
-      border-left: 1px solid var(--color-gray-700);
-    }
-    & .datatable-bottom .datatable-pagination .datatable-pagination-list-item:last-of-type .datatable-pagination-list-item-link {
-      border-top-right-radius: 0.5rem;
-      border-bottom-right-radius: 0.5rem;
-      border-left: 0;
-    }
-    & .datatable-bottom .datatable-pagination .datatable-pagination-list-item-link:hover {
-      background-color: var(--color-gray-50);
-      color: var(--color-gray-700);
-    }
-    .dark & .datatable-bottom .datatable-pagination .datatable-pagination-list-item-link:hover {
-      background-color: var(--color-gray-700);
-      color: white;
-    }
-  }
-  .datatable-bottom {
-    .datatable-wrapper & {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      align-items: start;
-      margin-top: 1rem;
-      gap: 1rem;
-      @media (min-width: 640px) {
-        flex-direction: row;
-        align-items: center;
-      }
-    }
-    .datatable-wrapper & .datatable-info {
-      color: var(--color-gray-500);
-      font-size: 0.875rem;
-    }
-    .dark .datatable-wrapper & .datatable-info {
-      color: var(--color-gray-400);
-    }
-    .datatable-wrapper & .datatable-pagination .datatable-pagination-list {
-      display: flex;
-      align-items: center;
-      height: 2rem;
-      font-size: 0.875rem;
-    }
-    .datatable-wrapper & .datatable-pagination .datatable-pagination-list-item-link {
-      display: flex;
-      align-items: center;
-      color: var(--color-gray-500);
-      font-weight: 500;
-      padding-left: 0.75rem;
-      padding-right: 0.75rem;
-      height: 2rem;
-      font-size: 0.875rem;
-      border-top: 1px solid var(--color-gray-300);
-      border-bottom: 1px solid var(--color-gray-300);
-      border-right: 1px solid var(--color-gray-300);
-    }
-    .dark .datatable-wrapper & .datatable-pagination .datatable-pagination-list-item-link {
-      color: var(--color-gray-400);
-      border-color: var(--color-gray-700);
-    }
-    .datatable-wrapper & .datatable-pagination .datatable-pagination-list-item:first-of-type {
-      position: relative;
-    }
-    .datatable-wrapper & .datatable-pagination .datatable-pagination-list-item:last-of-type {
-      position: relative;
-    }
-    .datatable-wrapper & .datatable-pagination .datatable-pagination-list-item:first-of-type .datatable-pagination-list-item-link {
-      color: transparent;
-    }
-    .datatable-wrapper & .datatable-pagination .datatable-pagination-list-item:last-of-type .datatable-pagination-list-item-link {
-      color: transparent;
-    }
-    .dark .datatable-wrapper & .datatable-pagination .datatable-pagination-list-item:first-of-type .datatable-pagination-list-item-link {
-      color: transparent;
-    }
-    .dark .datatable-wrapper & .datatable-pagination .datatable-pagination-list-item:last-of-type .datatable-pagination-list-item-link {
-      color: transparent;
-    }
-    .datatable-wrapper & .datatable-pagination .datatable-pagination-list-item:first-of-type .datatable-pagination-list-item-link::after {
-      content: url("data:image/svg+xml,%3csvg aria-hidden='true' xmlns='http://www.w3.org/2000/svg' width='20' height='20' fill='none' viewBox='0 0 24 24'%3e %3cpath stroke='%236B7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m14 8-4 4 4 4'/%3e %3c/svg%3e");
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      width: 1.3rem;
-      height: 1.3rem;
-      transform: translate(-50%, -50%);
-    }
-    .datatable-wrapper & .datatable-pagination .datatable-pagination-list-item:first-of-type .datatable-pagination-list-item-link:hover::after {
-      content: url("data:image/svg+xml,%3csvg aria-hidden='true' xmlns='http://www.w3.org/2000/svg' width='20' height='20' fill='none' viewBox='0 0 24 24'%3e %3cpath stroke='%23111827' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m14 8-4 4 4 4'/%3e %3c/svg%3e");
-    }
-    .dark .datatable-wrapper & .datatable-pagination .datatable-pagination-list-item:first-of-type .datatable-pagination-list-item-link::after {
-      content: url("data:image/svg+xml,%3csvg aria-hidden='true' xmlns='http://www.w3.org/2000/svg' width='20' height='20' fill='none' viewBox='0 0 24 24'%3e %3cpath stroke='%239CA3AF' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m14 8-4 4 4 4'/%3e %3c/svg%3e");
-    }
-    .dark .datatable-wrapper & .datatable-pagination .datatable-pagination-list-item:first-of-type .datatable-pagination-list-item-link:hover::after {
-      content: url("data:image/svg+xml,%3csvg aria-hidden='true' xmlns='http://www.w3.org/2000/svg' width='20' height='20' fill='none' viewBox='0 0 24 24'%3e %3cpath stroke='white' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m14 8-4 4 4 4'/%3e %3c/svg%3e");
-    }
-    .datatable-wrapper & .datatable-pagination .datatable-pagination-list-item:last-of-type .datatable-pagination-list-item-link::after {
-      content: url("data:image/svg+xml,%3csvg aria-hidden='true' xmlns='http://www.w3.org/2000/svg' width='20' height='20' fill='none' viewBox='0 0 24 24'%3e %3cpath stroke='%236B7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m10 16 4-4-4-4'/%3e %3c/svg%3e");
-      position: absolute;
-      top: 50%;
-      right: 50%;
-      width: 1.3rem;
-      height: 1.3rem;
-      transform: translate(50%, -50%);
-    }
-    .datatable-wrapper & .datatable-pagination .datatable-pagination-list-item:last-of-type .datatable-pagination-list-item-link:hover::after {
-      content: url("data:image/svg+xml,%3csvg aria-hidden='true' xmlns='http://www.w3.org/2000/svg' width='20' height='20' fill='none' viewBox='0 0 24 24'%3e %3cpath stroke='%23111827' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m10 16 4-4-4-4'/%3e %3c/svg%3e");
-    }
-    .dark .datatable-wrapper & .datatable-pagination .datatable-pagination-list-item:last-of-type .datatable-pagination-list-item-link::after {
-      content: url("data:image/svg+xml,%3csvg aria-hidden='true' xmlns='http://www.w3.org/2000/svg' width='20' height='20' fill='none' viewBox='0 0 24 24'%3e %3cpath stroke='%239CA3AF' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m10 16 4-4-4-4'/%3e %3c/svg%3e");
-    }
-    .dark .datatable-wrapper & .datatable-pagination .datatable-pagination-list-item:last-of-type .datatable-pagination-list-item-link:hover::after {
-      content: url("data:image/svg+xml,%3csvg aria-hidden='true' xmlns='http://www.w3.org/2000/svg' width='20' height='20' fill='none' viewBox='0 0 24 24'%3e %3cpath stroke='white' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m10 16 4-4-4-4'/%3e %3c/svg%3e");
-    }
-    .datatable-wrapper & .datatable-pagination .datatable-pagination-list-item:first-of-type .datatable-pagination-list-item-link {
-      border-top-left-radius: 0.5rem;
-      border-bottom-left-radius: 0.5rem;
-      border-left: 1px solid var(--color-gray-300);
-    }
-    .dark .datatable-wrapper & .datatable-pagination .datatable-pagination-list-item:first-of-type .datatable-pagination-list-item-link {
-      border-left: 1px solid var(--color-gray-700);
-    }
-    .datatable-wrapper & .datatable-pagination .datatable-pagination-list-item:last-of-type .datatable-pagination-list-item-link {
-      border-top-right-radius: 0.5rem;
-      border-bottom-right-radius: 0.5rem;
-      border-left: 0;
-    }
-    .datatable-wrapper & .datatable-pagination .datatable-pagination-list-item-link:hover {
-      background-color: var(--color-gray-50);
-      color: var(--color-gray-700);
-    }
-    .dark .datatable-wrapper & .datatable-pagination .datatable-pagination-list-item-link:hover {
-      background-color: var(--color-gray-700);
-      color: white;
-    }
-  }
-  .datatable-pagination {
-    .datatable-wrapper .datatable-bottom & .datatable-pagination-list {
-      display: flex;
-      align-items: center;
-      height: 2rem;
-      font-size: 0.875rem;
-    }
-    .datatable-wrapper .datatable-bottom & .datatable-pagination-list-item-link {
-      display: flex;
-      align-items: center;
-      color: var(--color-gray-500);
-      font-weight: 500;
-      padding-left: 0.75rem;
-      padding-right: 0.75rem;
-      height: 2rem;
-      font-size: 0.875rem;
-      border-top: 1px solid var(--color-gray-300);
-      border-bottom: 1px solid var(--color-gray-300);
-      border-right: 1px solid var(--color-gray-300);
-    }
-    .dark .datatable-wrapper .datatable-bottom & .datatable-pagination-list-item-link {
-      color: var(--color-gray-400);
-      border-color: var(--color-gray-700);
-    }
-    .datatable-wrapper .datatable-bottom & .datatable-pagination-list-item:first-of-type {
-      position: relative;
-    }
-    .datatable-wrapper .datatable-bottom & .datatable-pagination-list-item:last-of-type {
-      position: relative;
-    }
-    .datatable-wrapper .datatable-bottom & .datatable-pagination-list-item:first-of-type .datatable-pagination-list-item-link {
-      color: transparent;
-    }
-    .datatable-wrapper .datatable-bottom & .datatable-pagination-list-item:last-of-type .datatable-pagination-list-item-link {
-      color: transparent;
-    }
-    .dark .datatable-wrapper .datatable-bottom & .datatable-pagination-list-item:first-of-type .datatable-pagination-list-item-link {
-      color: transparent;
-    }
-    .dark .datatable-wrapper .datatable-bottom & .datatable-pagination-list-item:last-of-type .datatable-pagination-list-item-link {
-      color: transparent;
-    }
-    .datatable-wrapper .datatable-bottom & .datatable-pagination-list-item:first-of-type .datatable-pagination-list-item-link::after {
-      content: url("data:image/svg+xml,%3csvg aria-hidden='true' xmlns='http://www.w3.org/2000/svg' width='20' height='20' fill='none' viewBox='0 0 24 24'%3e %3cpath stroke='%236B7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m14 8-4 4 4 4'/%3e %3c/svg%3e");
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      width: 1.3rem;
-      height: 1.3rem;
-      transform: translate(-50%, -50%);
-    }
-    .datatable-wrapper .datatable-bottom & .datatable-pagination-list-item:first-of-type .datatable-pagination-list-item-link:hover::after {
-      content: url("data:image/svg+xml,%3csvg aria-hidden='true' xmlns='http://www.w3.org/2000/svg' width='20' height='20' fill='none' viewBox='0 0 24 24'%3e %3cpath stroke='%23111827' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m14 8-4 4 4 4'/%3e %3c/svg%3e");
-    }
-    .dark .datatable-wrapper .datatable-bottom & .datatable-pagination-list-item:first-of-type .datatable-pagination-list-item-link::after {
-      content: url("data:image/svg+xml,%3csvg aria-hidden='true' xmlns='http://www.w3.org/2000/svg' width='20' height='20' fill='none' viewBox='0 0 24 24'%3e %3cpath stroke='%239CA3AF' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m14 8-4 4 4 4'/%3e %3c/svg%3e");
-    }
-    .dark .datatable-wrapper .datatable-bottom & .datatable-pagination-list-item:first-of-type .datatable-pagination-list-item-link:hover::after {
-      content: url("data:image/svg+xml,%3csvg aria-hidden='true' xmlns='http://www.w3.org/2000/svg' width='20' height='20' fill='none' viewBox='0 0 24 24'%3e %3cpath stroke='white' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m14 8-4 4 4 4'/%3e %3c/svg%3e");
-    }
-    .datatable-wrapper .datatable-bottom & .datatable-pagination-list-item:last-of-type .datatable-pagination-list-item-link::after {
-      content: url("data:image/svg+xml,%3csvg aria-hidden='true' xmlns='http://www.w3.org/2000/svg' width='20' height='20' fill='none' viewBox='0 0 24 24'%3e %3cpath stroke='%236B7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m10 16 4-4-4-4'/%3e %3c/svg%3e");
-      position: absolute;
-      top: 50%;
-      right: 50%;
-      width: 1.3rem;
-      height: 1.3rem;
-      transform: translate(50%, -50%);
-    }
-    .datatable-wrapper .datatable-bottom & .datatable-pagination-list-item:last-of-type .datatable-pagination-list-item-link:hover::after {
-      content: url("data:image/svg+xml,%3csvg aria-hidden='true' xmlns='http://www.w3.org/2000/svg' width='20' height='20' fill='none' viewBox='0 0 24 24'%3e %3cpath stroke='%23111827' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m10 16 4-4-4-4'/%3e %3c/svg%3e");
-    }
-    .dark .datatable-wrapper .datatable-bottom & .datatable-pagination-list-item:last-of-type .datatable-pagination-list-item-link::after {
-      content: url("data:image/svg+xml,%3csvg aria-hidden='true' xmlns='http://www.w3.org/2000/svg' width='20' height='20' fill='none' viewBox='0 0 24 24'%3e %3cpath stroke='%239CA3AF' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m10 16 4-4-4-4'/%3e %3c/svg%3e");
-    }
-    .dark .datatable-wrapper .datatable-bottom & .datatable-pagination-list-item:last-of-type .datatable-pagination-list-item-link:hover::after {
-      content: url("data:image/svg+xml,%3csvg aria-hidden='true' xmlns='http://www.w3.org/2000/svg' width='20' height='20' fill='none' viewBox='0 0 24 24'%3e %3cpath stroke='white' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m10 16 4-4-4-4'/%3e %3c/svg%3e");
-    }
-    .datatable-wrapper .datatable-bottom & .datatable-pagination-list-item:first-of-type .datatable-pagination-list-item-link {
-      border-top-left-radius: 0.5rem;
-      border-bottom-left-radius: 0.5rem;
-      border-left: 1px solid var(--color-gray-300);
-    }
-    .dark .datatable-wrapper .datatable-bottom & .datatable-pagination-list-item:first-of-type .datatable-pagination-list-item-link {
-      border-left: 1px solid var(--color-gray-700);
-    }
-    .datatable-wrapper .datatable-bottom & .datatable-pagination-list-item:last-of-type .datatable-pagination-list-item-link {
-      border-top-right-radius: 0.5rem;
-      border-bottom-right-radius: 0.5rem;
-      border-left: 0;
-    }
-    .datatable-wrapper .datatable-bottom & .datatable-pagination-list-item-link:hover {
-      background-color: var(--color-gray-50);
-      color: var(--color-gray-700);
-    }
-    .dark .datatable-wrapper .datatable-bottom & .datatable-pagination-list-item-link:hover {
-      background-color: var(--color-gray-700);
-      color: white;
-    }
-  }
-  .datatable-pagination-list-item-link {
-    .datatable-wrapper .datatable-bottom .datatable-pagination & {
-      display: flex;
-      align-items: center;
-      color: var(--color-gray-500);
-      font-weight: 500;
-      padding-left: 0.75rem;
-      padding-right: 0.75rem;
-      height: 2rem;
-      font-size: 0.875rem;
-      border-top: 1px solid var(--color-gray-300);
-      border-bottom: 1px solid var(--color-gray-300);
-      border-right: 1px solid var(--color-gray-300);
-    }
-    .dark .datatable-wrapper .datatable-bottom .datatable-pagination & {
-      color: var(--color-gray-400);
-      border-color: var(--color-gray-700);
-    }
-    .datatable-wrapper .datatable-bottom .datatable-pagination .datatable-pagination-list-item:first-of-type & {
-      color: transparent;
-    }
-    .datatable-wrapper .datatable-bottom .datatable-pagination .datatable-pagination-list-item:last-of-type & {
-      color: transparent;
-    }
-    .dark .datatable-wrapper .datatable-bottom .datatable-pagination .datatable-pagination-list-item:first-of-type & {
-      color: transparent;
-    }
-    .dark .datatable-wrapper .datatable-bottom .datatable-pagination .datatable-pagination-list-item:last-of-type & {
-      color: transparent;
-    }
-    .datatable-wrapper .datatable-bottom .datatable-pagination .datatable-pagination-list-item:first-of-type &::after {
-      content: url("data:image/svg+xml,%3csvg aria-hidden='true' xmlns='http://www.w3.org/2000/svg' width='20' height='20' fill='none' viewBox='0 0 24 24'%3e %3cpath stroke='%236B7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m14 8-4 4 4 4'/%3e %3c/svg%3e");
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      width: 1.3rem;
-      height: 1.3rem;
-      transform: translate(-50%, -50%);
-    }
-    .datatable-wrapper .datatable-bottom .datatable-pagination .datatable-pagination-list-item:first-of-type &:hover::after {
-      content: url("data:image/svg+xml,%3csvg aria-hidden='true' xmlns='http://www.w3.org/2000/svg' width='20' height='20' fill='none' viewBox='0 0 24 24'%3e %3cpath stroke='%23111827' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m14 8-4 4 4 4'/%3e %3c/svg%3e");
-    }
-    .dark .datatable-wrapper .datatable-bottom .datatable-pagination .datatable-pagination-list-item:first-of-type &::after {
-      content: url("data:image/svg+xml,%3csvg aria-hidden='true' xmlns='http://www.w3.org/2000/svg' width='20' height='20' fill='none' viewBox='0 0 24 24'%3e %3cpath stroke='%239CA3AF' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m14 8-4 4 4 4'/%3e %3c/svg%3e");
-    }
-    .dark .datatable-wrapper .datatable-bottom .datatable-pagination .datatable-pagination-list-item:first-of-type &:hover::after {
-      content: url("data:image/svg+xml,%3csvg aria-hidden='true' xmlns='http://www.w3.org/2000/svg' width='20' height='20' fill='none' viewBox='0 0 24 24'%3e %3cpath stroke='white' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m14 8-4 4 4 4'/%3e %3c/svg%3e");
-    }
-    .datatable-wrapper .datatable-bottom .datatable-pagination .datatable-pagination-list-item:last-of-type &::after {
-      content: url("data:image/svg+xml,%3csvg aria-hidden='true' xmlns='http://www.w3.org/2000/svg' width='20' height='20' fill='none' viewBox='0 0 24 24'%3e %3cpath stroke='%236B7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m10 16 4-4-4-4'/%3e %3c/svg%3e");
-      position: absolute;
-      top: 50%;
-      right: 50%;
-      width: 1.3rem;
-      height: 1.3rem;
-      transform: translate(50%, -50%);
-    }
-    .datatable-wrapper .datatable-bottom .datatable-pagination .datatable-pagination-list-item:last-of-type &:hover::after {
-      content: url("data:image/svg+xml,%3csvg aria-hidden='true' xmlns='http://www.w3.org/2000/svg' width='20' height='20' fill='none' viewBox='0 0 24 24'%3e %3cpath stroke='%23111827' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m10 16 4-4-4-4'/%3e %3c/svg%3e");
-    }
-    .dark .datatable-wrapper .datatable-bottom .datatable-pagination .datatable-pagination-list-item:last-of-type &::after {
-      content: url("data:image/svg+xml,%3csvg aria-hidden='true' xmlns='http://www.w3.org/2000/svg' width='20' height='20' fill='none' viewBox='0 0 24 24'%3e %3cpath stroke='%239CA3AF' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m10 16 4-4-4-4'/%3e %3c/svg%3e");
-    }
-    .dark .datatable-wrapper .datatable-bottom .datatable-pagination .datatable-pagination-list-item:last-of-type &:hover::after {
-      content: url("data:image/svg+xml,%3csvg aria-hidden='true' xmlns='http://www.w3.org/2000/svg' width='20' height='20' fill='none' viewBox='0 0 24 24'%3e %3cpath stroke='white' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m10 16 4-4-4-4'/%3e %3c/svg%3e");
-    }
-    .datatable-wrapper .datatable-bottom .datatable-pagination .datatable-pagination-list-item:first-of-type & {
-      border-top-left-radius: 0.5rem;
-      border-bottom-left-radius: 0.5rem;
-      border-left: 1px solid var(--color-gray-300);
-    }
-    .dark .datatable-wrapper .datatable-bottom .datatable-pagination .datatable-pagination-list-item:first-of-type & {
-      border-left: 1px solid var(--color-gray-700);
-    }
-    .datatable-wrapper .datatable-bottom .datatable-pagination .datatable-pagination-list-item:last-of-type & {
-      border-top-right-radius: 0.5rem;
-      border-bottom-right-radius: 0.5rem;
-      border-left: 0;
-    }
-    .datatable-wrapper .datatable-bottom .datatable-pagination &:hover {
-      background-color: var(--color-gray-50);
-      color: var(--color-gray-700);
-    }
-    .dark .datatable-wrapper .datatable-bottom .datatable-pagination &:hover {
-      background-color: var(--color-gray-700);
-      color: white;
-    }
-  }
   .sr-only {
     position: absolute;
     width: 1px;
@@ -859,9 +264,6 @@
   }
   .inset-0 {
     inset: calc(var(--spacing) * 0);
-  }
-  .top-1 {
-    top: calc(var(--spacing) * 1);
   }
   .top-1\/2 {
     top: calc(1/2 * 100%);
@@ -917,9 +319,6 @@
   .-mt-24 {
     margin-top: calc(var(--spacing) * -24);
   }
-  .mt-0 {
-    margin-top: calc(var(--spacing) * 0);
-  }
   .mt-0\.5 {
     margin-top: calc(var(--spacing) * 0.5);
   }
@@ -928,9 +327,6 @@
   }
   .mt-4 {
     margin-top: calc(var(--spacing) * 4);
-  }
-  .mt-6 {
-    margin-top: calc(var(--spacing) * 6);
   }
   .mt-8 {
     margin-top: calc(var(--spacing) * 8);
@@ -944,316 +340,11 @@
   .mt-28 {
     margin-top: calc(var(--spacing) * 28);
   }
-  .apexcharts-canvas {
-    & .apexcharts-tooltip {
-      background-color: white !important;
-      color: var(--color-gray-700) !important;
-      border: 0 !important;
-      border-radius: 0.25rem !important;
-      box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1) !important;
-    }
-    .dark & .apexcharts-tooltip {
-      background-color: var(--color-gray-700) !important;
-      color: var(--color-gray-400) !important;
-      border-color: transparent !important;
-      box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1) !important;
-    }
-    & .apexcharts-tooltip .apexcharts-tooltip-title {
-      padding-top: 0.5rem !important;
-      padding-bottom: 0.5rem !important;
-      padding-right: 0.75rem !important;
-      padding-left: 0.75rem !important;
-      margin-bottom: 0.75rem !important;
-      background-color: var(--color-gray-100) !important;
-      border-bottom-color: var(--color-gray-200) !important;
-      font-size: 0.875rem !important;
-      font-weight: 400 !important;
-      color: var(--color-gray-500) !important;
-    }
-    .dark & .apexcharts-tooltip .apexcharts-tooltip-title {
-      background-color: var(--color-gray-600) !important;
-      border-color: var(--color-gray-500) !important;
-      color: var(--color-gray-500) !important;
-    }
-    & .apexcharts-xaxistooltip {
-      color: var(--color-gray-500) !important;
-      padding-top: 0.5rem !important;
-      padding-bottom: 0.5rem !important;
-      padding-right: 0.75rem !important;
-      padding-left: 0.75rem !important;
-      border-color: transparent !important;
-      background-color: white !important;
-      border-radius: 0.25rem !important;
-      box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1) !important;
-    }
-    .dark & .apexcharts-xaxistooltip {
-      color: var(--color-gray-400) !important;
-      background-color: var(--color-gray-700) !important;
-    }
-    & .apexcharts-tooltip .apexcharts-tooltip-text-y-label {
-      color: var(--color-gray-500) !important;
-      font-size: 0.875rem !important;
-    }
-    .dark & .apexcharts-tooltip .apexcharts-tooltip-text-y-label {
-      color: var(--color-gray-400) !important;
-    }
-    & .apexcharts-tooltip .apexcharts-tooltip-text-y-value {
-      color: var(--color-gray-900);
-      font-size: 0.875rem !important;
-    }
-    .dark & .apexcharts-tooltip .apexcharts-tooltip-text-y-value {
-      color: white !important;
-    }
-    & .apexcharts-xaxistooltip-text {
-      font-weight: 400 !important;
-      font-size: 0.875rem !important;
-    }
-    & .apexcharts-xaxistooltip:after {
-      border-bottom-color: white !important;
-    }
-    & .apexcharts-xaxistooltip:before {
-      border-bottom-color: white !important;
-    }
-    & .apexcharts-xaxistooltip:after {
-      border-width: 8px !important;
-      margin-left: -8px !important;
-    }
-    & .apexcharts-xaxistooltip:before {
-      border-width: 10px !important;
-      margin-left: -10px !important;
-    }
-    .dark & .apexcharts-xaxistooltip:after {
-      border-bottom-color: var(--color-gray-700) !important;
-    }
-    .dark & .apexcharts-xaxistooltip:before {
-      border-bottom-color: var(--color-gray-700) !important;
-    }
-    & .apexcharts-tooltip-series-group.apexcharts-active .apexcharts-tooltip-y-group {
-      padding: 0 !important;
-    }
-    & .apexcharts-tooltip-series-group.apexcharts-active {
-      padding-left: 0.75rem !important;
-      padding-right: 0.75rem !important;
-      padding-bottom: 0.75rem !important;
-      background-color: white !important;
-      color: var(--color-gray-500) !important;
-    }
-    .dark & .apexcharts-tooltip-series-group.apexcharts-active {
-      background-color: var(--color-gray-700) !important;
-      color: var(--color-gray-400) !important;
-    }
-    & .apexcharts-tooltip-series-group.apexcharts-active:first-of-type {
-      padding-top: 0.75rem !important;
-    }
-    & .apexcharts-legend {
-      padding: 0 !important;
-    }
-    & .apexcharts-legend-text {
-      font-size: 0.75rem !important;
-      font-weight: 500 !important;
-      padding-left: 1.25rem !important;
-      color: var(--color-gray-500) !important;
-    }
-    :is([dir=rtl]) & .apexcharts-legend-text {
-      padding-right: 0.5rem !important;
-    }
-    & .apexcharts-legend-text:not(.apexcharts-inactive-legend):hover {
-      color: var(--color-gray-900) !important;
-    }
-    .dark & .apexcharts-legend-text {
-      color: var(--color-gray-400) !important;
-    }
-    .dark & .apexcharts-legend-text:not(.apexcharts-inactive-legend):hover {
-      color: white !important;
-    }
-    & .apexcharts-legend-series {
-      margin-left: 0.5rem !important;
-      margin-right: 0.5rem !important;
-      margin-bottom: 0.25rem !important;
-      display: flex !important;
-      align-items: center !important;
-    }
-    .dark & .apexcharts-datalabels-group .apexcharts-text.apexcharts-datalabel-value {
-      fill: white !important;
-    }
-    & .apexcharts-datalabels-group .apexcharts-text.apexcharts-datalabel-label {
-      fill: var(--color-gray-500) !important;
-      font-size: 1rem,[object Object] !important;
-      font-weight: 400 !important;
-    }
-    .dark & .apexcharts-datalabels-group .apexcharts-text.apexcharts-datalabel-label {
-      fill: var(--color-gray-400) !important;
-    }
-    & .apexcharts-datalabels .apexcharts-text.apexcharts-pie-label {
-      font-size: 0.75rem,[object Object] !important;
-      font-weight: 600 !important;
-      text-shadow: none !important;
-      filter: none !important;
-    }
-  }
-  .apexcharts-legend-series {
-    .apexcharts-canvas & {
-      margin-left: 0.5rem !important;
-      margin-right: 0.5rem !important;
-      margin-bottom: 0.25rem !important;
-      display: flex !important;
-      align-items: center !important;
-    }
-  }
-  .apexcharts-tooltip {
-    .apexcharts-canvas & {
-      background-color: white !important;
-      color: var(--color-gray-700) !important;
-      border: 0 !important;
-      border-radius: 0.25rem !important;
-      box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1) !important;
-    }
-    .dark .apexcharts-canvas & {
-      background-color: var(--color-gray-700) !important;
-      color: var(--color-gray-400) !important;
-      border-color: transparent !important;
-      box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1) !important;
-    }
-    .apexcharts-canvas & .apexcharts-tooltip-title {
-      padding-top: 0.5rem !important;
-      padding-bottom: 0.5rem !important;
-      padding-right: 0.75rem !important;
-      padding-left: 0.75rem !important;
-      margin-bottom: 0.75rem !important;
-      background-color: var(--color-gray-100) !important;
-      border-bottom-color: var(--color-gray-200) !important;
-      font-size: 0.875rem !important;
-      font-weight: 400 !important;
-      color: var(--color-gray-500) !important;
-    }
-    .dark .apexcharts-canvas & .apexcharts-tooltip-title {
-      background-color: var(--color-gray-600) !important;
-      border-color: var(--color-gray-500) !important;
-      color: var(--color-gray-500) !important;
-    }
-    .apexcharts-canvas & .apexcharts-tooltip-text-y-label {
-      color: var(--color-gray-500) !important;
-      font-size: 0.875rem !important;
-    }
-    .dark .apexcharts-canvas & .apexcharts-tooltip-text-y-label {
-      color: var(--color-gray-400) !important;
-    }
-    .apexcharts-canvas & .apexcharts-tooltip-text-y-value {
-      color: var(--color-gray-900);
-      font-size: 0.875rem !important;
-    }
-    :is([dir=rtl]) & .apexcharts-tooltip-marker {
-      margin-right: 0px !important;
-      margin-left: e !important;
-    }
-    .dark .apexcharts-canvas & .apexcharts-tooltip-text-y-value {
-      color: white !important;
-    }
-  }
-  .datatable-top {
-    .datatable-wrapper & {
-      display: flex;
-      justify-content: space-between;
-      flex-direction: column-reverse;
-      align-items: start;
-      gap: 1rem;
-      margin-bottom: 1rem;
-      @media (min-width: 640px) {
-        flex-direction: row-reverse;
-        align-items: center;
-      }
-    }
-    .datatable-wrapper & .datatable-dropdown {
-      color: var(--color-gray-500);
-      font-size: 0.875rem;
-    }
-    .dark .datatable-wrapper & .datatable-dropdown {
-      color: var(--color-gray-400);
-    }
-    .datatable-wrapper & .datatable-dropdown .datatable-selector {
-      background-color: var(--color-gray-50);
-      color: var(--color-gray-900);
-      font-size: 0.875rem;
-      border: 1px solid var(--color-gray-300);
-      border-radius: 0.5rem;
-      margin-right: 0.25rem;
-      min-width: 4rem;
-    }
-    .dark .datatable-wrapper & .datatable-dropdown .datatable-selector {
-      background-color: var(--color-gray-800);
-      border: 1px solid var(--color-gray-700);
-      color: white;
-    }
-  }
-  .apexcharts-tooltip-marker {
-    :is([dir=rtl]) .apexcharts-tooltip & {
-      margin-right: 0px !important;
-      margin-left: e !important;
-    }
-  }
-  .datatable-dropdown {
-    .datatable-wrapper .datatable-top & {
-      color: var(--color-gray-500);
-      font-size: 0.875rem;
-    }
-    .dark .datatable-wrapper .datatable-top & {
-      color: var(--color-gray-400);
-    }
-    .datatable-wrapper .datatable-top & .datatable-selector {
-      background-color: var(--color-gray-50);
-      color: var(--color-gray-900);
-      font-size: 0.875rem;
-      border: 1px solid var(--color-gray-300);
-      border-radius: 0.5rem;
-      margin-right: 0.25rem;
-      min-width: 4rem;
-    }
-    .dark .datatable-wrapper .datatable-top & .datatable-selector {
-      background-color: var(--color-gray-800);
-      border: 1px solid var(--color-gray-700);
-      color: white;
-    }
-  }
-  .datatable-selector {
-    .datatable-wrapper .datatable-top .datatable-dropdown & {
-      background-color: var(--color-gray-50);
-      color: var(--color-gray-900);
-      font-size: 0.875rem;
-      border: 1px solid var(--color-gray-300);
-      border-radius: 0.5rem;
-      margin-right: 0.25rem;
-      min-width: 4rem;
-    }
-    .dark .datatable-wrapper .datatable-top .datatable-dropdown & {
-      background-color: var(--color-gray-800);
-      border: 1px solid var(--color-gray-700);
-      color: white;
-    }
-  }
   .mr-3 {
     margin-right: calc(var(--spacing) * 3);
   }
   .mr-5 {
     margin-right: calc(var(--spacing) * 5);
-  }
-  .apexcharts-tooltip-title {
-    .apexcharts-canvas .apexcharts-tooltip & {
-      padding-top: 0.5rem !important;
-      padding-bottom: 0.5rem !important;
-      padding-right: 0.75rem !important;
-      padding-left: 0.75rem !important;
-      margin-bottom: 0.75rem !important;
-      background-color: var(--color-gray-100) !important;
-      border-bottom-color: var(--color-gray-200) !important;
-      font-size: 0.875rem !important;
-      font-weight: 400 !important;
-      color: var(--color-gray-500) !important;
-    }
-    .dark .apexcharts-canvas .apexcharts-tooltip & {
-      background-color: var(--color-gray-600) !important;
-      border-color: var(--color-gray-500) !important;
-      color: var(--color-gray-500) !important;
-    }
   }
   .mb-1 {
     margin-bottom: calc(var(--spacing) * 1);
@@ -1288,43 +379,6 @@
   .mb-20 {
     margin-bottom: calc(var(--spacing) * 20);
   }
-  .apexcharts-xaxistooltip {
-    .apexcharts-canvas & {
-      color: var(--color-gray-500) !important;
-      padding-top: 0.5rem !important;
-      padding-bottom: 0.5rem !important;
-      padding-right: 0.75rem !important;
-      padding-left: 0.75rem !important;
-      border-color: transparent !important;
-      background-color: white !important;
-      border-radius: 0.25rem !important;
-      box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1) !important;
-    }
-    .dark .apexcharts-canvas & {
-      color: var(--color-gray-400) !important;
-      background-color: var(--color-gray-700) !important;
-    }
-    .apexcharts-canvas &:after {
-      border-bottom-color: white !important;
-    }
-    .apexcharts-canvas &:before {
-      border-bottom-color: white !important;
-    }
-    .apexcharts-canvas &:after {
-      border-width: 8px !important;
-      margin-left: -8px !important;
-    }
-    .apexcharts-canvas &:before {
-      border-width: 10px !important;
-      margin-left: -10px !important;
-    }
-    .dark .apexcharts-canvas &:after {
-      border-bottom-color: var(--color-gray-700) !important;
-    }
-    .dark .apexcharts-canvas &:before {
-      border-bottom-color: var(--color-gray-700) !important;
-    }
-  }
   .ml-5 {
     margin-left: calc(var(--spacing) * 5);
   }
@@ -1333,14 +387,6 @@
   }
   .box-border {
     box-sizing: border-box;
-  }
-  .datatable-pagination-list {
-    .datatable-wrapper .datatable-bottom .datatable-pagination & {
-      display: flex;
-      align-items: center;
-      height: 2rem;
-      font-size: 0.875rem;
-    }
   }
   .block {
     display: block;
@@ -1356,9 +402,6 @@
   }
   .inline-flex {
     display: inline-flex;
-  }
-  .table {
-    display: table;
   }
   .size-4 {
     width: calc(var(--spacing) * 4);
@@ -1380,9 +423,6 @@
   }
   .h-8 {
     height: calc(var(--spacing) * 8);
-  }
-  .h-9 {
-    height: calc(var(--spacing) * 9);
   }
   .h-10 {
     height: calc(var(--spacing) * 10);
@@ -1426,97 +466,8 @@
   .h-full {
     height: 100%;
   }
-  .max-h-2 {
-    max-height: calc(var(--spacing) * 2);
-  }
-  .max-h-2\/6 {
-    max-height: calc(2/6 * 100%);
-  }
   .min-h-\[200px\] {
     min-height: 200px;
-  }
-  .datatable-table {
-    .datatable-wrapper & {
-      width: 100%;
-      font-size: 0.875rem;
-      color: var(--color-gray-500);
-      text-align: left;
-    }
-    .dark .datatable-wrapper & {
-      color: var(--color-gray-400);
-    }
-    .datatable-wrapper & thead {
-      font-size: 0.75rem;
-      color: var(--color-gray-500);
-      background-color: var(--color-gray-50);
-    }
-    .dark .datatable-wrapper & thead {
-      color: var(--color-gray-400);
-      background-color: var(--color-gray-800);
-    }
-    .datatable-wrapper & thead th {
-      white-space: nowrap;
-    }
-    .datatable-wrapper & thead th {
-      width: auto !important;
-      padding-top: 0.75rem;
-      padding-bottom: 0.75rem;
-      padding-left: 1.5rem;
-      padding-right: 1.5rem;
-    }
-    .datatable-wrapper & tbody th {
-      width: auto !important;
-      padding-top: 0.75rem;
-      padding-bottom: 0.75rem;
-      padding-left: 1.5rem;
-      padding-right: 1.5rem;
-    }
-    .datatable-wrapper & tbody td {
-      width: auto !important;
-      padding-top: 0.75rem;
-      padding-bottom: 0.75rem;
-      padding-left: 1.5rem;
-      padding-right: 1.5rem;
-    }
-    .datatable-wrapper & thead th .datatable-sorter {
-      text-transform: uppercase;
-    }
-    .datatable-wrapper & thead th {
-      text-transform: uppercase;
-    }
-    .datatable-wrapper & thead th .datatable-sorter:hover {
-      color: var(--color-gray-900);
-    }
-    .datatable-wrapper & thead th.datatable-ascending .datatable-sorter {
-      color: var(--color-gray-900);
-    }
-    .datatable-wrapper & thead th.datatable-descending .datatable-sorter {
-      color: var(--color-gray-900);
-    }
-    .dark .datatable-wrapper & thead th .datatable-sorter:hover {
-      color: white;
-    }
-    .dark .datatable-wrapper & thead th.datatable-ascending .datatable-sorter {
-      color: white;
-    }
-    .dark .datatable-wrapper & thead th.datatable-descending .datatable-sorter {
-      color: white;
-    }
-    .datatable-wrapper & tbody tr.selected {
-      background-color: var(--color-gray-100);
-    }
-    .dark .datatable-wrapper & tbody tr.selected {
-      background-color: var(--color-gray-700);
-    }
-    .datatable-wrapper & tbody tr {
-      border-bottom: 1px solid var(--color-gray-200);
-    }
-    .dark .datatable-wrapper & tbody tr {
-      border-bottom: 1px solid var(--color-gray-700);
-    }
-    .datatable-wrapper & .datatable-empty {
-      text-align: center;
-    }
   }
   .w-4 {
     width: calc(var(--spacing) * 4);
@@ -1533,9 +484,6 @@
   .w-8 {
     width: calc(var(--spacing) * 8);
   }
-  .w-9 {
-    width: calc(var(--spacing) * 9);
-  }
   .w-10 {
     width: calc(var(--spacing) * 10);
   }
@@ -1550,9 +498,6 @@
   }
   .w-\[500px\] {
     width: 500px;
-  }
-  .w-auto {
-    width: auto;
   }
   .w-full {
     width: 100%;
@@ -1581,73 +526,8 @@
   .max-w-xl {
     max-width: var(--container-xl);
   }
-  .datatable-input {
-    .datatable-wrapper .datatable-search & {
-      color: var(--color-gray-900);
-      font-size: 0.875rem;
-      border: 1px solid var(--color-gray-300);
-      border-radius: 0.5rem;
-      background-color: var(--color-gray-50);
-      min-width: 16rem;
-    }
-    .datatable-wrapper & {
-      color: var(--color-gray-900);
-      font-size: 0.875rem;
-      border: 1px solid var(--color-gray-300);
-      border-radius: 0.5rem;
-      background-color: var(--color-gray-50);
-      min-width: 16rem;
-    }
-    .dark .datatable-wrapper .datatable-search & {
-      color: white;
-      background-color: var(--color-gray-800);
-      border: 1px solid var(--color-gray-700);
-    }
-    .dark .datatable-wrapper & {
-      color: white;
-      background-color: var(--color-gray-800);
-      border: 1px solid var(--color-gray-700);
-    }
-    .datatable-wrapper thead th & {
-      background-color: white;
-      font-weight: 400;
-      color: var(--color-gray-900);
-      padding-top: .35rem;
-      padding-bottom: .35rem;
-      min-width: 0;
-    }
-    .dark .datatable-wrapper thead th & {
-      background-color: var(--color-gray-700);
-      border-color: var(--color-gray-600);
-      color: white;
-    }
-    .datatable-wrapper .datatable-search &:focus {
-      border-color: var(--color-blue-600);
-    }
-  }
-  .datatable-search {
-    .datatable-wrapper & .datatable-input {
-      color: var(--color-gray-900);
-      font-size: 0.875rem;
-      border: 1px solid var(--color-gray-300);
-      border-radius: 0.5rem;
-      background-color: var(--color-gray-50);
-      min-width: 16rem;
-    }
-    .dark .datatable-wrapper & .datatable-input {
-      color: white;
-      background-color: var(--color-gray-800);
-      border: 1px solid var(--color-gray-700);
-    }
-    .datatable-wrapper & .datatable-input:focus {
-      border-color: var(--color-blue-600);
-    }
-  }
   .min-w-\[200px\] {
     min-width: 200px;
-  }
-  .flex-shrink {
-    flex-shrink: 1;
   }
   .flex-shrink-0 {
     flex-shrink: 0;
@@ -1658,13 +538,6 @@
   .flex-grow {
     flex-grow: 1;
   }
-  .border-collapse {
-    border-collapse: collapse;
-  }
-  .-translate-y-1 {
-    --tw-translate-y: calc(var(--spacing) * -1);
-    translate: var(--tw-translate-x) var(--tw-translate-y);
-  }
   .-translate-y-1\/2 {
     --tw-translate-y: calc(calc(1/2 * 100%) * -1);
     translate: var(--tw-translate-x) var(--tw-translate-y);
@@ -1674,9 +547,6 @@
   }
   .cursor-pointer {
     cursor: pointer;
-  }
-  .resize {
-    resize: both;
   }
   .list-disc {
     list-style-type: disc;
@@ -1710,9 +580,6 @@
   }
   .justify-end {
     justify-content: flex-end;
-  }
-  .gap-1 {
-    gap: calc(var(--spacing) * 1);
   }
   .gap-1\.5 {
     gap: calc(var(--spacing) * 1.5);
@@ -1755,13 +622,6 @@
       --tw-space-y-reverse: 0;
       margin-block-start: calc(calc(var(--spacing) * 1) * var(--tw-space-y-reverse));
       margin-block-end: calc(calc(var(--spacing) * 1) * calc(1 - var(--tw-space-y-reverse)));
-    }
-  }
-  .space-y-2 {
-    :where(& > :not(:last-child)) {
-      --tw-space-y-reverse: 0;
-      margin-block-start: calc(calc(var(--spacing) * 2) * var(--tw-space-y-reverse));
-      margin-block-end: calc(calc(var(--spacing) * 2) * calc(1 - var(--tw-space-y-reverse)));
     }
   }
   .space-y-2\.5 {
@@ -1815,14 +675,6 @@
   .overflow-hidden {
     overflow: hidden;
   }
-  .datatable-container {
-    .datatable-wrapper & thead tr.search-filtering-row th {
-      padding-top: 0;
-    }
-    .datatable-wrapper & {
-      overflow-x: auto;
-    }
-  }
   .rounded {
     border-radius: 0.25rem;
   }
@@ -1861,139 +713,6 @@
     border-bottom-style: var(--tw-border-style);
     border-bottom-width: 1px;
   }
-  .dark {
-    & .apexcharts-canvas .apexcharts-tooltip {
-      background-color: var(--color-gray-700) !important;
-      color: var(--color-gray-400) !important;
-      border-color: transparent !important;
-      box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1) !important;
-    }
-    & .apexcharts-canvas .apexcharts-tooltip .apexcharts-tooltip-title {
-      background-color: var(--color-gray-600) !important;
-      border-color: var(--color-gray-500) !important;
-      color: var(--color-gray-500) !important;
-    }
-    & .apexcharts-canvas .apexcharts-xaxistooltip {
-      color: var(--color-gray-400) !important;
-      background-color: var(--color-gray-700) !important;
-    }
-    & .apexcharts-canvas .apexcharts-tooltip .apexcharts-tooltip-text-y-label {
-      color: var(--color-gray-400) !important;
-    }
-    & .apexcharts-canvas .apexcharts-tooltip .apexcharts-tooltip-text-y-value {
-      color: white !important;
-    }
-    & .apexcharts-canvas .apexcharts-xaxistooltip:after {
-      border-bottom-color: var(--color-gray-700) !important;
-    }
-    & .apexcharts-canvas .apexcharts-xaxistooltip:before {
-      border-bottom-color: var(--color-gray-700) !important;
-    }
-    & .apexcharts-canvas .apexcharts-tooltip-series-group.apexcharts-active {
-      background-color: var(--color-gray-700) !important;
-      color: var(--color-gray-400) !important;
-    }
-    & .apexcharts-canvas .apexcharts-legend-text {
-      color: var(--color-gray-400) !important;
-    }
-    & .apexcharts-canvas .apexcharts-legend-text:not(.apexcharts-inactive-legend):hover {
-      color: white !important;
-    }
-    & .apexcharts-canvas .apexcharts-datalabels-group .apexcharts-text.apexcharts-datalabel-value {
-      fill: white !important;
-    }
-    & .apexcharts-canvas .apexcharts-datalabels-group .apexcharts-text.apexcharts-datalabel-label {
-      fill: var(--color-gray-400) !important;
-    }
-    & .apexcharts-gridline {
-      stroke: var(--color-gray-700) !important;
-    }
-    & .apexcharts-xcrosshairs {
-      stroke: var(--color-gray-700) !important;
-    }
-    & .apexcharts-ycrosshairs {
-      stroke: var(--color-gray-700) !important;
-    }
-  }
-  .dark {
-    & .datatable-wrapper .datatable-search .datatable-input {
-      color: white;
-      background-color: var(--color-gray-800);
-      border: 1px solid var(--color-gray-700);
-    }
-    & .datatable-wrapper .datatable-input {
-      color: white;
-      background-color: var(--color-gray-800);
-      border: 1px solid var(--color-gray-700);
-    }
-    & .datatable-wrapper thead th .datatable-input {
-      background-color: var(--color-gray-700);
-      border-color: var(--color-gray-600);
-      color: white;
-    }
-    & .datatable-wrapper .datatable-top .datatable-dropdown {
-      color: var(--color-gray-400);
-    }
-    & .datatable-wrapper .datatable-top .datatable-dropdown .datatable-selector {
-      background-color: var(--color-gray-800);
-      border: 1px solid var(--color-gray-700);
-      color: white;
-    }
-    & .datatable-wrapper .datatable-table {
-      color: var(--color-gray-400);
-    }
-    & .datatable-wrapper .datatable-table thead {
-      color: var(--color-gray-400);
-      background-color: var(--color-gray-800);
-    }
-    & .datatable-wrapper .datatable-table thead th .datatable-sorter:hover {
-      color: white;
-    }
-    & .datatable-wrapper .datatable-table thead th.datatable-ascending .datatable-sorter {
-      color: white;
-    }
-    & .datatable-wrapper .datatable-table thead th.datatable-descending .datatable-sorter {
-      color: white;
-    }
-    & .datatable-wrapper .datatable-table tbody tr.selected {
-      background-color: var(--color-gray-700);
-    }
-    & .datatable-wrapper .datatable-table tbody tr {
-      border-bottom: 1px solid var(--color-gray-700);
-    }
-    & .datatable-wrapper .datatable-bottom .datatable-info {
-      color: var(--color-gray-400);
-    }
-    & .datatable-wrapper .datatable-bottom .datatable-pagination .datatable-pagination-list-item-link {
-      color: var(--color-gray-400);
-      border-color: var(--color-gray-700);
-    }
-    & .datatable-wrapper .datatable-bottom .datatable-pagination .datatable-pagination-list-item:first-of-type .datatable-pagination-list-item-link {
-      color: transparent;
-    }
-    & .datatable-wrapper .datatable-bottom .datatable-pagination .datatable-pagination-list-item:last-of-type .datatable-pagination-list-item-link {
-      color: transparent;
-    }
-    & .datatable-wrapper .datatable-bottom .datatable-pagination .datatable-pagination-list-item:first-of-type .datatable-pagination-list-item-link::after {
-      content: url("data:image/svg+xml,%3csvg aria-hidden='true' xmlns='http://www.w3.org/2000/svg' width='20' height='20' fill='none' viewBox='0 0 24 24'%3e %3cpath stroke='%239CA3AF' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m14 8-4 4 4 4'/%3e %3c/svg%3e");
-    }
-    & .datatable-wrapper .datatable-bottom .datatable-pagination .datatable-pagination-list-item:first-of-type .datatable-pagination-list-item-link:hover::after {
-      content: url("data:image/svg+xml,%3csvg aria-hidden='true' xmlns='http://www.w3.org/2000/svg' width='20' height='20' fill='none' viewBox='0 0 24 24'%3e %3cpath stroke='white' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m14 8-4 4 4 4'/%3e %3c/svg%3e");
-    }
-    & .datatable-wrapper .datatable-bottom .datatable-pagination .datatable-pagination-list-item:last-of-type .datatable-pagination-list-item-link::after {
-      content: url("data:image/svg+xml,%3csvg aria-hidden='true' xmlns='http://www.w3.org/2000/svg' width='20' height='20' fill='none' viewBox='0 0 24 24'%3e %3cpath stroke='%239CA3AF' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m10 16 4-4-4-4'/%3e %3c/svg%3e");
-    }
-    & .datatable-wrapper .datatable-bottom .datatable-pagination .datatable-pagination-list-item:last-of-type .datatable-pagination-list-item-link:hover::after {
-      content: url("data:image/svg+xml,%3csvg aria-hidden='true' xmlns='http://www.w3.org/2000/svg' width='20' height='20' fill='none' viewBox='0 0 24 24'%3e %3cpath stroke='white' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m10 16 4-4-4-4'/%3e %3c/svg%3e");
-    }
-    & .datatable-wrapper .datatable-bottom .datatable-pagination .datatable-pagination-list-item:first-of-type .datatable-pagination-list-item-link {
-      border-left: 1px solid var(--color-gray-700);
-    }
-    & .datatable-wrapper .datatable-bottom .datatable-pagination .datatable-pagination-list-item-link:hover {
-      background-color: var(--color-gray-700);
-      color: white;
-    }
-  }
   .border-blue-700 {
     border-color: var(--color-blue-700);
   }
@@ -2018,39 +737,6 @@
   .border-white {
     border-color: var(--color-white);
   }
-  .apexcharts-active {
-    .apexcharts-canvas .apexcharts-tooltip-series-group& .apexcharts-tooltip-y-group {
-      padding: 0 !important;
-    }
-    .apexcharts-canvas .apexcharts-tooltip-series-group& {
-      padding-left: 0.75rem !important;
-      padding-right: 0.75rem !important;
-      padding-bottom: 0.75rem !important;
-      background-color: white !important;
-      color: var(--color-gray-500) !important;
-    }
-    .dark .apexcharts-canvas .apexcharts-tooltip-series-group& {
-      background-color: var(--color-gray-700) !important;
-      color: var(--color-gray-400) !important;
-    }
-    .apexcharts-canvas .apexcharts-tooltip-series-group&:first-of-type {
-      padding-top: 0.75rem !important;
-    }
-  }
-  .selected {
-    .datatable-wrapper .datatable-table tbody tr& {
-      background-color: var(--color-gray-100);
-    }
-    .dark .datatable-wrapper .datatable-table tbody tr& {
-      background-color: var(--color-gray-700);
-    }
-  }
-  .selectedCell {
-    background-color: var(--color-gray-50);
-    .dark & {
-      background-color: var(--color-gray-700);
-    }
-  }
   .bg-\[\#051c3d\] {
     background-color: #051c3d;
   }
@@ -2062,12 +748,6 @@
   }
   .bg-blue-800 {
     background-color: var(--color-blue-800);
-  }
-  .bg-blue-900 {
-    background-color: var(--color-blue-900);
-  }
-  .bg-blue-950 {
-    background-color: var(--color-blue-950);
   }
   .bg-gray-50 {
     background-color: var(--color-gray-50);
@@ -2087,19 +767,11 @@
   .bg-jdporange {
     background-color: var(--color-jdporange);
   }
-  .bg-red-500 {
-    background-color: var(--color-red-500);
-  }
   .bg-white {
     background-color: var(--color-white);
   }
   .bg-yellow-500 {
     background-color: var(--color-yellow-500);
-  }
-  .dark {
-    & .selectedCell {
-      background-color: var(--color-gray-700);
-    }
   }
   .bg-\[url\(\'\/assets\/Group2\.jpg\'\)\] {
     background-image: url('/assets/Group2.jpg');
@@ -2107,61 +779,14 @@
   .bg-\[url\(\'\/assets\/pexels-chuchuphinh-1164572\.jpg\'\)\] {
     background-image: url('/assets/pexels-chuchuphinh-1164572.jpg');
   }
-  .bg-\[url\(\'https\:\/\/placehold\.co\/1920x600\/1e3a8a\/ffffff\?text\=Background\+Image\'\)\] {
-    background-image: url('https://placehold.co/1920x600/1e3a8a/ffffff?text=Background+Image');
-  }
   .bg-cover {
     background-size: cover;
-  }
-  .bg-fixed {
-    background-attachment: fixed;
-  }
-  .bg-bottom {
-    background-position: bottom;
   }
   .bg-center {
     background-position: center;
   }
   .bg-top {
     background-position: top;
-  }
-  .apexcharts-datalabels-group {
-    & .apexcharts-text.apexcharts-datalabel-value {
-      fill: var(--color-gray-900) !important;
-      font-size: 1.875rem,[object Object] !important;
-      font-weight: 700 !important;
-    }
-    .dark .apexcharts-canvas & .apexcharts-text.apexcharts-datalabel-value {
-      fill: white !important;
-    }
-    .apexcharts-canvas & .apexcharts-text.apexcharts-datalabel-label {
-      fill: var(--color-gray-500) !important;
-      font-size: 1rem,[object Object] !important;
-      font-weight: 400 !important;
-    }
-    .dark .apexcharts-canvas & .apexcharts-text.apexcharts-datalabel-label {
-      fill: var(--color-gray-400) !important;
-    }
-  }
-  .apexcharts-datalabel-label {
-    .apexcharts-canvas .apexcharts-datalabels-group .apexcharts-text& {
-      fill: var(--color-gray-500) !important;
-      font-size: 1rem,[object Object] !important;
-      font-weight: 400 !important;
-    }
-    .dark .apexcharts-canvas .apexcharts-datalabels-group .apexcharts-text& {
-      fill: var(--color-gray-400) !important;
-    }
-  }
-  .apexcharts-datalabel-value {
-    .apexcharts-datalabels-group .apexcharts-text& {
-      fill: var(--color-gray-900) !important;
-      font-size: 1.875rem,[object Object] !important;
-      font-weight: 700 !important;
-    }
-    .dark .apexcharts-canvas .apexcharts-datalabels-group .apexcharts-text& {
-      fill: white !important;
-    }
   }
   .fill-amber-300 {
     fill: var(--color-amber-300);
@@ -2175,24 +800,6 @@
   .fill-white {
     fill: var(--color-white);
   }
-  .apexcharts-gridline {
-    stroke: var(--color-gray-200) !important;
-    .dark & {
-      stroke: var(--color-gray-700) !important;
-    }
-  }
-  .apexcharts-xcrosshairs {
-    stroke: var(--color-gray-200) !important;
-    .dark & {
-      stroke: var(--color-gray-700) !important;
-    }
-  }
-  .apexcharts-ycrosshairs {
-    stroke: var(--color-gray-200) !important;
-    .dark & {
-      stroke: var(--color-gray-700) !important;
-    }
-  }
   .object-cover {
     object-fit: cover;
   }
@@ -2201,16 +808,6 @@
   }
   .object-top {
     object-position: top;
-  }
-  .apexcharts-legend {
-    .apexcharts-canvas & {
-      padding: 0 !important;
-    }
-  }
-  .apexcharts-tooltip-y-group {
-    .apexcharts-canvas .apexcharts-tooltip-series-group.apexcharts-active & {
-      padding: 0 !important;
-    }
   }
   .p-2 {
     padding: calc(var(--spacing) * 2);
@@ -2248,9 +845,6 @@
   .px-16 {
     padding-inline: calc(var(--spacing) * 16);
   }
-  .py-1 {
-    padding-block: calc(var(--spacing) * 1);
-  }
   .py-1\.5 {
     padding-block: calc(var(--spacing) * 1.5);
   }
@@ -2275,41 +869,11 @@
   .py-16 {
     padding-block: calc(var(--spacing) * 16);
   }
-  .search-filtering-row {
-    .datatable-wrapper .datatable-container thead tr& th {
-      padding-top: 0;
-    }
-  }
-  .apexcharts-legend-text {
-    .apexcharts-canvas & {
-      font-size: 0.75rem !important;
-      font-weight: 500 !important;
-      padding-left: 1.25rem !important;
-      color: var(--color-gray-500) !important;
-    }
-    :is([dir=rtl]) .apexcharts-canvas & {
-      padding-right: 0.5rem !important;
-    }
-    .apexcharts-canvas &:not(.apexcharts-inactive-legend):hover {
-      color: var(--color-gray-900) !important;
-    }
-    .dark .apexcharts-canvas & {
-      color: var(--color-gray-400) !important;
-    }
-    .dark .apexcharts-canvas &:not(.apexcharts-inactive-legend):hover {
-      color: white !important;
-    }
-  }
   .pb-10 {
     padding-bottom: calc(var(--spacing) * 10);
   }
   .pl-5 {
     padding-left: calc(var(--spacing) * 5);
-  }
-  .datatable-empty {
-    .datatable-wrapper .datatable-table & {
-      text-align: center;
-    }
   }
   .text-center {
     text-align: center;
@@ -2362,55 +926,6 @@
     font-size: var(--text-xs);
     line-height: var(--tw-leading, var(--text-xs--line-height));
   }
-  .apexcharts-datalabels {
-    .apexcharts-canvas & .apexcharts-text.apexcharts-pie-label {
-      font-size: 0.75rem,[object Object] !important;
-      font-weight: 600 !important;
-      text-shadow: none !important;
-      filter: none !important;
-    }
-  }
-  .apexcharts-pie-label {
-    .apexcharts-canvas .apexcharts-datalabels .apexcharts-text& {
-      font-size: 0.75rem,[object Object] !important;
-      font-weight: 600 !important;
-      text-shadow: none !important;
-      filter: none !important;
-    }
-  }
-  .apexcharts-xaxistooltip-text {
-    .apexcharts-canvas & {
-      font-weight: 400 !important;
-      font-size: 0.875rem !important;
-    }
-  }
-  .apexcharts-tooltip-text-y-label {
-    .apexcharts-canvas .apexcharts-tooltip & {
-      color: var(--color-gray-500) !important;
-      font-size: 0.875rem !important;
-    }
-    .dark .apexcharts-canvas .apexcharts-tooltip & {
-      color: var(--color-gray-400) !important;
-    }
-  }
-  .apexcharts-tooltip-text-y-value {
-    .apexcharts-canvas .apexcharts-tooltip & {
-      color: var(--color-gray-900);
-      font-size: 0.875rem !important;
-    }
-    .dark .apexcharts-canvas .apexcharts-tooltip & {
-      color: white !important;
-    }
-  }
-  .datatable-info {
-    .datatable-wrapper .datatable-bottom & {
-      color: var(--color-gray-500);
-      font-size: 0.875rem;
-    }
-    .dark .datatable-wrapper .datatable-bottom & {
-      color: var(--color-gray-400);
-    }
-  }
   .leading-relaxed {
     --tw-leading: var(--leading-relaxed);
     line-height: var(--leading-relaxed);
@@ -2445,45 +960,6 @@
   }
   .whitespace-nowrap {
     white-space: nowrap;
-  }
-  .datatable-sorter {
-    .datatable-wrapper .datatable-table thead th & {
-      text-transform: uppercase;
-    }
-    .datatable-wrapper .datatable-table thead th &:hover {
-      color: var(--color-gray-900);
-    }
-    .datatable-wrapper .datatable-table thead th.datatable-ascending & {
-      color: var(--color-gray-900);
-    }
-    .datatable-wrapper .datatable-table thead th.datatable-descending & {
-      color: var(--color-gray-900);
-    }
-    .dark .datatable-wrapper .datatable-table thead th &:hover {
-      color: white;
-    }
-    .dark .datatable-wrapper .datatable-table thead th.datatable-ascending & {
-      color: white;
-    }
-    .dark .datatable-wrapper .datatable-table thead th.datatable-descending & {
-      color: white;
-    }
-  }
-  .datatable-ascending {
-    .datatable-wrapper .datatable-table thead th& .datatable-sorter {
-      color: var(--color-gray-900);
-    }
-    .dark .datatable-wrapper .datatable-table thead th& .datatable-sorter {
-      color: white;
-    }
-  }
-  .datatable-descending {
-    .datatable-wrapper .datatable-table thead th& .datatable-sorter {
-      color: var(--color-gray-900);
-    }
-    .dark .datatable-wrapper .datatable-table thead th& .datatable-sorter {
-      color: white;
-    }
   }
   .text-blue-200 {
     color: var(--color-blue-200);
@@ -2552,17 +1028,11 @@
   .opacity-0 {
     opacity: 0%;
   }
-  .opacity-50 {
-    opacity: 50%;
-  }
   .opacity-70 {
     opacity: 70%;
   }
   .opacity-75 {
     opacity: 75%;
-  }
-  .opacity-80 {
-    opacity: 80%;
   }
   .opacity-100 {
     opacity: 100%;
@@ -2582,13 +1052,6 @@
   .shadow-xl {
     --tw-shadow: 0 20px 25px -5px var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 8px 10px -6px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
     box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
-  }
-  .outline {
-    outline-style: var(--tw-outline-style);
-    outline-width: 1px;
-  }
-  .filter {
-    filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
   }
   .transition {
     transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to, opacity, box-shadow, transform, translate, scale, rotate, filter, -webkit-backdrop-filter, backdrop-filter;
@@ -2637,13 +1100,6 @@
     &:hover {
       @media (hover: hover) {
         border-color: var(--color-yellowish);
-      }
-    }
-  }
-  .hover\:bg-blue-700 {
-    &:hover {
-      @media (hover: hover) {
-        background-color: var(--color-blue-700);
       }
     }
   }
@@ -3270,19 +1726,9 @@
       align-items: flex-start;
     }
   }
-  .lg\:gap-0 {
-    @media (width >= 64rem) {
-      gap: calc(var(--spacing) * 0);
-    }
-  }
   .lg\:gap-6 {
     @media (width >= 64rem) {
       gap: calc(var(--spacing) * 6);
-    }
-  }
-  .lg\:gap-10 {
-    @media (width >= 64rem) {
-      gap: calc(var(--spacing) * 10);
     }
   }
   .lg\:gap-12 {
@@ -3907,64 +2353,6 @@
   inherits: false;
   initial-value: 0 0 #0000;
 }
-@property --tw-outline-style {
-  syntax: "*";
-  inherits: false;
-  initial-value: solid;
-}
-@property --tw-blur {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-brightness {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-contrast {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-grayscale {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-hue-rotate {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-invert {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-opacity {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-saturate {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-sepia {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-drop-shadow {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-drop-shadow-color {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-drop-shadow-alpha {
-  syntax: "<percentage>";
-  inherits: false;
-  initial-value: 100%;
-}
-@property --tw-drop-shadow-size {
-  syntax: "*";
-  inherits: false;
-}
 @property --tw-duration {
   syntax: "*";
   inherits: false;
@@ -4004,20 +2392,6 @@
       --tw-ring-offset-width: 0px;
       --tw-ring-offset-color: #fff;
       --tw-ring-offset-shadow: 0 0 #0000;
-      --tw-outline-style: solid;
-      --tw-blur: initial;
-      --tw-brightness: initial;
-      --tw-contrast: initial;
-      --tw-grayscale: initial;
-      --tw-hue-rotate: initial;
-      --tw-invert: initial;
-      --tw-opacity: initial;
-      --tw-saturate: initial;
-      --tw-sepia: initial;
-      --tw-drop-shadow: initial;
-      --tw-drop-shadow-color: initial;
-      --tw-drop-shadow-alpha: 100%;
-      --tw-drop-shadow-size: initial;
       --tw-duration: initial;
       --tw-ease: initial;
     }
