@@ -1,36 +1,43 @@
 /*FONTS*/
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import url(/fonts/Freshman.ttf);
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap')
+layer(utilities);
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap')
+layer(utilities);
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap')
+layer(utilities);
+@import url(/fonts/Freshman.ttf) layer(utilities);
 
-@import "tailwindcss";
-@tailwind utilities;
+@import 'tailwindcss' layer(utilities);
+@import 'tailwindcss/utilities' layer(utilities);
 
-@import "flowbite/src/themes/default";
-@plugin "flowbite/plugin";
+@import 'flowbite/src/themes/default' layer(utilities);
+
 @source "./node_modules/flowbite";
 
+@theme {
+  /*FONTS*/
+  --font-roboto: 'Roboto', sans-serif;
+  --font-montserrat: 'Montserrat', sans-serif;
+  --font-poppins: 'Poppins', sans-serif;
+  --font-freshman: 'Freshman', sans-serif;
+  /*COLORS*/
+  --color-jdporange: #e67e22;
+  --color-jdpblue: #00255b;
+  --color-yellowish: #fdc800;
+  --color-blueish: #002147;
+}
 
-@font-face {
+@layer utilities {
+  @plugin "flowbite/plugin";
+}
+
+
+@layer utilities {
+  @font-face {
     font-family: 'Freshman'; /* Choose a name for your font */
     font-style: normal;
     font-weight: 400; /* Regular weight */
     font-display: swap; /* Optional: Improves perceived performance */
     src: url('/fonts/Freshman.ttf') format('ttf'); /* Path relative to the public root or correctly handled by your build tool */
   }
-
-@theme{
-    /*FONTS*/
-    --font-roboto: "Roboto", sans-serif;
-    --font-montserrat: "Montserrat", sans-serif;
-    --font-poppins: "Poppins", sans-serif;
-    --font-freshman: "Freshman", sans-serif;
-    /*COLORS*/
-    --color-jdporange: #e67e22;
-    --color-jdpblue: #00255b;
-    --color-yellowish: #fdc800;
-    --color-blueish: #002147;
-
-
 }
