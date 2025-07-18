@@ -12,6 +12,7 @@ layer(utilities);
 
 @import 'flowbite/src/themes/default' layer(utilities);
 
+@plugin "flowbite/plugin";
 @source "./node_modules/flowbite";
 
 @theme {
@@ -27,9 +28,8 @@ layer(utilities);
   --color-blueish: #002147;
 }
 
-@layer utilities {
-  @plugin "flowbite/plugin";
-}
+
+
 
 
 @layer utilities {
