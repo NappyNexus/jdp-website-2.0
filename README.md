@@ -144,6 +144,26 @@ npm run dev
 
 <br>
 
+## ☁️ Despliegue
+
+El sitio se despliega en **Cloudflare Pages** (gratis, ancho de banda ilimitado, HTTPS automático, vistas previas en cada PR).
+
+`npm run build` compila Tailwind **y** ejecuta `scripts/build-site.mjs`, que genera un directorio `dist/` plano y listo para producción — los HTML viven en `src/` durante el desarrollo, pero el script reescribe las rutas `../assets/` y `../index.js` a `./` al copiarlos a `dist/`.
+
+### Configuración en Cloudflare Pages (una sola vez)
+
+| Campo | Valor |
+| :--- | :--- |
+| Framework preset | `None` |
+| Build command | `npm run build` |
+| Build output directory | `dist` |
+| Root directory | _(vacío)_ |
+| `NODE_VERSION` | `20` |
+
+Cada `push` a `main` dispara un despliegue de producción. Cada PR recibe una URL de vista previa.
+
+<br>
+
 ## 📞 Contacto
 
 <table>

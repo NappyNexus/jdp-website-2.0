@@ -15,7 +15,7 @@
   "author": "Gabriel Soriano",
   "scripts": {
     "dev": "tailwindcss -i ./src/input.css -o ./src/output.css --watch",
-    "build": "tailwindcss -i ./src/input.css -o ./src/output.css --minify",
+    "build": "tailwindcss -i ./src/input.css -o ./src/output.css --minify && node scripts/build-site.mjs",
     "format": "prettier --write \"src/**/*.{html,css}\" \"*.{js,json,md}\""
   },
   "devDependencies": {
