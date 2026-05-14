@@ -1,7 +1,8 @@
 {
   "name": "jdp-website-2.0",
   "version": "1.0.0",
-  "description": "",
+  "private": true,
+  "description": "Sitio oficial del Centro Educativo Jardin de Principes",
   "homepage": "https://github.com/NappyNexus/jdp-website-2.0#readme",
   "bugs": {
     "url": "https://github.com/NappyNexus/jdp-website-2.0/issues"
@@ -11,25 +12,17 @@
     "url": "git+https://github.com/NappyNexus/jdp-website-2.0.git"
   },
   "license": "ISC",
-  "author": "",
-  "type": "commonjs",
-  "main": "index.js",
+  "author": "Gabriel Soriano",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch"
-  },
-  "dependencies": {
-    "@tailwindcss/cli": "^4.1.11",
-    "@tailwindcss/nesting": "^0.0.0-insiders.565cd3e",
-    "flowbite": "^3.1.2",
-    "i": "^0.3.7",
-    "npm": "^11.4.2"
+    "dev": "tailwindcss -i ./src/input.css -o ./src/output.css --watch",
+    "build": "tailwindcss -i ./src/input.css -o ./src/output.css --minify",
+    "format": "prettier --write \"src/**/*.{html,css}\" \"*.{js,json,md}\""
   },
   "devDependencies": {
-    "postcss": "^8.5.6",
-    "postcss-cli": "^11.0.1",
-    "postcss-nested": "^7.0.2",
+    "@tailwindcss/cli": "^4.3.0",
+    "flowbite": "^3.1.2",
+    "prettier": "^3.3.3",
     "prettier-plugin-tailwindcss": "^0.6.14",
-    "tailwindcss": "^4.1.11"
+    "tailwindcss": "^4.3.0"
   }
 }
