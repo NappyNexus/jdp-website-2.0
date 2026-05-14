@@ -83,6 +83,43 @@
     });
   }
 
+  // ============ CONTACT FORM → WHATSAPP ============
+  const contactForm = document.getElementById('contact-form');
+  if (contactForm) {
+    const statusEl = document.getElementById('contact-form-status');
+    const gradeText = (sel) => sel?.options?.[sel.selectedIndex]?.text.trim() || '';
+
+    contactForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const data = new FormData(contactForm);
+      const grade = gradeText(contactForm.querySelector('#contact-grade'));
+      const name = (data.get('name') || '').toString().trim();
+      const email = (data.get('email') || '').toString().trim();
+      const phone = (data.get('phone') || '').toString().trim();
+      const message = (data.get('message') || '').toString().trim();
+
+      const lines = [
+        `Hola, soy ${name}. Me interesa más información sobre el Colegio Jardín de Príncipes.`,
+        '',
+        `*Correo:* ${email}`,
+      ];
+      if (phone) lines.push(`*Teléfono:* ${phone}`);
+      if (grade && grade !== 'Selecciona...') lines.push(`*Grado de interés:* ${grade}`);
+      lines.push('', '*Mensaje:*', message);
+
+      const number = contactForm.dataset.waNumber || '18292328384';
+      const url = `https://wa.me/${number}?text=${encodeURIComponent(lines.join('\n'))}`;
+      const opened = window.open(url, '_blank', 'noopener,noreferrer');
+
+      if (statusEl) {
+        statusEl.classList.remove('hidden');
+        statusEl.innerHTML = opened
+          ? '✓ Abrimos WhatsApp en otra pestaña. Solo te falta tocar <strong>Enviar</strong>.'
+          : `Si WhatsApp no se abrió, <a class="underline text-jdporange" href="${url}" target="_blank" rel="noopener noreferrer">haz clic aquí</a>.`;
+      }
+    });
+  }
+
   // ============ MOBILE MENU ============
   const mobileToggle = document.querySelector('[data-menu-toggle]');
   const mobileMenu = document.querySelector('[data-menu]');
