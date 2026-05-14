@@ -1,19 +1,23 @@
-        // Back to Top button functionality
-        const backToTopBtn = document.getElementById('backToTopBtn');
+// Back-to-top button — fades in after 300px of scroll, scrolls to top on click.
+(() => {
+  const backToTopBtn = document.getElementById('backToTopBtn');
+  if (!backToTopBtn) return;
 
-        window.addEventListener('scroll', () => {
-            if (window.scrollY > 300) { // Show button after scrolling 300px
-                backToTopBtn.classList.remove('opacity-0', 'pointer-events-none');
-                backToTopBtn.classList.add('opacity-100', 'pointer-events-auto');
-            } else {
-                backToTopBtn.classList.remove('opacity-100', 'pointer-events-auto');
-                backToTopBtn.classList.add('opacity-0', 'pointer-events-none');
-            }
-        });
+  const showClasses = ['opacity-100', 'pointer-events-auto'];
+  const hideClasses = ['opacity-0', 'pointer-events-none'];
 
-        backToTopBtn.addEventListener('click', () => {
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
-            });
-        });
+  const update = () => {
+    if (window.scrollY > 300) {
+      backToTopBtn.classList.remove(...hideClasses);
+      backToTopBtn.classList.add(...showClasses);
+    } else {
+      backToTopBtn.classList.remove(...showClasses);
+      backToTopBtn.classList.add(...hideClasses);
+    }
+  };
+
+  window.addEventListener('scroll', update, { passive: true });
+  backToTopBtn.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+})();
