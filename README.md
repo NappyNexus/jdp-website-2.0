@@ -46,8 +46,8 @@ La institución es administrada por un grupo familiar cristiano cuya vocación d
 | Persona | Rol |
 | :--- | :--- |
 | **Sra. Ana A. De La Cruz Jiménez** | Directora General |
-| **Yocasta la Paix** | Directora Administrativa |
-| **Elizabeth Romero** | Secretaria Docente |
+| **Yocasta L. Paix** | Directora Administrativa |
+| **Elizabeth Rivero** | Secretaria Docente |
 
 > La **Sra. Ana A. De La Cruz Jiménez** acumula **42 años de vocación docente**. Inició a los 14 años como asistente en el Colegio Carrusel Infantil y se desempeñó por 26 años en el Instituto CI Bilingual School como maestra de nivel inicial y asistente de dirección. Dirige académicamente el Centro Educativo Jardín de Príncipes desde **2011**.
 
