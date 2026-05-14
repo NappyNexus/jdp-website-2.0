@@ -1,6 +1,6 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
-  "name": "jdpwebsite2",
+  "name": "jardindeprincipes",
   "compatibility_date": "2026-05-14",
   "observability": {
     "enabled": true
