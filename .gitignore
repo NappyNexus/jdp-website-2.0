@@ -4,6 +4,7 @@ node_modules/
 # Build artifacts
 src/output.css
 src/output.css.map
+dist/
 
 # Editor / OS
 .idea/
