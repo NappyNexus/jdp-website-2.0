@@ -10,11 +10,11 @@
 
 <br>
 
-### 🌐 [jardindeprincipes.gabrielsoriano172.workers.dev](https://jardindeprincipes.gabrielsoriano172.workers.dev)
+### 🌐 [jardindeprincipes.pages.dev](https://jardindeprincipes.pages.dev)
 
 <br>
 
-[![Live](https://img.shields.io/badge/Sitio_en_vivo-00255b?style=for-the-badge&logo=cloudflare&logoColor=fdc800)](https://jardindeprincipes.gabrielsoriano172.workers.dev)
+[![Live](https://img.shields.io/badge/Sitio_en_vivo-00255b?style=for-the-badge&logo=cloudflare&logoColor=fdc800)](https://jardindeprincipes.pages.dev)
 [![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)](https://developer.mozilla.org/docs/Web/HTML)
 [![Tailwind v4](https://img.shields.io/badge/Tailwind-v4-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)](https://tailwindcss.com)
 [![Flowbite 3](https://img.shields.io/badge/Flowbite-3.1-1C64F2?style=for-the-badge&logo=flowbite&logoColor=white)](https://flowbite.com)
@@ -151,7 +151,7 @@ npm run dev
 
 ## ☁️ Despliegue
 
-El sitio está en producción en [**jardindeprincipes.gabrielsoriano172.workers.dev**](https://jardindeprincipes.gabrielsoriano172.workers.dev) y se despliega automáticamente en **Cloudflare** (gratis, ancho de banda ilimitado, HTTPS automático, vistas previas en cada PR).
+El sitio está en producción en [**jardindeprincipes.pages.dev**](https://jardindeprincipes.pages.dev) y se despliega automáticamente en **Cloudflare** (gratis, ancho de banda ilimitado, HTTPS automático, vistas previas en cada PR).
 
 `npm run build` compila Tailwind **y** ejecuta `scripts/build-site.mjs`, que genera un directorio `dist/` plano y listo para producción — los HTML viven en `src/` durante el desarrollo, pero el script reescribe las rutas `../assets/` y `../index.js` a `./` al copiarlos a `dist/`.
 
