@@ -1,23 +1,109 @@
-// Back-to-top button — fades in after 300px of scroll, scrolls to top on click.
 (() => {
-  const backToTopBtn = document.getElementById('backToTopBtn');
-  if (!backToTopBtn) return;
-
-  const showClasses = ['opacity-100', 'pointer-events-auto'];
-  const hideClasses = ['opacity-0', 'pointer-events-none'];
-
-  const update = () => {
-    if (window.scrollY > 300) {
-      backToTopBtn.classList.remove(...hideClasses);
-      backToTopBtn.classList.add(...showClasses);
-    } else {
-      backToTopBtn.classList.remove(...showClasses);
-      backToTopBtn.classList.add(...hideClasses);
-    }
+  // ============ THEME TOGGLE ============
+  const root = document.documentElement;
+  const THEME_KEY = 'jdp-theme';
+  const setTheme = (mode) => {
+    if (mode === 'dark') root.classList.add('dark');
+    else root.classList.remove('dark');
+    try { localStorage.setItem(THEME_KEY, mode); } catch {}
+    document.querySelectorAll('[data-theme-toggle]').forEach((b) => {
+      b.setAttribute('aria-pressed', String(mode === 'dark'));
+      b.setAttribute('aria-label', mode === 'dark' ? 'Cambiar a modo claro' : 'Cambiar a modo oscuro');
+    });
+    const meta = document.querySelector('meta[name="theme-color"]');
+    if (meta) meta.setAttribute('content', mode === 'dark' ? '#0a1228' : '#00255b');
   };
-
-  window.addEventListener('scroll', update, { passive: true });
-  backToTopBtn.addEventListener('click', () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+  document.querySelectorAll('[data-theme-toggle]').forEach((btn) => {
+    btn.addEventListener('click', () => {
+      const next = root.classList.contains('dark') ? 'light' : 'dark';
+      setTheme(next);
+    });
   });
+  // Sync aria-pressed on load (theme is already applied by inline script in <head>)
+  setTheme(root.classList.contains('dark') ? 'dark' : 'light');
+
+  // ============ SCROLL REVEAL ============
+  const revealEls = document.querySelectorAll('.reveal');
+  if (revealEls.length && 'IntersectionObserver' in window) {
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((e) => {
+        if (e.isIntersecting) {
+          e.target.classList.add('is-visible');
+          io.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -60px 0px' });
+    revealEls.forEach((el) => io.observe(el));
+  }
+
+  // ============ COUNTERS ============
+  const counters = document.querySelectorAll('[data-counter]');
+  if (counters.length && 'IntersectionObserver' in window) {
+    const easeOut = (t) => 1 - Math.pow(1 - t, 3);
+    const counterIO = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        const el = entry.target;
+        const target = parseInt(el.dataset.counter, 10) || 0;
+        const duration = 1600;
+        const start = performance.now();
+        const tick = (now) => {
+          const p = Math.min((now - start) / duration, 1);
+          el.textContent = Math.round(easeOut(p) * target).toLocaleString('es-DO');
+          if (p < 1) requestAnimationFrame(tick);
+        };
+        requestAnimationFrame(tick);
+        counterIO.unobserve(el);
+      });
+    }, { threshold: 0.5 });
+    counters.forEach((c) => counterIO.observe(c));
+  }
+
+  // ============ BACK TO TOP + NAV STATE ============
+  const backToTopBtn = document.getElementById('backToTopBtn');
+  const nav = document.querySelector('[data-nav]');
+  const onScroll = () => {
+    const y = window.scrollY;
+    if (backToTopBtn) {
+      const show = y > 400;
+      backToTopBtn.classList.toggle('opacity-0', !show);
+      backToTopBtn.classList.toggle('pointer-events-none', !show);
+      backToTopBtn.classList.toggle('opacity-100', show);
+      backToTopBtn.classList.toggle('pointer-events-auto', show);
+      backToTopBtn.classList.toggle('translate-y-2', !show);
+    }
+    if (nav) nav.classList.toggle('is-scrolled', y > 40);
+  };
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+
+  if (backToTopBtn) {
+    backToTopBtn.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  }
+
+  // ============ MOBILE MENU ============
+  const mobileToggle = document.querySelector('[data-menu-toggle]');
+  const mobileMenu = document.querySelector('[data-menu]');
+  if (mobileToggle && mobileMenu) {
+    const closeMenu = () => {
+      mobileMenu.dataset.open = 'false';
+      mobileToggle.setAttribute('aria-expanded', 'false');
+      document.body.style.overflow = '';
+    };
+    mobileToggle.addEventListener('click', () => {
+      const open = mobileMenu.dataset.open === 'true';
+      if (open) closeMenu();
+      else {
+        mobileMenu.dataset.open = 'true';
+        mobileToggle.setAttribute('aria-expanded', 'true');
+        document.body.style.overflow = 'hidden';
+      }
+    });
+    mobileMenu.querySelectorAll('a').forEach((a) => a.addEventListener('click', closeMenu));
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && mobileMenu.dataset.open === 'true') closeMenu();
+    });
+  }
 })();
