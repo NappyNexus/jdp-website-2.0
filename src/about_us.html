@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,11 +11,12 @@
     <script>
         try {
             if (localStorage.getItem('jdp-theme') === 'dark') document.documentElement.classList.add('dark');
-        } catch {}
+        } catch { }
     </script>
 
     <title>Nosotros — Centro Educativo Jardín de Príncipes</title>
-    <meta name="description" content="Conoce la historia, la misión y el equipo directivo del Centro Educativo Jardín de Príncipes. Formación cristiana en Santo Domingo desde 2011, ahora con una nueva etapa como Colegio.">
+    <meta name="description"
+        content="Conoce la historia, la misión y el equipo directivo del Centro Educativo Jardín de Príncipes. Formación cristiana en Santo Domingo desde 2011, ahora con una nueva etapa como Colegio.">
     <meta name="theme-color" content="#00255b">
     <link rel="icon" type="image/x-icon" sizes="any" href="../assets/favicon.ico">
 
@@ -22,294 +24,448 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://jdp-website-2-0.pages.dev/about_us.html">
     <meta property="og:title" content="Nosotros — Centro Educativo Jardín de Príncipes">
-    <meta property="og:description" content="Conoce la historia, misión y equipo del Centro Educativo Jardín de Príncipes.">
+    <meta property="og:description"
+        content="Conoce la historia, misión y equipo del Centro Educativo Jardín de Príncipes.">
     <meta property="og:locale" content="es_DO">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,500&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,500&family=DM+Sans:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
 
     <link href="./output.css" rel="stylesheet">
 </head>
+
 <body class="bg-jdpcream dark:bg-jdpnight text-jdpblue dark:text-jdpcream antialiased">
-    <a href="#contenido" class="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:left-3 focus:z-[100] focus:bg-jdpblue focus:text-jdpcream focus:px-4 focus:py-2 focus:rounded-full">Saltar al contenido</a>
+    <a href="#contenido"
+        class="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:left-3 focus:z-[100] focus:bg-jdpblue focus:text-jdpcream focus:px-4 focus:py-2 focus:rounded-full">Saltar
+        al contenido</a>
 
     <header data-nav class="nav-glass fixed top-0 inset-x-0 z-50 border-b border-transparent">
         <div class="max-w-7xl mx-auto px-5 lg:px-10 py-4 flex items-center justify-between">
-            <a href="./index.html" class="inline-flex items-center group" aria-label="Centro Educativo Jardín de Príncipes — Inicio">
+            <a href="./index.html" class="inline-flex items-center group"
+                aria-label="Centro Educativo Jardín de Príncipes — Inicio">
                 <span class="rounded-xl dark:bg-jdpcream dark:px-2.5 dark:py-1 transition-colors">
-                    <img src="../assets/logo-horizontal.png" alt="Centro Educativo Jardín de Príncipes" class="h-8 sm:h-9 w-auto group-hover:opacity-80 transition-opacity" width="220" height="60">
+                    <img src="../assets/logo-horizontal.png" alt="Centro Educativo Jardín de Príncipes"
+                        class="h-8 sm:h-9 w-auto group-hover:opacity-80 transition-opacity" width="220" height="60">
                 </span>
             </a>
             <nav aria-label="Principal" class="hidden lg:flex items-center gap-9 text-sm">
-                <a href="./index.html" class="ul-grow text-jdpblue/70 dark:text-jdpcream/70 hover:text-jdpblue dark:hover:text-jdpcream">Inicio</a>
-                <a href="./about_us.html" aria-current="page" class="ul-grow text-jdpblue dark:text-jdpcream">Nosotros</a>
-                <a href="./index.html#programas" class="ul-grow text-jdpblue/70 dark:text-jdpcream/70 hover:text-jdpblue dark:hover:text-jdpcream">Programas</a>
-                <a href="./index.html#admisiones" class="ul-grow text-jdpblue/70 dark:text-jdpcream/70 hover:text-jdpblue dark:hover:text-jdpcream">Admisiones</a>
-                <a href="./contact.html" class="ul-grow text-jdpblue/70 dark:text-jdpcream/70 hover:text-jdpblue dark:hover:text-jdpcream">Contacto</a>
+                <a href="./index.html"
+                    class="ul-grow text-jdpblue/70 dark:text-jdpcream/70 hover:text-jdpblue dark:hover:text-jdpcream">Inicio</a>
+                <a href="./about_us.html" aria-current="page"
+                    class="ul-grow text-jdpblue dark:text-jdpcream">Nosotros</a>
+                <a href="./index.html#programas"
+                    class="ul-grow text-jdpblue/70 dark:text-jdpcream/70 hover:text-jdpblue dark:hover:text-jdpcream">Programas</a>
+                <a href="./index.html#admisiones"
+                    class="ul-grow text-jdpblue/70 dark:text-jdpcream/70 hover:text-jdpblue dark:hover:text-jdpcream">Admisiones</a>
+                <a href="./contact.html"
+                    class="ul-grow text-jdpblue/70 dark:text-jdpcream/70 hover:text-jdpblue dark:hover:text-jdpcream">Contacto</a>
             </nav>
             <div class="flex items-center gap-3">
-                <a href="./contact.html" class="hidden sm:inline-flex items-center gap-2 bg-jdpblue hover:bg-jdporange text-white text-sm font-medium px-5 py-2.5 rounded-full transition-colors group">
+                <a href="./contact.html"
+                    class="hidden sm:inline-flex items-center gap-2 bg-jdpblue hover:bg-jdporange text-white text-sm font-medium px-5 py-2.5 rounded-full transition-colors group">
                     <span>Aplicar ahora</span>
-                    <svg class="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform" aria-hidden="true" viewBox="0 0 20 20" fill="currentColor"><path d="M3.5 10a.75.75 0 0 1 .75-.75h9.69L11.22 6.53a.75.75 0 1 1 1.06-1.06l4 4a.75.75 0 0 1 0 1.06l-4 4a.75.75 0 1 1-1.06-1.06l2.72-2.72H4.25A.75.75 0 0 1 3.5 10Z"/></svg>
+                    <svg class="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform" aria-hidden="true"
+                        viewBox="0 0 20 20" fill="currentColor">
+                        <path
+                            d="M3.5 10a.75.75 0 0 1 .75-.75h9.69L11.22 6.53a.75.75 0 1 1 1.06-1.06l4 4a.75.75 0 0 1 0 1.06l-4 4a.75.75 0 1 1-1.06-1.06l2.72-2.72H4.25A.75.75 0 0 1 3.5 10Z" />
+                    </svg>
                 </a>
-                <button data-theme-toggle type="button" aria-pressed="false" aria-label="Cambiar a modo oscuro" class="grid w-10 h-10 rounded-full border border-jdpblue/15 dark:border-jdpcream/15 hover:bg-jdpblue dark:hover:bg-jdpcard hover:text-jdpcream dark:hover:text-jdpcream transition-colors">
-                    <svg class="theme-icon-moon w-4 h-4 m-auto [grid-area:1/1]" aria-hidden="true" viewBox="0 0 24 24" fill="currentColor"><path d="M21.752 15.002A9.718 9.718 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z"/></svg>
-                    <svg class="theme-icon-sun w-4 h-4 m-auto [grid-area:1/1]" aria-hidden="true" viewBox="0 0 24 24" fill="currentColor"><path fill-rule="evenodd" d="M12 2.25a.75.75 0 0 1 .75.75v2.25a.75.75 0 0 1-1.5 0V3a.75.75 0 0 1 .75-.75ZM7.5 12a4.5 4.5 0 1 1 9 0 4.5 4.5 0 0 1-9 0ZM18.894 6.166a.75.75 0 0 0-1.06-1.06l-1.591 1.59a.75.75 0 1 0 1.06 1.061l1.591-1.59ZM21.75 12a.75.75 0 0 1-.75.75h-2.25a.75.75 0 0 1 0-1.5H21a.75.75 0 0 1 .75.75ZM17.834 18.894a.75.75 0 0 0 1.06-1.06l-1.59-1.591a.75.75 0 1 0-1.061 1.06l1.59 1.591ZM12 18a.75.75 0 0 1 .75.75V21a.75.75 0 0 1-1.5 0v-2.25A.75.75 0 0 1 12 18ZM7.758 17.303a.75.75 0 0 0-1.061-1.06l-1.591 1.59a.75.75 0 0 0 1.06 1.061l1.591-1.59ZM6 12a.75.75 0 0 1-.75.75H3a.75.75 0 0 1 0-1.5h2.25A.75.75 0 0 1 6 12ZM6.697 7.757a.75.75 0 0 0 1.06-1.06l-1.59-1.591a.75.75 0 0 0-1.061 1.06l1.59 1.591Z" clip-rule="evenodd"/></svg>
+                <button data-theme-toggle type="button" aria-pressed="false" aria-label="Cambiar a modo oscuro"
+                    class="grid w-10 h-10 rounded-full border border-jdpblue/15 dark:border-jdpcream/15 hover:bg-jdpblue dark:hover:bg-jdpcard hover:text-jdpcream dark:hover:text-jdpcream transition-colors">
+                    <svg class="theme-icon-moon w-4 h-4 m-auto [grid-area:1/1]" aria-hidden="true" viewBox="0 0 24 24"
+                        fill="currentColor">
+                        <path
+                            d="M21.752 15.002A9.718 9.718 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z" />
+                    </svg>
+                    <svg class="theme-icon-sun w-4 h-4 m-auto [grid-area:1/1]" aria-hidden="true" viewBox="0 0 24 24"
+                        fill="currentColor">
+                        <path fill-rule="evenodd"
+                            d="M12 2.25a.75.75 0 0 1 .75.75v2.25a.75.75 0 0 1-1.5 0V3a.75.75 0 0 1 .75-.75ZM7.5 12a4.5 4.5 0 1 1 9 0 4.5 4.5 0 0 1-9 0ZM18.894 6.166a.75.75 0 0 0-1.06-1.06l-1.591 1.59a.75.75 0 1 0 1.06 1.061l1.591-1.59ZM21.75 12a.75.75 0 0 1-.75.75h-2.25a.75.75 0 0 1 0-1.5H21a.75.75 0 0 1 .75.75ZM17.834 18.894a.75.75 0 0 0 1.06-1.06l-1.59-1.591a.75.75 0 1 0-1.061 1.06l1.59 1.591ZM12 18a.75.75 0 0 1 .75.75V21a.75.75 0 0 1-1.5 0v-2.25A.75.75 0 0 1 12 18ZM7.758 17.303a.75.75 0 0 0-1.061-1.06l-1.591 1.59a.75.75 0 0 0 1.06 1.061l1.591-1.59ZM6 12a.75.75 0 0 1-.75.75H3a.75.75 0 0 1 0-1.5h2.25A.75.75 0 0 1 6 12ZM6.697 7.757a.75.75 0 0 0 1.06-1.06l-1.59-1.591a.75.75 0 0 0-1.061 1.06l1.59 1.591Z"
+                            clip-rule="evenodd" />
+                    </svg>
                 </button>
-                <button data-menu-toggle type="button" aria-expanded="false" aria-controls="mobile-menu" class="lg:hidden grid place-items-center w-10 h-10 rounded-full border border-jdpblue/15 dark:border-jdpcream/15 hover:bg-jdpblue hover:text-jdpcream transition-colors">
+                <button data-menu-toggle type="button" aria-expanded="false" aria-controls="mobile-menu"
+                    class="lg:hidden grid place-items-center w-10 h-10 rounded-full border border-jdpblue/15 dark:border-jdpcream/15 hover:bg-jdpblue hover:text-jdpcream transition-colors">
                     <span class="sr-only">Abrir menú</span>
-                    <svg class="w-5 h-5" aria-hidden="true" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 6h14M3 10h14M3 14h14" stroke-linecap="round"/></svg>
+                    <svg class="w-5 h-5" aria-hidden="true" viewBox="0 0 20 20" fill="none" stroke="currentColor"
+                        stroke-width="1.6">
+                        <path d="M3 6h14M3 10h14M3 14h14" stroke-linecap="round" />
+                    </svg>
                 </button>
             </div>
         </div>
     </header>
 
-    <div id="mobile-menu" data-menu data-open="false" class="lg:hidden fixed inset-0 z-40 bg-jdpcream dark:bg-jdpnight data-[open=false]:opacity-0 data-[open=false]:pointer-events-none data-[open=true]:opacity-100 transition-opacity duration-300">
+    <div id="mobile-menu" data-menu data-open="false"
+        class="lg:hidden fixed inset-0 z-40 bg-jdpcream dark:bg-jdpnight data-[open=false]:opacity-0 data-[open=false]:pointer-events-none data-[open=true]:opacity-100 transition-opacity duration-300">
         <div class="h-full flex flex-col justify-center px-8 gap-4">
             <a href="./index.html" class="font-display text-5xl text-jdpblue/80 dark:text-jdpcream/80">Inicio</a>
             <a href="./about_us.html" class="font-display text-5xl text-jdpblue dark:text-jdpcream">Nosotros</a>
-            <a href="./index.html#programas" class="font-display text-5xl text-jdpblue/80 dark:text-jdpcream/80">Programas</a>
-            <a href="./index.html#admisiones" class="font-display text-5xl text-jdpblue/80 dark:text-jdpcream/80">Admisiones</a>
+            <a href="./index.html#programas"
+                class="font-display text-5xl text-jdpblue/80 dark:text-jdpcream/80">Programas</a>
+            <a href="./index.html#admisiones"
+                class="font-display text-5xl text-jdpblue/80 dark:text-jdpcream/80">Admisiones</a>
             <a href="./contact.html" class="font-display text-5xl text-jdpblue/80 dark:text-jdpcream/80">Contacto</a>
-            <a href="./contact.html" class="mt-8 inline-flex w-fit items-center gap-2 bg-jdporange text-white text-base font-medium px-6 py-3 rounded-full">Aplicar ahora →</a>
+            <a href="./contact.html"
+                class="mt-8 inline-flex w-fit items-center gap-2 bg-jdporange text-white text-base font-medium px-6 py-3 rounded-full">Aplicar
+                ahora →</a>
         </div>
     </div>
 
     <main id="contenido">
 
-    <!-- ========== PAGE HERO ========== -->
-    <section class="relative pt-36 lg:pt-44 pb-16 lg:pb-24 overflow-hidden grain">
-        <div aria-hidden="true" class="absolute -top-40 right-0 w-[34rem] h-[34rem] rounded-full bg-yellowish/20 blur-3xl"></div>
-        <div aria-hidden="true" class="absolute bottom-0 left-0 w-[26rem] h-[26rem] rounded-full bg-jdporange/15 blur-3xl"></div>
+        <!-- ========== PAGE HERO ========== -->
+        <section class="relative pt-36 lg:pt-44 pb-16 lg:pb-24 overflow-hidden grain">
+            <div aria-hidden="true"
+                class="absolute -top-40 right-0 w-[34rem] h-[34rem] rounded-full bg-yellowish/20 blur-3xl"></div>
+            <div aria-hidden="true"
+                class="absolute bottom-0 left-0 w-[26rem] h-[26rem] rounded-full bg-jdporange/15 blur-3xl"></div>
 
-        <div class="relative max-w-7xl mx-auto px-5 lg:px-10">
-            <p class="reveal text-xs tracking-[0.3em] uppercase text-jdpblue/55 dark:text-jdpcream/55 mb-6">
-                <a href="./index.html" class="hover:text-jdporange">Inicio</a> · Nosotros
-            </p>
-            <div class="grid lg:grid-cols-[1.3fr_1fr] gap-12 items-end">
-                <h1 class="reveal reveal-delay-1 font-display text-[clamp(3rem,8vw,7rem)] leading-[0.95] tracking-[-0.025em] text-jdpblue dark:text-jdpcream">
-                    Una escuela <em class="italic text-jdporange">con nombre.</em><br>
-                    Con vocación.<br>
-                    Con propósito.
-                </h1>
-                <p class="reveal reveal-delay-2 text-lg text-jdpblue/65 dark:text-jdpcream/65 leading-relaxed">
-                    Somos una institución cristiana de Santo Domingo, administrada por un grupo familiar con vocación docente heredada de generación en generación. Aquí cada estudiante es conocido por nombre y guiado a crecer conforme al ideal de Dios.
+            <div class="relative max-w-7xl mx-auto px-5 lg:px-10">
+                <p class="reveal text-xs tracking-[0.3em] uppercase text-jdpblue/55 dark:text-jdpcream/55 mb-6">
+                    <a href="./index.html" class="hover:text-jdporange">Inicio</a> · Nosotros
                 </p>
-            </div>
-        </div>
-    </section>
-
-    <!-- ========== STORY ========== -->
-    <section class="py-24 lg:py-32">
-        <div class="max-w-7xl mx-auto px-5 lg:px-10 grid lg:grid-cols-[1fr_1.1fr] gap-12 lg:gap-20 items-center">
-            <div class="reveal relative order-2 lg:order-1">
-                <div aria-hidden="true" class="absolute inset-x-6 -inset-y-3 -z-10 bg-jdporange/20 rounded-blob-2"></div>
-                <img src="../assets/young_kids_on_playground_circle.jpg" alt="Niños jugando en el patio del colegio" class="w-full aspect-[4/5] object-cover rounded-blob-1 shadow-2xl shadow-jdpblue/10" loading="lazy" width="800" height="1000">
-                <div class="absolute -bottom-4 -right-2 sm:-right-6 bg-jdpcream dark:bg-jdpnight border border-jdpblue/10 dark:border-jdpcream/10 rounded-2xl px-5 py-4 shadow-xl">
-                    <p class="font-display italic text-3xl text-jdporange leading-none">2011</p>
-                    <p class="text-[10px] tracking-widest uppercase text-jdpblue/55 dark:text-jdpcream/55 mt-2">Inicio del Centro</p>
+                <div class="grid lg:grid-cols-[1.3fr_1fr] gap-12 items-end">
+                    <h1
+                        class="reveal reveal-delay-1 font-display text-[clamp(3rem,8vw,7rem)] leading-[0.95] tracking-[-0.025em] text-jdpblue dark:text-jdpcream">
+                        Una escuela <em class="italic text-jdporange">con nombre.</em><br>
+                        Con vocación.<br>
+                        Con propósito.
+                    </h1>
+                    <p class="reveal reveal-delay-2 text-lg text-jdpblue/65 dark:text-jdpcream/65 leading-relaxed">
+                        Somos una institución cristiana de Santo Domingo, administrada por un grupo familiar con
+                        vocación docente heredada de generación en generación. Aquí cada estudiante es conocido por
+                        nombre y guiado a crecer conforme al ideal de Dios.
+                    </p>
                 </div>
             </div>
-            <div class="order-1 lg:order-2">
-                <p class="reveal text-[11px] tracking-[0.32em] uppercase text-jdporange mb-4">Nuestra historia</p>
-                <h2 class="reveal reveal-delay-1 font-display text-4xl md:text-5xl leading-[1] text-jdpblue dark:text-jdpcream mb-8">Una vocación que se vuelve <em class="italic text-jdporange">colegio.</em></h2>
-                <div class="space-y-5 text-jdpblue/70 dark:text-jdpcream/70 leading-relaxed text-lg">
-                    <p class="reveal reveal-delay-2">El Jardín de Príncipes nace del compromiso de un grupo familiar cristiano con la educación, una vocación heredada de generación en generación y entregada con metodología moderna.</p>
-                    <p class="reveal reveal-delay-3">Desde 2011, bajo la dirección académica de Sra. Ana Aleyda De La Cruz Jiménez, hemos formado a niños y niñas con la convicción de que la verdadera educación es el desarrollo armonioso de las facultades físicas, mentales y espirituales.</p>
-                    <p class="reveal reveal-delay-4">Iniciamos una nueva etapa como <em class="italic text-jdporange">Colegio Jardín de Príncipes</em>, ampliando nuestra propuesta y dándole continuidad a los estudiantes y maestros del Instituto.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- ========== TIMELINE ========== -->
-    <section class="py-24 lg:py-32 bg-jdpsand dark:bg-jdpnight-2">
-        <div class="max-w-7xl mx-auto px-5 lg:px-10">
-            <div class="max-w-2xl mb-16">
-                <p class="reveal text-[11px] tracking-[0.32em] uppercase text-jdporange mb-4">Línea del tiempo</p>
-                <h2 class="reveal reveal-delay-1 font-display text-5xl md:text-6xl leading-[0.98] text-jdpblue dark:text-jdpcream">Una vocación con <em class="italic text-jdporange">pasos.</em></h2>
-            </div>
-            <ol class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-                <li class="reveal bg-white dark:bg-jdpcard rounded-3xl p-7 border border-jdpblue/8 dark:border-jdpcream/8">
-                    <p class="font-display italic text-jdporange text-5xl leading-none">1983</p>
-                    <h3 class="font-display text-2xl mt-5 mb-2">Vocación temprana</h3>
-                    <p class="text-sm text-jdpblue/60 dark:text-jdpcream/60 leading-relaxed">A los 14 años, Ana De La Cruz inicia como asistente en el Colegio Carrusel Infantil. Comienza una vida entregada a la enseñanza.</p>
-                </li>
-                <li class="reveal reveal-delay-1 bg-white dark:bg-jdpcard rounded-3xl p-7 border border-jdpblue/8 dark:border-jdpcream/8">
-                    <p class="font-display italic text-jdporange text-5xl leading-none">CI</p>
-                    <h3 class="font-display text-2xl mt-5 mb-2">26 años bilingües</h3>
-                    <p class="text-sm text-jdpblue/60 dark:text-jdpcream/60 leading-relaxed">Más de dos décadas en el Instituto CI Bilingual School como maestra de nivel inicial y asistente de dirección.</p>
-                </li>
-                <li class="reveal reveal-delay-2 bg-white dark:bg-jdpcard rounded-3xl p-7 border border-jdpblue/8 dark:border-jdpcream/8">
-                    <p class="font-display italic text-jdporange text-5xl leading-none">2011</p>
-                    <h3 class="font-display text-2xl mt-5 mb-2">Centro Educativo</h3>
-                    <p class="text-sm text-jdpblue/60 dark:text-jdpcream/60 leading-relaxed">Ana asume la dirección académica del Centro Educativo Jardín de Príncipes. Se consolida la identidad y el método.</p>
-                </li>
-                <li class="reveal reveal-delay-3 bg-jdpblue text-jdpcream rounded-3xl p-7">
-                    <p class="font-display italic text-yellowish text-5xl leading-none">2025</p>
-                    <h3 class="font-display text-2xl mt-5 mb-2">Nueva etapa · Colegio</h3>
-                    <p class="text-sm text-white/70 leading-relaxed">El Jardín de Príncipes inicia formalmente como Colegio. Una propuesta completa para crecer conforme al ideal de Dios.</p>
-                </li>
-            </ol>
-        </div>
-    </section>
-
-    <!-- ========== MISSION/VISION/VALUES ========== -->
-    <section class="py-28 lg:py-36 bg-jdpblue text-jdpcream relative overflow-hidden grain">
-        <span aria-hidden="true" class="pointer-events-none absolute -right-32 -bottom-40 font-display italic text-[28rem] leading-none opacity-[0.05] select-none">jdp</span>
-        <div class="relative max-w-7xl mx-auto px-5 lg:px-10">
-            <p class="reveal text-[11px] tracking-[0.32em] uppercase text-yellowish mb-6">Lo que nos define</p>
-            <h2 class="reveal reveal-delay-1 font-display text-5xl md:text-6xl leading-[0.98] mb-20 max-w-3xl">Tres palabras, una <em class="italic text-yellowish">misma dirección.</em></h2>
-
-            <div class="grid lg:grid-cols-3 gap-12 lg:gap-16">
-                <div class="reveal reveal-delay-2">
-                    <div class="flex items-center gap-3 mb-5">
-                        <span class="inline-block w-8 h-px bg-yellowish"></span>
-                        <p class="text-xs uppercase tracking-[0.3em] text-yellowish">Misión</p>
+        <!-- ========== STORY ========== -->
+        <section class="py-24 lg:py-32">
+            <div class="max-w-7xl mx-auto px-5 lg:px-10 grid lg:grid-cols-[1fr_1.1fr] gap-12 lg:gap-20 items-center">
+                <div class="reveal relative order-2 lg:order-1">
+                    <div aria-hidden="true" class="absolute inset-x-6 -inset-y-3 -z-10 bg-jdporange/20 rounded-blob-2">
                     </div>
-                    <p class="font-display text-2xl leading-snug">Fomentar un legado espiritual en cada alumno formando <em class="italic text-yellowish">mano, mente y corazón</em>, preparándolos para crecer conforme al ideal de Dios.</p>
-                </div>
-                <div class="reveal reveal-delay-3">
-                    <div class="flex items-center gap-3 mb-5">
-                        <span class="inline-block w-8 h-px bg-yellowish"></span>
-                        <p class="text-xs uppercase tracking-[0.3em] text-yellowish">Visión</p>
+                    <img src="../assets/young_kids_on_playground_circle.jpg" alt="Niños jugando en el patio del colegio"
+                        class="w-full aspect-[4/5] object-cover rounded-blob-1 shadow-2xl shadow-jdpblue/10"
+                        loading="lazy" width="800" height="1000">
+                    <div
+                        class="absolute -bottom-4 -right-2 sm:-right-6 bg-jdpcream dark:bg-jdpnight border border-jdpblue/10 dark:border-jdpcream/10 rounded-2xl px-5 py-4 shadow-xl">
+                        <p class="font-display italic text-3xl text-jdporange leading-none">2011</p>
+                        <p class="text-[10px] tracking-widest uppercase text-jdpblue/55 dark:text-jdpcream/55 mt-2">
+                            Inicio del Centro</p>
                     </div>
-                    <p class="font-display text-2xl leading-snug">Una educación que sea el <em class="italic text-yellowish">desarrollo armonioso</em> de las facultades físicas, mentales y espirituales, para el servicio en este mundo y para la vida eterna.</p>
                 </div>
-                <div class="reveal reveal-delay-4">
-                    <div class="flex items-center gap-3 mb-5">
-                        <span class="inline-block w-8 h-px bg-yellowish"></span>
-                        <p class="text-xs uppercase tracking-[0.3em] text-yellowish">Compromiso</p>
+                <div class="order-1 lg:order-2">
+                    <p class="reveal text-[11px] tracking-[0.32em] uppercase text-jdporange mb-4">Nuestra historia</p>
+                    <h2
+                        class="reveal reveal-delay-1 font-display text-4xl md:text-5xl leading-[1] text-jdpblue dark:text-jdpcream mb-8">
+                        Una vocación que se vuelve <em class="italic text-jdporange">colegio.</em></h2>
+                    <div class="space-y-5 text-jdpblue/70 dark:text-jdpcream/70 leading-relaxed text-lg">
+                        <p class="reveal reveal-delay-2">El Jardín de Príncipes nace del compromiso de un grupo familiar
+                            cristiano con la educación, una vocación heredada de generación en generación y entregada
+                            con metodología moderna.</p>
+                        <p class="reveal reveal-delay-3">Desde 2011, bajo la dirección académica de Sra. Ana Aleyda De
+                            La Cruz Jiménez, hemos formado a niños y niñas con la convicción de que la verdadera
+                            educación es el desarrollo armonioso de las facultades físicas, mentales y espirituales.</p>
+                        <p class="reveal reveal-delay-4">Iniciamos una nueva etapa como <em
+                                class="italic text-jdporange">Colegio Jardín de Príncipes</em>, ampliando nuestra
+                            propuesta y dándole continuidad a los estudiantes y maestros del Instituto.</p>
                     </div>
-                    <p class="font-display text-2xl leading-snug">Moldear ciudadanos enfocados a la <em class="italic text-yellowish">excelencia académica</em> y comprometidos con la moral, la verdad, la justicia y los valores cristianos.</p>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- ========== WHY US (PILLARS) ========== -->
-    <section class="py-28 lg:py-36">
-        <div class="max-w-7xl mx-auto px-5 lg:px-10">
-            <div class="max-w-2xl mb-20">
-                <p class="reveal text-[11px] tracking-[0.32em] uppercase text-jdporange mb-4">Nuestros pilares</p>
-                <h2 class="reveal reveal-delay-1 font-display text-5xl md:text-6xl leading-[0.98] text-jdpblue dark:text-jdpcream">Cuatro razones, <em class="italic text-jdporange">un solo norte.</em></h2>
+        <!-- ========== TIMELINE ========== -->
+        <section class="py-24 lg:py-32 bg-jdpsand dark:bg-jdpnight-2">
+            <div class="max-w-7xl mx-auto px-5 lg:px-10">
+                <div class="max-w-2xl mb-16">
+                    <p class="reveal text-[11px] tracking-[0.32em] uppercase text-jdporange mb-4">Línea del tiempo</p>
+                    <h2
+                        class="reveal reveal-delay-1 font-display text-5xl md:text-6xl leading-[0.98] text-jdpblue dark:text-jdpcream">
+                        Una vocación con <em class="italic text-jdporange">pasos.</em></h2>
+                </div>
+                <ol class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <li
+                        class="reveal bg-white dark:bg-jdpcard rounded-3xl p-7 border border-jdpblue/8 dark:border-jdpcream/8">
+                        <p class="font-display italic text-jdporange text-5xl leading-none">1983</p>
+                        <h3 class="font-display text-2xl mt-5 mb-2">Vocación temprana</h3>
+                        <p class="text-sm text-jdpblue/60 dark:text-jdpcream/60 leading-relaxed">A los 14 años, Ana De
+                            La Cruz inicia como asistente en el Colegio Carrusel Infantil. Comienza una vida entregada a
+                            la enseñanza.</p>
+                    </li>
+                    <li
+                        class="reveal reveal-delay-1 bg-white dark:bg-jdpcard rounded-3xl p-7 border border-jdpblue/8 dark:border-jdpcream/8">
+                        <p class="font-display italic text-jdporange text-5xl leading-none">CI</p>
+                        <h3 class="font-display text-2xl mt-5 mb-2">26 años bilingües</h3>
+                        <p class="text-sm text-jdpblue/60 dark:text-jdpcream/60 leading-relaxed">Más de dos décadas en
+                            el Instituto CI Bilingual School como maestra de nivel inicial y asistente de dirección.</p>
+                    </li>
+                    <li
+                        class="reveal reveal-delay-2 bg-white dark:bg-jdpcard rounded-3xl p-7 border border-jdpblue/8 dark:border-jdpcream/8">
+                        <p class="font-display italic text-jdporange text-5xl leading-none">2011</p>
+                        <h3 class="font-display text-2xl mt-5 mb-2">Centro Educativo</h3>
+                        <p class="text-sm text-jdpblue/60 dark:text-jdpcream/60 leading-relaxed">Ana asume la dirección
+                            académica del Centro Educativo Jardín de Príncipes. Se consolida la identidad y el método.
+                        </p>
+                    </li>
+                    <li class="reveal reveal-delay-3 bg-jdpblue text-jdpcream rounded-3xl p-7">
+                        <p class="font-display italic text-yellowish text-5xl leading-none">2025</p>
+                        <h3 class="font-display text-2xl mt-5 mb-2">Nueva etapa · Colegio</h3>
+                        <p class="text-sm text-white/70 leading-relaxed">El Jardín de Príncipes inicia formalmente como
+                            Colegio. Una propuesta completa para crecer conforme al ideal de Dios.</p>
+                    </li>
+                </ol>
             </div>
-            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
-                <div class="reveal bg-jdpsoft dark:bg-jdpnight-soft rounded-3xl p-7 hover:bg-white hover:shadow-xl hover:shadow-jdpblue/5 transition-all duration-500">
-                    <div class="grid place-items-center w-14 h-14 rounded-2xl bg-jdporange/15 text-jdporange mb-6">
-                        <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z"/></svg>
+        </section>
+
+        <!-- ========== MISSION/VISION/VALUES ========== -->
+        <section class="py-28 lg:py-36 bg-jdpblue text-jdpcream relative overflow-hidden grain">
+            <span aria-hidden="true"
+                class="pointer-events-none absolute -right-32 -bottom-40 font-display italic text-[28rem] leading-none opacity-[0.05] select-none">jdp</span>
+            <div class="relative max-w-7xl mx-auto px-5 lg:px-10">
+                <p class="reveal text-[11px] tracking-[0.32em] uppercase text-yellowish mb-6">Lo que nos define</p>
+                <h2 class="reveal reveal-delay-1 font-display text-5xl md:text-6xl leading-[0.98] mb-20 max-w-3xl">Tres
+                    palabras, una <em class="italic text-yellowish">misma dirección.</em></h2>
+
+                <div class="grid lg:grid-cols-3 gap-12 lg:gap-16">
+                    <div class="reveal reveal-delay-2">
+                        <div class="flex items-center gap-3 mb-5">
+                            <span class="inline-block w-8 h-px bg-yellowish"></span>
+                            <p class="text-xs uppercase tracking-[0.3em] text-yellowish">Misión</p>
+                        </div>
+                        <p class="font-display text-2xl leading-snug">Fomentar un legado espiritual en cada alumno
+                            formando <em class="italic text-yellowish">mano, mente y corazón</em>, preparándolos para
+                            crecer conforme al ideal de Dios.</p>
                     </div>
-                    <h3 class="font-display text-xl mb-2">Formación de fe</h3>
-                    <p class="text-sm text-jdpblue/65 dark:text-jdpcream/65 leading-relaxed">Devocionales y momentos de oración integrados al día académico.</p>
-                </div>
-                <div class="reveal reveal-delay-1 bg-jdpsoft dark:bg-jdpnight-soft rounded-3xl p-7 hover:bg-white hover:shadow-xl hover:shadow-jdpblue/5 transition-all duration-500">
-                    <div class="grid place-items-center w-14 h-14 rounded-2xl bg-yellowish/30 text-jdpblue dark:text-jdpcream mb-6">
-                        <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25"/></svg>
+                    <div class="reveal reveal-delay-3">
+                        <div class="flex items-center gap-3 mb-5">
+                            <span class="inline-block w-8 h-px bg-yellowish"></span>
+                            <p class="text-xs uppercase tracking-[0.3em] text-yellowish">Visión</p>
+                        </div>
+                        <p class="font-display text-2xl leading-snug">Una educación que sea el <em
+                                class="italic text-yellowish">desarrollo armonioso</em> de las facultades físicas,
+                            mentales y espirituales, para el servicio en este mundo y para la vida eterna.</p>
                     </div>
-                    <h3 class="font-display text-xl mb-2">Calidad académica</h3>
-                    <p class="text-sm text-jdpblue/65 dark:text-jdpcream/65 leading-relaxed">Currículo riguroso con énfasis en lectura, lógica y pensamiento crítico.</p>
-                </div>
-                <div class="reveal reveal-delay-2 bg-jdpsoft dark:bg-jdpnight-soft rounded-3xl p-7 hover:bg-white hover:shadow-xl hover:shadow-jdpblue/5 transition-all duration-500">
-                    <div class="grid place-items-center w-14 h-14 rounded-2xl bg-jdpblue/8 dark:bg-jdpcream/8 text-jdpblue dark:text-jdpcream mb-6">
-                        <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M18 18.72a9.094 9.094 0 0 0 3.741-.479 3 3 0 0 0-4.682-2.72m.94 3.198.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0 1 12 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 0 1 6 18.719m12 0a5.971 5.971 0 0 0-.941-3.197m0 0A5.995 5.995 0 0 0 12 12.75a5.995 5.995 0 0 0-5.058 2.772m0 0a3 3 0 0 0-4.681 2.72 8.986 8.986 0 0 0 3.74.477m.94-3.197a5.971 5.971 0 0 0-.94 3.197M15 6.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm6 3a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Zm-13.5 0a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Z"/></svg>
+                    <div class="reveal reveal-delay-4">
+                        <div class="flex items-center gap-3 mb-5">
+                            <span class="inline-block w-8 h-px bg-yellowish"></span>
+                            <p class="text-xs uppercase tracking-[0.3em] text-yellowish">Compromiso</p>
+                        </div>
+                        <p class="font-display text-2xl leading-snug">Moldear ciudadanos enfocados a la <em
+                                class="italic text-yellowish">excelencia académica</em> y comprometidos con la moral, la
+                            verdad, la justicia y los valores cristianos.</p>
                     </div>
-                    <h3 class="font-display text-xl mb-2">Atención cercana</h3>
-                    <p class="text-sm text-jdpblue/65 dark:text-jdpcream/65 leading-relaxed">Grupos pequeños para que cada estudiante reciba acompañamiento real.</p>
                 </div>
-                <div class="reveal reveal-delay-3 bg-jdpsoft dark:bg-jdpnight-soft rounded-3xl p-7 hover:bg-white hover:shadow-xl hover:shadow-jdpblue/5 transition-all duration-500">
-                    <div class="grid place-items-center w-14 h-14 rounded-2xl bg-jdporange/15 text-jdporange mb-6">
-                        <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 0 0 8.716-6.747M12 21a9.004 9.004 0 0 1-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 0 1 7.843 4.582M12 3a8.997 8.997 0 0 0-7.843 4.582m15.686 0A11.953 11.953 0 0 1 12 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0 1 21 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0 1 12 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 0 1 3 12c0-1.605.42-3.113 1.157-4.418"/></svg>
+            </div>
+        </section>
+
+        <!-- ========== WHY US (PILLARS) ========== -->
+        <section class="py-28 lg:py-36">
+            <div class="max-w-7xl mx-auto px-5 lg:px-10">
+                <div class="max-w-2xl mb-20">
+                    <p class="reveal text-[11px] tracking-[0.32em] uppercase text-jdporange mb-4">Nuestros pilares</p>
+                    <h2
+                        class="reveal reveal-delay-1 font-display text-5xl md:text-6xl leading-[0.98] text-jdpblue dark:text-jdpcream">
+                        Cuatro razones, <em class="italic text-jdporange">un solo norte.</em></h2>
+                </div>
+                <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+                    <div
+                        class="reveal bg-jdpsoft dark:bg-jdpnight-soft rounded-3xl p-7 hover:bg-white hover:shadow-xl hover:shadow-jdpblue/5 transition-all duration-500">
+                        <div class="grid place-items-center w-14 h-14 rounded-2xl bg-jdporange/15 text-jdporange mb-6">
+                            <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.5">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                            </svg>
+                        </div>
+                        <h3 class="font-display text-xl mb-2">Formación de fe</h3>
+                        <p class="text-sm text-jdpblue/65 dark:text-jdpcream/65 leading-relaxed">Devocionales y momentos
+                            de oración integrados al día académico.</p>
                     </div>
-                    <h3 class="font-display text-xl mb-2">Mente bilingüe</h3>
-                    <p class="text-sm text-jdpblue/65 dark:text-jdpcream/65 leading-relaxed">Inglés y español como segundas naturalezas, desde el inicio.</p>
+                    <div
+                        class="reveal reveal-delay-1 bg-jdpsoft dark:bg-jdpnight-soft rounded-3xl p-7 hover:bg-white hover:shadow-xl hover:shadow-jdpblue/5 transition-all duration-500">
+                        <div
+                            class="grid place-items-center w-14 h-14 rounded-2xl bg-yellowish/30 text-jdpblue dark:text-jdpcream mb-6">
+                            <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.5">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25" />
+                            </svg>
+                        </div>
+                        <h3 class="font-display text-xl mb-2">Calidad académica</h3>
+                        <p class="text-sm text-jdpblue/65 dark:text-jdpcream/65 leading-relaxed">Currículo riguroso con
+                            énfasis en lectura, lógica y pensamiento crítico.</p>
+                    </div>
+                    <div
+                        class="reveal reveal-delay-2 bg-jdpsoft dark:bg-jdpnight-soft rounded-3xl p-7 hover:bg-white hover:shadow-xl hover:shadow-jdpblue/5 transition-all duration-500">
+                        <div
+                            class="grid place-items-center w-14 h-14 rounded-2xl bg-jdpblue/8 dark:bg-jdpcream/8 text-jdpblue dark:text-jdpcream mb-6">
+                            <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.5">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M18 18.72a9.094 9.094 0 0 0 3.741-.479 3 3 0 0 0-4.682-2.72m.94 3.198.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0 1 12 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 0 1 6 18.719m12 0a5.971 5.971 0 0 0-.941-3.197m0 0A5.995 5.995 0 0 0 12 12.75a5.995 5.995 0 0 0-5.058 2.772m0 0a3 3 0 0 0-4.681 2.72 8.986 8.986 0 0 0 3.74.477m.94-3.197a5.971 5.971 0 0 0-.94 3.197M15 6.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm6 3a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Zm-13.5 0a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Z" />
+                            </svg>
+                        </div>
+                        <h3 class="font-display text-xl mb-2">Atención cercana</h3>
+                        <p class="text-sm text-jdpblue/65 dark:text-jdpcream/65 leading-relaxed">Grupos pequeños para
+                            que cada estudiante reciba acompañamiento real.</p>
+                    </div>
+                    <div
+                        class="reveal reveal-delay-3 bg-jdpsoft dark:bg-jdpnight-soft rounded-3xl p-7 hover:bg-white hover:shadow-xl hover:shadow-jdpblue/5 transition-all duration-500">
+                        <div class="grid place-items-center w-14 h-14 rounded-2xl bg-jdporange/15 text-jdporange mb-6">
+                            <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.5">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M12 21a9.004 9.004 0 0 0 8.716-6.747M12 21a9.004 9.004 0 0 1-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 0 1 7.843 4.582M12 3a8.997 8.997 0 0 0-7.843 4.582m15.686 0A11.953 11.953 0 0 1 12 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0 1 21 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0 1 12 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 0 1 3 12c0-1.605.42-3.113 1.157-4.418" />
+                            </svg>
+                        </div>
+                        <h3 class="font-display text-xl mb-2">Mente bilingüe</h3>
+                        <p class="text-sm text-jdpblue/65 dark:text-jdpcream/65 leading-relaxed">Inglés y español como
+                            segundas naturalezas, desde el inicio.</p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- ========== LEADERSHIP ========== -->
-    <section class="py-28 lg:py-36 bg-jdpink dark:bg-jdpnight-3">
-        <div class="max-w-7xl mx-auto px-5 lg:px-10">
-            <div class="flex flex-wrap items-end justify-between gap-6 mb-16">
-                <div class="max-w-xl">
-                    <p class="reveal text-[11px] tracking-[0.32em] uppercase text-jdporange mb-4">Nuestro liderazgo</p>
-                    <h2 class="reveal reveal-delay-1 font-display text-5xl md:text-6xl leading-[0.98] text-jdpblue dark:text-jdpcream">Tres mujeres, <em class="italic text-jdporange">una visión.</em></h2>
+        <!-- ========== LEADERSHIP ========== -->
+        <section class="py-28 lg:py-36 bg-jdpink dark:bg-jdpnight-3">
+            <div class="max-w-7xl mx-auto px-5 lg:px-10">
+                <div class="flex flex-wrap items-end justify-between gap-6 mb-16">
+                    <div class="max-w-xl">
+                        <p class="reveal text-[11px] tracking-[0.32em] uppercase text-jdporange mb-4">Nuestro liderazgo
+                        </p>
+                        <h2
+                            class="reveal reveal-delay-1 font-display text-5xl md:text-6xl leading-[0.98] text-jdpblue dark:text-jdpcream">
+                            Tres mujeres, <em class="italic text-jdporange">una visión.</em></h2>
+                    </div>
+                    <p class="reveal reveal-delay-2 text-jdpblue/65 dark:text-jdpcream/65 max-w-md">El equipo directivo
+                        que sostiene el proyecto educativo desde su fundación, con décadas de experiencia docente y
+                        vocación cristiana.</p>
                 </div>
-                <p class="reveal reveal-delay-2 text-jdpblue/65 dark:text-jdpcream/65 max-w-md">El equipo directivo que sostiene el proyecto educativo desde su fundación, con décadas de experiencia docente y vocación cristiana.</p>
+
+                <div class="grid md:grid-cols-3 gap-6">
+                    <article
+                        class="reveal group bg-white dark:bg-jdpcard rounded-3xl p-7 border border-jdpblue/8 dark:border-jdpcream/8 hover:shadow-xl hover:shadow-jdpblue/5 transition-shadow duration-500">
+                        <div
+                            class="grid place-items-center w-20 h-20 rounded-2xl bg-jdpblue text-yellowish font-display italic text-4xl mb-6">
+                            A</div>
+                        <h3 class="font-display text-2xl leading-tight">Ana A. De La Cruz Jiménez</h3>
+                        <p class="text-xs tracking-widest uppercase text-jdporange mt-2">Directora General</p>
+                        <p class="mt-5 text-sm text-jdpblue/65 dark:text-jdpcream/65 leading-relaxed">42 años de
+                            vocación docente. Inició a los 14 años como asistente en el Colegio Carrusel Infantil. 26
+                            años en el Instituto CI Bilingual School como maestra de nivel inicial y asistente de
+                            dirección. Al frente del Centro Educativo desde 2011.</p>
+                    </article>
+
+                    <article
+                        class="reveal reveal-delay-1 group bg-white dark:bg-jdpcard rounded-3xl p-7 border border-jdpblue/8 dark:border-jdpcream/8 hover:shadow-xl hover:shadow-jdpblue/5 transition-shadow duration-500">
+                        <div
+                            class="grid place-items-center w-20 h-20 rounded-2xl bg-jdporange text-white font-display italic text-4xl mb-6">
+                            Y</div>
+                        <h3 class="font-display text-2xl leading-tight">Yocasta L Paix</h3>
+                        <p class="text-xs tracking-widest uppercase text-jdporange mt-2">Directora Administrativa</p>
+                        <p class="mt-5 text-sm text-jdpblue/65 dark:text-jdpcream/65 leading-relaxed">Responsable de la
+                            gestión administrativa, financiera y operacional del Colegio. Asegura que cada decisión
+                            sostenga el proyecto educativo y la experiencia diaria de cada familia.</p>
+                    </article>
+
+                    <article
+                        class="reveal reveal-delay-2 group bg-white dark:bg-jdpcard rounded-3xl p-7 border border-jdpblue/8 dark:border-jdpcream/8 hover:shadow-xl hover:shadow-jdpblue/5 transition-shadow duration-500">
+                        <div
+                            class="grid place-items-center w-20 h-20 rounded-2xl bg-yellowish text-jdpblue dark:text-jdpcream font-display italic text-4xl mb-6">
+                            E</div>
+                        <h3 class="font-display text-2xl leading-tight">Elizabeth Rivero</h3>
+                        <p class="text-xs tracking-widest uppercase text-jdporange mt-2">Secretaria Docente</p>
+                        <p class="mt-5 text-sm text-jdpblue/65 dark:text-jdpcream/65 leading-relaxed">Acompañamiento
+                            académico, gestión de matrícula y comunicación con las familias. Punto de contacto y de
+                            confianza dentro del proceso educativo.</p>
+                    </article>
+                </div>
+
+                <p class="reveal mt-12 max-w-2xl text-jdpblue/60 dark:text-jdpcream/60 text-sm leading-relaxed">Junto a
+                    un equipo de profesores procedentes del Jardín de Príncipes con experiencia docente comprobada,
+                    formado para preparar y moldear ciudadanos enfocados a la excelencia académica y comprometidos con
+                    la moral, la verdad, la justicia y los valores cristianos.</p>
             </div>
+        </section>
 
-            <div class="grid md:grid-cols-3 gap-6">
-                <article class="reveal group bg-white dark:bg-jdpcard rounded-3xl p-7 border border-jdpblue/8 dark:border-jdpcream/8 hover:shadow-xl hover:shadow-jdpblue/5 transition-shadow duration-500">
-                    <div class="grid place-items-center w-20 h-20 rounded-2xl bg-jdpblue text-yellowish font-display italic text-4xl mb-6">A</div>
-                    <h3 class="font-display text-2xl leading-tight">Ana A. De La Cruz Jiménez</h3>
-                    <p class="text-xs tracking-widest uppercase text-jdporange mt-2">Directora General</p>
-                    <p class="mt-5 text-sm text-jdpblue/65 dark:text-jdpcream/65 leading-relaxed">42 años de vocación docente. Inició a los 14 años como asistente en el Colegio Carrusel Infantil. 26 años en el Instituto CI Bilingual School como maestra de nivel inicial y asistente de dirección. Al frente del Centro Educativo desde 2011.</p>
-                </article>
-
-                <article class="reveal reveal-delay-1 group bg-white dark:bg-jdpcard rounded-3xl p-7 border border-jdpblue/8 dark:border-jdpcream/8 hover:shadow-xl hover:shadow-jdpblue/5 transition-shadow duration-500">
-                    <div class="grid place-items-center w-20 h-20 rounded-2xl bg-jdporange text-white font-display italic text-4xl mb-6">Y</div>
-                    <h3 class="font-display text-2xl leading-tight">Yocasta L. Paix</h3>
-                    <p class="text-xs tracking-widest uppercase text-jdporange mt-2">Directora Administrativa</p>
-                    <p class="mt-5 text-sm text-jdpblue/65 dark:text-jdpcream/65 leading-relaxed">Responsable de la gestión administrativa, financiera y operacional del Colegio. Asegura que cada decisión sostenga el proyecto educativo y la experiencia diaria de cada familia.</p>
-                </article>
-
-                <article class="reveal reveal-delay-2 group bg-white dark:bg-jdpcard rounded-3xl p-7 border border-jdpblue/8 dark:border-jdpcream/8 hover:shadow-xl hover:shadow-jdpblue/5 transition-shadow duration-500">
-                    <div class="grid place-items-center w-20 h-20 rounded-2xl bg-yellowish text-jdpblue dark:text-jdpcream font-display italic text-4xl mb-6">E</div>
-                    <h3 class="font-display text-2xl leading-tight">Elizabeth Rivero</h3>
-                    <p class="text-xs tracking-widest uppercase text-jdporange mt-2">Secretaria Docente</p>
-                    <p class="mt-5 text-sm text-jdpblue/65 dark:text-jdpcream/65 leading-relaxed">Acompañamiento académico, gestión de matrícula y comunicación con las familias. Punto de contacto y de confianza dentro del proceso educativo.</p>
-                </article>
+        <!-- ========== CTA ========== -->
+        <section class="py-32 lg:py-40 bg-jdpblue text-jdpcream relative overflow-hidden grain">
+            <span aria-hidden="true"
+                class="pointer-events-none absolute -left-12 top-1/3 w-72 h-72 rounded-full bg-yellowish/20 blur-3xl"></span>
+            <span aria-hidden="true"
+                class="pointer-events-none absolute -right-12 bottom-0 w-96 h-96 rounded-full bg-jdporange/20 blur-3xl"></span>
+            <div class="relative max-w-5xl mx-auto px-5 lg:px-10 text-center">
+                <h2 class="reveal font-display text-6xl md:text-8xl leading-[0.92] mb-8">¿Listo para <em
+                        class="italic text-yellowish">conocernos?</em></h2>
+                <p class="reveal reveal-delay-1 max-w-xl mx-auto text-white/70 text-lg leading-relaxed mb-12">Visita el
+                    campus, conversa con nuestro equipo y siente la diferencia desde el primer minuto.</p>
+                <div class="reveal reveal-delay-2 flex flex-wrap justify-center gap-4">
+                    <a href="./contact.html"
+                        class="group inline-flex items-center gap-3 bg-jdporange hover:bg-yellowish hover:text-jdpblue dark:hover:text-jdpcream text-white font-medium px-8 py-5 rounded-full transition-colors">
+                        <span>Agendar visita</span>
+                        <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform" aria-hidden="true"
+                            viewBox="0 0 20 20" fill="currentColor">
+                            <path
+                                d="M3.5 10a.75.75 0 0 1 .75-.75h9.69L11.22 6.53a.75.75 0 1 1 1.06-1.06l4 4a.75.75 0 0 1 0 1.06l-4 4a.75.75 0 1 1-1.06-1.06l2.72-2.72H4.25A.75.75 0 0 1 3.5 10Z" />
+                        </svg>
+                    </a>
+                    <a href="./index.html#programas"
+                        class="inline-flex items-center gap-2 px-7 py-5 rounded-full border border-white/20 hover:bg-white/10 transition-colors font-medium">
+                        Ver programas
+                    </a>
+                </div>
             </div>
-
-            <p class="reveal mt-12 max-w-2xl text-jdpblue/60 dark:text-jdpcream/60 text-sm leading-relaxed">Junto a un equipo de profesores procedentes del Jardín de Príncipes con experiencia docente comprobada, formado para preparar y moldear ciudadanos enfocados a la excelencia académica y comprometidos con la moral, la verdad, la justicia y los valores cristianos.</p>
-        </div>
-    </section>
-
-    <!-- ========== CTA ========== -->
-    <section class="py-32 lg:py-40 bg-jdpblue text-jdpcream relative overflow-hidden grain">
-        <span aria-hidden="true" class="pointer-events-none absolute -left-12 top-1/3 w-72 h-72 rounded-full bg-yellowish/20 blur-3xl"></span>
-        <span aria-hidden="true" class="pointer-events-none absolute -right-12 bottom-0 w-96 h-96 rounded-full bg-jdporange/20 blur-3xl"></span>
-        <div class="relative max-w-5xl mx-auto px-5 lg:px-10 text-center">
-            <h2 class="reveal font-display text-6xl md:text-8xl leading-[0.92] mb-8">¿Listo para <em class="italic text-yellowish">conocernos?</em></h2>
-            <p class="reveal reveal-delay-1 max-w-xl mx-auto text-white/70 text-lg leading-relaxed mb-12">Visita el campus, conversa con nuestro equipo y siente la diferencia desde el primer minuto.</p>
-            <div class="reveal reveal-delay-2 flex flex-wrap justify-center gap-4">
-                <a href="./contact.html" class="group inline-flex items-center gap-3 bg-jdporange hover:bg-yellowish hover:text-jdpblue dark:hover:text-jdpcream text-white font-medium px-8 py-5 rounded-full transition-colors">
-                    <span>Agendar visita</span>
-                    <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform" aria-hidden="true" viewBox="0 0 20 20" fill="currentColor"><path d="M3.5 10a.75.75 0 0 1 .75-.75h9.69L11.22 6.53a.75.75 0 1 1 1.06-1.06l4 4a.75.75 0 0 1 0 1.06l-4 4a.75.75 0 1 1-1.06-1.06l2.72-2.72H4.25A.75.75 0 0 1 3.5 10Z"/></svg>
-                </a>
-                <a href="./index.html#programas" class="inline-flex items-center gap-2 px-7 py-5 rounded-full border border-white/20 hover:bg-white/10 transition-colors font-medium">
-                    Ver programas
-                </a>
-            </div>
-        </div>
-    </section>
+        </section>
 
     </main>
 
     <!-- ========== FOOTER ========== -->
     <footer class="bg-jdpdeep text-jdpcream pt-20 lg:pt-28 pb-10 relative overflow-hidden">
-        <span aria-hidden="true" class="pointer-events-none absolute -right-20 -bottom-32 font-display italic text-[28rem] leading-none opacity-[0.05] select-none">JdP</span>
+        <span aria-hidden="true"
+            class="pointer-events-none absolute -right-20 -bottom-32 font-display italic text-[28rem] leading-none opacity-[0.05] select-none">JdP</span>
         <div class="relative max-w-7xl mx-auto px-5 lg:px-10">
             <div class="grid lg:grid-cols-[1.4fr_1fr_1fr_1fr] gap-10 lg:gap-16 pb-14 border-b border-white/10">
                 <div>
-                    <a href="./index.html" class="inline-flex items-center group" aria-label="Centro Educativo Jardín de Príncipes — Inicio">
+                    <a href="./index.html" class="inline-flex items-center group"
+                        aria-label="Centro Educativo Jardín de Príncipes — Inicio">
                         <span class="bg-jdpcream rounded-xl px-3 py-1.5">
-                            <img src="../assets/logo-horizontal.png" alt="Centro Educativo Jardín de Príncipes" class="h-9 sm:h-10 w-auto group-hover:opacity-80 transition-opacity" width="220" height="60">
+                            <img src="../assets/logo-horizontal.png" alt="Centro Educativo Jardín de Príncipes"
+                                class="h-9 sm:h-10 w-auto group-hover:opacity-80 transition-opacity" width="220"
+                                height="60">
                         </span>
                     </a>
                     <p class="mt-6 text-white/65 leading-relaxed max-w-sm">
-                        Centro educativo cristiano en Santo Domingo. Formando mano, mente y corazón desde 2011. Nueva etapa como Colegio Jardín de Príncipes.
+                        Centro educativo cristiano en Santo Domingo. Formando mano, mente y corazón desde 2011. Nueva
+                        etapa como Colegio Jardín de Príncipes.
                     </p>
                     <div class="mt-6 flex items-center gap-3">
-                        <a href="#" aria-label="Facebook" class="grid place-items-center w-10 h-10 rounded-full border border-white/15 hover:bg-jdporange hover:border-jdporange transition-colors">
-                            <svg class="w-4 h-4" aria-hidden="true" viewBox="0 0 24 24" fill="currentColor"><path d="M22.675 0H1.325C.593 0 0 .593 0 1.325v21.351C0 23.408.593 24 1.325 24H12.82v-9.294H9.692V11.07h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.464.099 2.795.143v3.24h-1.918c-1.504 0-1.796.715-1.796 1.763v2.31h3.587l-.467 3.636h-3.12V24h6.116C23.407 24 24 23.408 24 22.676V1.325C24 .593 23.407 0 22.675 0z"/></svg>
+                        <a href="#" aria-label="Facebook"
+                            class="grid place-items-center w-10 h-10 rounded-full border border-white/15 hover:bg-jdporange hover:border-jdporange transition-colors">
+                            <svg class="w-4 h-4" aria-hidden="true" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M22.675 0H1.325C.593 0 0 .593 0 1.325v21.351C0 23.408.593 24 1.325 24H12.82v-9.294H9.692V11.07h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.464.099 2.795.143v3.24h-1.918c-1.504 0-1.796.715-1.796 1.763v2.31h3.587l-.467 3.636h-3.12V24h6.116C23.407 24 24 23.408 24 22.676V1.325C24 .593 23.407 0 22.675 0z" />
+                            </svg>
                         </a>
-                        <a href="#" aria-label="Instagram" class="grid place-items-center w-10 h-10 rounded-full border border-white/15 hover:bg-jdporange hover:border-jdporange transition-colors">
-                            <svg class="w-4 h-4" aria-hidden="true" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+                        <a href="#" aria-label="Instagram"
+                            class="grid place-items-center w-10 h-10 rounded-full border border-white/15 hover:bg-jdporange hover:border-jdporange transition-colors">
+                            <svg class="w-4 h-4" aria-hidden="true" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" />
+                            </svg>
                         </a>
-                        <a href="mailto:jardindeprincipes7@gmail.com" aria-label="Correo" class="grid place-items-center w-10 h-10 rounded-full border border-white/15 hover:bg-jdporange hover:border-jdporange transition-colors">
-                            <svg class="w-4 h-4" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l9 6 9-6M5 19h14a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2z"/></svg>
+                        <a href="mailto:jardindeprincipes7@gmail.com" aria-label="Correo"
+                            class="grid place-items-center w-10 h-10 rounded-full border border-white/15 hover:bg-jdporange hover:border-jdporange transition-colors">
+                            <svg class="w-4 h-4" aria-hidden="true" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M3 8l9 6 9-6M5 19h14a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2z" />
+                            </svg>
                         </a>
                     </div>
                 </div>
@@ -319,8 +475,10 @@
                     <ul class="space-y-3 text-sm">
                         <li><a href="./index.html" class="ul-grow text-white/70 hover:text-white">Inicio</a></li>
                         <li><a href="./about_us.html" class="ul-grow text-white/70 hover:text-white">Nosotros</a></li>
-                        <li><a href="./index.html#programas" class="ul-grow text-white/70 hover:text-white">Programas</a></li>
-                        <li><a href="./index.html#admisiones" class="ul-grow text-white/70 hover:text-white">Admisiones</a></li>
+                        <li><a href="./index.html#programas"
+                                class="ul-grow text-white/70 hover:text-white">Programas</a></li>
+                        <li><a href="./index.html#admisiones"
+                                class="ul-grow text-white/70 hover:text-white">Admisiones</a></li>
                         <li><a href="./contact.html" class="ul-grow text-white/70 hover:text-white">Contacto</a></li>
                     </ul>
                 </div>
@@ -330,7 +488,8 @@
                     <ul class="space-y-3 text-sm text-white/70">
                         <li>Jardines del Norte<br>C. Luxemburgo #5A<br>Santo Domingo D.N.</li>
                         <li><a href="tel:+18096361065" class="ul-grow hover:text-white">+1 (809) 636-1065</a></li>
-                        <li><a href="mailto:jardindeprincipes7@gmail.com" class="ul-grow hover:text-white break-all">jardindeprincipes7@gmail.com</a></li>
+                        <li><a href="mailto:jardindeprincipes7@gmail.com"
+                                class="ul-grow hover:text-white break-all">jardindeprincipes7@gmail.com</a></li>
                     </ul>
                 </div>
 
@@ -341,7 +500,8 @@
                         <li class="flex justify-between"><span>Sábado</span><span>Cerrado</span></li>
                         <li class="flex justify-between"><span>Domingo</span><span>Cerrado</span></li>
                     </ul>
-                    <a href="./contact.html" class="mt-6 inline-flex items-center gap-2 text-yellowish text-sm font-medium border-b border-yellowish/40 hover:border-yellowish pb-1 transition-colors">
+                    <a href="./contact.html"
+                        class="mt-6 inline-flex items-center gap-2 text-yellowish text-sm font-medium border-b border-yellowish/40 hover:border-yellowish pb-1 transition-colors">
                         Agendar visita →
                     </a>
                 </div>
@@ -349,16 +509,22 @@
 
             <div class="flex flex-col md:flex-row items-center justify-between gap-4 pt-8 text-xs text-white/45">
                 <p>&copy; 2025 Centro Educativo Jardín de Príncipes · Todos los derechos reservados</p>
-                <p>Diseño y desarrollo por <a href="https://github.com/NappyNexus" target="_blank" rel="noopener noreferrer" class="text-white/70 hover:text-white">Gabriel Soriano</a></p>
+                <p>Diseño y desarrollo por <a href="https://github.com/NappyNexus" target="_blank"
+                        rel="noopener noreferrer" class="text-white/70 hover:text-white">Gabriel Soriano</a></p>
             </div>
         </div>
 
-        <button id="backToTopBtn" type="button" aria-label="Volver arriba" class="fixed bottom-6 right-6 z-40 grid place-items-center w-12 h-12 rounded-full bg-jdporange text-white shadow-xl shadow-jdpblue/20 opacity-0 pointer-events-none transition-all duration-300 hover:bg-yellowish hover:text-jdpblue dark:hover:text-jdpcream">
-            <svg class="w-5 h-5" aria-hidden="true" viewBox="0 0 20 20" fill="currentColor"><path d="M10 17a.75.75 0 0 1-.75-.75V5.56L5.53 9.28a.75.75 0 0 1-1.06-1.06l5-5a.75.75 0 0 1 1.06 0l5 5a.75.75 0 1 1-1.06 1.06l-3.72-3.72v10.69A.75.75 0 0 1 10 17Z"/></svg>
+        <button id="backToTopBtn" type="button" aria-label="Volver arriba"
+            class="fixed bottom-6 right-6 z-40 grid place-items-center w-12 h-12 rounded-full bg-jdporange text-white shadow-xl shadow-jdpblue/20 opacity-0 pointer-events-none transition-all duration-300 hover:bg-yellowish hover:text-jdpblue dark:hover:text-jdpcream">
+            <svg class="w-5 h-5" aria-hidden="true" viewBox="0 0 20 20" fill="currentColor">
+                <path
+                    d="M10 17a.75.75 0 0 1-.75-.75V5.56L5.53 9.28a.75.75 0 0 1-1.06-1.06l5-5a.75.75 0 0 1 1.06 0l5 5a.75.75 0 1 1-1.06 1.06l-3.72-3.72v10.69A.75.75 0 0 1 10 17Z" />
+            </svg>
         </button>
     </footer>
 
     <script src="../index.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js" defer></script>
 </body>
+
 </html>
