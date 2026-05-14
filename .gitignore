@@ -1,0 +1,25 @@
+# Dependencies
+node_modules/
+
+# Build artifacts
+src/output.css
+src/output.css.map
+
+# Editor / OS
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+
+# Env
+.env
+.env.local
+.env.*.local
+
+# Scratch
+*.tmp
+.tmp/
