@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Theme init (runs before paint to prevent flash) -->
+    <!-- Theme init (runs before paint to prevent flash).
+         Defaults to light mode; only applies dark when the user has
+         explicitly opted in via the toggle (stored in localStorage). -->
     <script>
         try {
-            const t = localStorage.getItem('jdp-theme');
-            const sysDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-            if (t === 'dark' || (!t && sysDark)) document.documentElement.classList.add('dark');
+            if (localStorage.getItem('jdp-theme') === 'dark') document.documentElement.classList.add('dark');
         } catch {}
     </script>
 
