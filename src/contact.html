@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,11 +11,12 @@
     <script>
         try {
             if (localStorage.getItem('jdp-theme') === 'dark') document.documentElement.classList.add('dark');
-        } catch {}
+        } catch { }
     </script>
 
     <title>Contacto — Centro Educativo Jardín de Príncipes</title>
-    <meta name="description" content="Contáctanos para admisiones, visitas al campus o cualquier consulta sobre el Centro Educativo Jardín de Príncipes en Santo Domingo.">
+    <meta name="description"
+        content="Contáctanos para admisiones, visitas al campus o cualquier consulta sobre el Centro Educativo Jardín de Príncipes en Santo Domingo.">
     <meta name="theme-color" content="#00255b">
     <link rel="icon" type="image/x-icon" sizes="any" href="../assets/favicon.ico">
 
@@ -27,302 +29,431 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,500&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,500&family=DM+Sans:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
 
     <link href="./output.css" rel="stylesheet">
 </head>
+
 <body class="bg-jdpcream dark:bg-jdpnight text-jdpblue dark:text-jdpcream antialiased">
-    <a href="#contenido" class="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:left-3 focus:z-[100] focus:bg-jdpblue focus:text-jdpcream focus:px-4 focus:py-2 focus:rounded-full">Saltar al contenido</a>
+    <a href="#contenido"
+        class="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:left-3 focus:z-[100] focus:bg-jdpblue focus:text-jdpcream focus:px-4 focus:py-2 focus:rounded-full">Saltar
+        al contenido</a>
 
     <header data-nav class="nav-glass fixed top-0 inset-x-0 z-50 border-b border-transparent">
         <div class="max-w-7xl mx-auto px-5 lg:px-10 py-4 flex items-center justify-between">
-            <a href="./index.html" class="inline-flex items-center group" aria-label="Centro Educativo Jardín de Príncipes — Inicio">
+            <a href="./index.html" class="inline-flex items-center group"
+                aria-label="Centro Educativo Jardín de Príncipes — Inicio">
                 <span class="rounded-xl dark:bg-jdpcream dark:px-2.5 dark:py-1 transition-colors">
-                    <img src="../assets/logo-horizontal.png" alt="Centro Educativo Jardín de Príncipes" class="h-8 sm:h-9 w-auto group-hover:opacity-80 transition-opacity" width="220" height="60">
+                    <img src="../assets/logo-horizontal.png" alt="Centro Educativo Jardín de Príncipes"
+                        class="h-8 sm:h-9 w-auto group-hover:opacity-80 transition-opacity" width="220" height="60">
                 </span>
             </a>
             <nav aria-label="Principal" class="hidden lg:flex items-center gap-9 text-sm">
-                <a href="./index.html" class="ul-grow text-jdpblue/70 dark:text-jdpcream/70 hover:text-jdpblue dark:hover:text-jdpcream">Inicio</a>
-                <a href="./about_us.html" class="ul-grow text-jdpblue/70 dark:text-jdpcream/70 hover:text-jdpblue dark:hover:text-jdpcream">Nosotros</a>
-                <a href="./index.html#programas" class="ul-grow text-jdpblue/70 dark:text-jdpcream/70 hover:text-jdpblue dark:hover:text-jdpcream">Programas</a>
-                <a href="./index.html#admisiones" class="ul-grow text-jdpblue/70 dark:text-jdpcream/70 hover:text-jdpblue dark:hover:text-jdpcream">Admisiones</a>
-                <a href="./contact.html" aria-current="page" class="ul-grow text-jdpblue dark:text-jdpcream">Contacto</a>
+                <a href="./index.html"
+                    class="ul-grow text-jdpblue/70 dark:text-jdpcream/70 hover:text-jdpblue dark:hover:text-jdpcream">Inicio</a>
+                <a href="./about_us.html"
+                    class="ul-grow text-jdpblue/70 dark:text-jdpcream/70 hover:text-jdpblue dark:hover:text-jdpcream">Nosotros</a>
+                <a href="./index.html#programas"
+                    class="ul-grow text-jdpblue/70 dark:text-jdpcream/70 hover:text-jdpblue dark:hover:text-jdpcream">Programas</a>
+                <a href="./index.html#admisiones"
+                    class="ul-grow text-jdpblue/70 dark:text-jdpcream/70 hover:text-jdpblue dark:hover:text-jdpcream">Admisiones</a>
+                <a href="./contact.html" aria-current="page"
+                    class="ul-grow text-jdpblue dark:text-jdpcream">Contacto</a>
             </nav>
             <div class="flex items-center gap-3">
-                <a href="#form" class="hidden sm:inline-flex items-center gap-2 bg-jdpblue hover:bg-jdporange text-white text-sm font-medium px-5 py-2.5 rounded-full transition-colors group">
+                <a href="#form"
+                    class="hidden sm:inline-flex items-center gap-2 bg-jdpblue hover:bg-jdporange text-white text-sm font-medium px-5 py-2.5 rounded-full transition-colors group">
                     <span>Aplicar ahora</span>
-                    <svg class="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform" aria-hidden="true" viewBox="0 0 20 20" fill="currentColor"><path d="M3.5 10a.75.75 0 0 1 .75-.75h9.69L11.22 6.53a.75.75 0 1 1 1.06-1.06l4 4a.75.75 0 0 1 0 1.06l-4 4a.75.75 0 1 1-1.06-1.06l2.72-2.72H4.25A.75.75 0 0 1 3.5 10Z"/></svg>
+                    <svg class="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform" aria-hidden="true"
+                        viewBox="0 0 20 20" fill="currentColor">
+                        <path
+                            d="M3.5 10a.75.75 0 0 1 .75-.75h9.69L11.22 6.53a.75.75 0 1 1 1.06-1.06l4 4a.75.75 0 0 1 0 1.06l-4 4a.75.75 0 1 1-1.06-1.06l2.72-2.72H4.25A.75.75 0 0 1 3.5 10Z" />
+                    </svg>
                 </a>
-                <button data-theme-toggle type="button" aria-pressed="false" aria-label="Cambiar a modo oscuro" class="grid w-10 h-10 rounded-full border border-jdpblue/15 dark:border-jdpcream/15 hover:bg-jdpblue dark:hover:bg-jdpcard hover:text-jdpcream dark:hover:text-jdpcream transition-colors">
-                    <svg class="theme-icon-moon w-4 h-4 m-auto [grid-area:1/1]" aria-hidden="true" viewBox="0 0 24 24" fill="currentColor"><path d="M21.752 15.002A9.718 9.718 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z"/></svg>
-                    <svg class="theme-icon-sun w-4 h-4 m-auto [grid-area:1/1]" aria-hidden="true" viewBox="0 0 24 24" fill="currentColor"><path fill-rule="evenodd" d="M12 2.25a.75.75 0 0 1 .75.75v2.25a.75.75 0 0 1-1.5 0V3a.75.75 0 0 1 .75-.75ZM7.5 12a4.5 4.5 0 1 1 9 0 4.5 4.5 0 0 1-9 0ZM18.894 6.166a.75.75 0 0 0-1.06-1.06l-1.591 1.59a.75.75 0 1 0 1.06 1.061l1.591-1.59ZM21.75 12a.75.75 0 0 1-.75.75h-2.25a.75.75 0 0 1 0-1.5H21a.75.75 0 0 1 .75.75ZM17.834 18.894a.75.75 0 0 0 1.06-1.06l-1.59-1.591a.75.75 0 1 0-1.061 1.06l1.59 1.591ZM12 18a.75.75 0 0 1 .75.75V21a.75.75 0 0 1-1.5 0v-2.25A.75.75 0 0 1 12 18ZM7.758 17.303a.75.75 0 0 0-1.061-1.06l-1.591 1.59a.75.75 0 0 0 1.06 1.061l1.591-1.59ZM6 12a.75.75 0 0 1-.75.75H3a.75.75 0 0 1 0-1.5h2.25A.75.75 0 0 1 6 12ZM6.697 7.757a.75.75 0 0 0 1.06-1.06l-1.59-1.591a.75.75 0 0 0-1.061 1.06l1.59 1.591Z" clip-rule="evenodd"/></svg>
+                <button data-theme-toggle type="button" aria-pressed="false" aria-label="Cambiar a modo oscuro"
+                    class="grid w-10 h-10 rounded-full border border-jdpblue/15 dark:border-jdpcream/15 hover:bg-jdpblue dark:hover:bg-jdpcard hover:text-jdpcream dark:hover:text-jdpcream transition-colors">
+                    <svg class="theme-icon-moon w-4 h-4 m-auto [grid-area:1/1]" aria-hidden="true" viewBox="0 0 24 24"
+                        fill="currentColor">
+                        <path
+                            d="M21.752 15.002A9.718 9.718 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z" />
+                    </svg>
+                    <svg class="theme-icon-sun w-4 h-4 m-auto [grid-area:1/1]" aria-hidden="true" viewBox="0 0 24 24"
+                        fill="currentColor">
+                        <path fill-rule="evenodd"
+                            d="M12 2.25a.75.75 0 0 1 .75.75v2.25a.75.75 0 0 1-1.5 0V3a.75.75 0 0 1 .75-.75ZM7.5 12a4.5 4.5 0 1 1 9 0 4.5 4.5 0 0 1-9 0ZM18.894 6.166a.75.75 0 0 0-1.06-1.06l-1.591 1.59a.75.75 0 1 0 1.06 1.061l1.591-1.59ZM21.75 12a.75.75 0 0 1-.75.75h-2.25a.75.75 0 0 1 0-1.5H21a.75.75 0 0 1 .75.75ZM17.834 18.894a.75.75 0 0 0 1.06-1.06l-1.59-1.591a.75.75 0 1 0-1.061 1.06l1.59 1.591ZM12 18a.75.75 0 0 1 .75.75V21a.75.75 0 0 1-1.5 0v-2.25A.75.75 0 0 1 12 18ZM7.758 17.303a.75.75 0 0 0-1.061-1.06l-1.591 1.59a.75.75 0 0 0 1.06 1.061l1.591-1.59ZM6 12a.75.75 0 0 1-.75.75H3a.75.75 0 0 1 0-1.5h2.25A.75.75 0 0 1 6 12ZM6.697 7.757a.75.75 0 0 0 1.06-1.06l-1.59-1.591a.75.75 0 0 0-1.061 1.06l1.59 1.591Z"
+                            clip-rule="evenodd" />
+                    </svg>
                 </button>
-                <button data-menu-toggle type="button" aria-expanded="false" aria-controls="mobile-menu" class="lg:hidden grid place-items-center w-10 h-10 rounded-full border border-jdpblue/15 dark:border-jdpcream/15 hover:bg-jdpblue hover:text-jdpcream transition-colors">
+                <button data-menu-toggle type="button" aria-expanded="false" aria-controls="mobile-menu"
+                    class="lg:hidden grid place-items-center w-10 h-10 rounded-full border border-jdpblue/15 dark:border-jdpcream/15 hover:bg-jdpblue hover:text-jdpcream transition-colors">
                     <span class="sr-only">Abrir menú</span>
-                    <svg class="w-5 h-5" aria-hidden="true" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 6h14M3 10h14M3 14h14" stroke-linecap="round"/></svg>
+                    <svg class="w-5 h-5" aria-hidden="true" viewBox="0 0 20 20" fill="none" stroke="currentColor"
+                        stroke-width="1.6">
+                        <path d="M3 6h14M3 10h14M3 14h14" stroke-linecap="round" />
+                    </svg>
                 </button>
             </div>
         </div>
     </header>
 
-    <div id="mobile-menu" data-menu data-open="false" class="lg:hidden fixed inset-0 z-40 bg-jdpcream dark:bg-jdpnight data-[open=false]:opacity-0 data-[open=false]:pointer-events-none data-[open=true]:opacity-100 transition-opacity duration-300">
+    <div id="mobile-menu" data-menu data-open="false"
+        class="lg:hidden fixed inset-0 z-40 bg-jdpcream dark:bg-jdpnight data-[open=false]:opacity-0 data-[open=false]:pointer-events-none data-[open=true]:opacity-100 transition-opacity duration-300">
         <div class="h-full flex flex-col justify-center px-8 gap-4">
             <a href="./index.html" class="font-display text-5xl text-jdpblue/80 dark:text-jdpcream/80">Inicio</a>
             <a href="./about_us.html" class="font-display text-5xl text-jdpblue/80 dark:text-jdpcream/80">Nosotros</a>
-            <a href="./index.html#programas" class="font-display text-5xl text-jdpblue/80 dark:text-jdpcream/80">Programas</a>
-            <a href="./index.html#admisiones" class="font-display text-5xl text-jdpblue/80 dark:text-jdpcream/80">Admisiones</a>
+            <a href="./index.html#programas"
+                class="font-display text-5xl text-jdpblue/80 dark:text-jdpcream/80">Programas</a>
+            <a href="./index.html#admisiones"
+                class="font-display text-5xl text-jdpblue/80 dark:text-jdpcream/80">Admisiones</a>
             <a href="./contact.html" class="font-display text-5xl text-jdpblue dark:text-jdpcream">Contacto</a>
-            <a href="#form" class="mt-8 inline-flex w-fit items-center gap-2 bg-jdporange text-white text-base font-medium px-6 py-3 rounded-full">Aplicar ahora →</a>
+            <a href="#form"
+                class="mt-8 inline-flex w-fit items-center gap-2 bg-jdporange text-white text-base font-medium px-6 py-3 rounded-full">Aplicar
+                ahora →</a>
         </div>
     </div>
 
     <main id="contenido">
 
-    <!-- ========== PAGE HERO ========== -->
-    <section class="relative pt-36 lg:pt-44 pb-16 lg:pb-20 overflow-hidden grain">
-        <div aria-hidden="true" class="absolute -top-32 -right-32 w-[30rem] h-[30rem] rounded-full bg-yellowish/20 blur-3xl"></div>
-        <div aria-hidden="true" class="absolute -bottom-12 -left-32 w-[26rem] h-[26rem] rounded-full bg-jdporange/15 blur-3xl"></div>
+        <!-- ========== PAGE HERO ========== -->
+        <section class="relative pt-36 lg:pt-44 pb-16 lg:pb-20 overflow-hidden grain">
+            <div aria-hidden="true"
+                class="absolute -top-32 -right-32 w-[30rem] h-[30rem] rounded-full bg-yellowish/20 blur-3xl"></div>
+            <div aria-hidden="true"
+                class="absolute -bottom-12 -left-32 w-[26rem] h-[26rem] rounded-full bg-jdporange/15 blur-3xl"></div>
 
-        <div class="relative max-w-7xl mx-auto px-5 lg:px-10">
-            <p class="reveal text-xs tracking-[0.3em] uppercase text-jdpblue/55 dark:text-jdpcream/55 mb-6">
-                <a href="./index.html" class="hover:text-jdporange">Inicio</a> · Contacto
-            </p>
-            <h1 class="reveal reveal-delay-1 font-display text-[clamp(3rem,8vw,7rem)] leading-[0.95] tracking-[-0.025em] text-jdpblue dark:text-jdpcream max-w-5xl">
-                Hablemos. <em class="italic text-jdporange">Sin prisa,</em><br>
-                con atención.
-            </h1>
-            <p class="reveal reveal-delay-2 mt-6 max-w-xl text-lg text-jdpblue/65 dark:text-jdpcream/65 leading-relaxed">
-                Cuéntanos sobre tu familia. Te respondemos en menos de 24 horas hábiles. Si prefieres, agenda una visita al campus.
-            </p>
-        </div>
-    </section>
+            <div class="relative max-w-7xl mx-auto px-5 lg:px-10">
+                <p class="reveal text-xs tracking-[0.3em] uppercase text-jdpblue/55 dark:text-jdpcream/55 mb-6">
+                    <a href="./index.html" class="hover:text-jdporange">Inicio</a> · Contacto
+                </p>
+                <h1
+                    class="reveal reveal-delay-1 font-display text-[clamp(3rem,8vw,7rem)] leading-[0.95] tracking-[-0.025em] text-jdpblue dark:text-jdpcream max-w-5xl">
+                    Hablemos. <em class="italic text-jdporange">Sin prisa,</em><br>
+                    con atención.
+                </h1>
+                <p
+                    class="reveal reveal-delay-2 mt-6 max-w-xl text-lg text-jdpblue/65 dark:text-jdpcream/65 leading-relaxed">
+                    Cuéntanos sobre tu familia. Te respondemos en menos de 24 horas hábiles. Si prefieres, agenda una
+                    visita al campus.
+                </p>
+            </div>
+        </section>
 
-    <!-- ========== CONTACT INFO + FORM ========== -->
-    <section id="form" class="py-16 lg:py-24">
-        <div class="max-w-7xl mx-auto px-5 lg:px-10 grid lg:grid-cols-[1fr_1.5fr] gap-10 lg:gap-16">
+        <!-- ========== CONTACT INFO + FORM ========== -->
+        <section id="form" class="py-16 lg:py-24">
+            <div class="max-w-7xl mx-auto px-5 lg:px-10 grid lg:grid-cols-[1fr_1.5fr] gap-10 lg:gap-16">
 
-            <!-- Info column -->
-            <aside class="reveal space-y-6">
-                <div class="bg-jdpblue text-jdpcream rounded-3xl p-8 relative overflow-hidden">
-                    <span aria-hidden="true" class="pointer-events-none absolute -right-10 -bottom-16 font-display italic text-[14rem] leading-none opacity-[0.07]">@</span>
-                    <p class="text-[11px] tracking-[0.32em] uppercase text-yellowish mb-6">Contáctanos</p>
-                    <div class="space-y-6 relative">
-                        <div>
-                            <p class="text-xs uppercase tracking-widest text-white/50 mb-1">Dirección</p>
-                            <p class="font-display text-lg leading-snug">Jardines del Norte<br>C. Luxemburgo #5A<br>Santo Domingo D.N.</p>
-                        </div>
-                        <div>
-                            <p class="text-xs uppercase tracking-widest text-white/50 mb-1">Teléfono</p>
-                            <a href="tel:+18096361065" class="font-display text-2xl text-yellowish hover:text-white transition-colors">+1 (809) 636-1065</a>
-                        </div>
-                        <div>
-                            <p class="text-xs uppercase tracking-widest text-white/50 mb-1">Correo</p>
-                            <a href="mailto:jardindeprincipes7@gmail.com" class="font-display text-lg hover:text-yellowish transition-colors break-all">jardindeprincipes7@gmail.com</a>
-                        </div>
-                        <div>
-                            <p class="text-xs uppercase tracking-widest text-white/50 mb-2">Horario</p>
-                            <ul class="space-y-1 text-sm text-white/80">
-                                <li class="flex justify-between"><span>Lun – Vie</span><span>7:30–14:30</span></li>
-                                <li class="flex justify-between"><span>Sábado</span><span>Cerrado</span></li>
-                            </ul>
+                <!-- Info column -->
+                <aside class="reveal space-y-6">
+                    <div class="bg-jdpblue text-jdpcream rounded-3xl p-8 relative overflow-hidden">
+                        <span aria-hidden="true"
+                            class="pointer-events-none absolute -right-10 -bottom-16 font-display italic text-[14rem] leading-none opacity-[0.07]">@</span>
+                        <p class="text-[11px] tracking-[0.32em] uppercase text-yellowish mb-6">Contáctanos</p>
+                        <div class="space-y-6 relative">
+                            <div>
+                                <p class="text-xs uppercase tracking-widest text-white/50 mb-1">Dirección</p>
+                                <p class="font-display text-lg leading-snug">Jardines del Norte<br>C. Luxemburgo
+                                    #5A<br>Santo Domingo D.N.</p>
+                            </div>
+                            <div>
+                                <p class="text-xs uppercase tracking-widest text-white/50 mb-1">Teléfono</p>
+                                <a href="tel:+18096361065"
+                                    class="font-display text-2xl text-yellowish hover:text-white transition-colors">+1
+                                    (809) 636-1065</a>
+                            </div>
+                            <div>
+                                <p class="text-xs uppercase tracking-widest text-white/50 mb-1">Correo</p>
+                                <a href="mailto:jardindeprincipes7@gmail.com"
+                                    class="font-display text-lg hover:text-yellowish transition-colors break-all">jardindeprincipes7@gmail.com</a>
+                            </div>
+                            <div>
+                                <p class="text-xs uppercase tracking-widest text-white/50 mb-2">Horario</p>
+                                <ul class="space-y-1 text-sm text-white/80">
+                                    <li class="flex justify-between"><span>Lun – Vie</span><span>7:30–14:30</span></li>
+                                    <li class="flex justify-between"><span>Sábado</span><span>Cerrado</span></li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
+                    <div class="bg-jdpsoft dark:bg-jdpnight-soft rounded-3xl p-8">
+                        <p class="text-[11px] tracking-[0.32em] uppercase text-jdporange mb-4">Síguenos</p>
+                        <div class="flex items-center gap-3">
+                            <a href="#" aria-label="Facebook"
+                                class="grid place-items-center w-11 h-11 rounded-full bg-white dark:bg-jdpcard border border-jdpblue/10 dark:border-jdpcream/10 text-jdpblue dark:text-jdpcream hover:bg-jdpblue hover:text-jdpcream transition-colors">
+                                <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M22.675 0H1.325C.593 0 0 .593 0 1.325v21.351C0 23.408.593 24 1.325 24H12.82v-9.294H9.692V11.07h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.464.099 2.795.143v3.24h-1.918c-1.504 0-1.796.715-1.796 1.763v2.31h3.587l-.467 3.636h-3.12V24h6.116C23.407 24 24 23.408 24 22.676V1.325C24 .593 23.407 0 22.675 0z" />
+                                </svg>
+                            </a>
+                            <a href="#" aria-label="Instagram"
+                                class="grid place-items-center w-11 h-11 rounded-full bg-white dark:bg-jdpcard border border-jdpblue/10 dark:border-jdpcream/10 text-jdpblue dark:text-jdpcream hover:bg-jdpblue hover:text-jdpcream transition-colors">
+                                <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" />
+                                </svg>
+                            </a>
+                            <a href="mailto:jardindeprincipes7@gmail.com" aria-label="Correo"
+                                class="grid place-items-center w-11 h-11 rounded-full bg-white dark:bg-jdpcard border border-jdpblue/10 dark:border-jdpcream/10 text-jdpblue dark:text-jdpcream hover:bg-jdpblue hover:text-jdpcream transition-colors">
+                                <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M3 8l9 6 9-6M5 19h14a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </aside>
+
+                <!-- Form column -->
+                <div class="reveal reveal-delay-1">
+                    <p class="text-[11px] tracking-[0.32em] uppercase text-jdporange mb-4">Escríbenos</p>
+                    <h2 class="font-display text-4xl md:text-5xl leading-[1] mb-10">Cuéntanos sobre tu <em
+                            class="italic text-jdporange">familia.</em></h2>
+                    <!-- Submission handler in /index.js builds a WhatsApp click-to-chat URL toward data-wa-number. -->
+                    <form id="contact-form" data-wa-number="18292328384" action="#" method="post" class="space-y-6">
+                        <div class="grid sm:grid-cols-2 gap-5">
+                            <div>
+                                <label for="contact-name"
+                                    class="block text-xs tracking-widest uppercase text-jdpblue/55 dark:text-jdpcream/55 mb-2">Nombre</label>
+                                <input type="text" id="contact-name" name="name" required autocomplete="name"
+                                    placeholder="Tu nombre completo"
+                                    class="w-full bg-white/60 dark:bg-jdpcard/60 border border-jdpblue/10 dark:border-jdpcream/10 rounded-2xl px-5 py-4 text-jdpblue dark:text-jdpcream placeholder:text-jdpblue/35 dark:placeholder:text-jdpcream/35 dark:text-jdpcream/35 focus:outline-none focus:border-jdporange focus:bg-white dark:focus:bg-jdpcard transition-colors">
+                            </div>
+                            <div>
+                                <label for="contact-email"
+                                    class="block text-xs tracking-widest uppercase text-jdpblue/55 dark:text-jdpcream/55 mb-2">Correo</label>
+                                <input type="email" id="contact-email" name="email" required autocomplete="email"
+                                    placeholder="tucorreo@ejemplo.com"
+                                    class="w-full bg-white/60 dark:bg-jdpcard/60 border border-jdpblue/10 dark:border-jdpcream/10 rounded-2xl px-5 py-4 text-jdpblue dark:text-jdpcream placeholder:text-jdpblue/35 dark:placeholder:text-jdpcream/35 dark:text-jdpcream/35 focus:outline-none focus:border-jdporange focus:bg-white dark:focus:bg-jdpcard transition-colors">
+                            </div>
+                        </div>
+                        <div class="grid sm:grid-cols-2 gap-5">
+                            <div>
+                                <label for="contact-phone"
+                                    class="block text-xs tracking-widest uppercase text-jdpblue/55 dark:text-jdpcream/55 mb-2">Teléfono</label>
+                                <input type="tel" id="contact-phone" name="phone" autocomplete="tel"
+                                    placeholder="+1 (809) 000-0000"
+                                    class="w-full bg-white/60 dark:bg-jdpcard/60 border border-jdpblue/10 dark:border-jdpcream/10 rounded-2xl px-5 py-4 text-jdpblue dark:text-jdpcream placeholder:text-jdpblue/35 dark:placeholder:text-jdpcream/35 dark:text-jdpcream/35 focus:outline-none focus:border-jdporange focus:bg-white dark:focus:bg-jdpcard transition-colors">
+                            </div>
+                            <div>
+                                <label for="contact-grade"
+                                    class="block text-xs tracking-widest uppercase text-jdpblue/55 dark:text-jdpcream/55 mb-2">Grado
+                                    de interés</label>
+                                <select id="contact-grade" name="grade"
+                                    class="w-full bg-white/60 dark:bg-jdpcard/60 border border-jdpblue/10 dark:border-jdpcream/10 rounded-2xl px-5 py-4 text-jdpblue dark:text-jdpcream focus:outline-none focus:border-jdporange focus:bg-white dark:focus:bg-jdpcard transition-colors">
+                                    <option value="">Selecciona...</option>
+                                    <optgroup label="Nivel Inicial">
+                                        <option value="parvulos">Párvulos</option>
+                                        <option value="prekinder">Pre-Kinder</option>
+                                        <option value="kinder">Kinder</option>
+                                        <option value="preprimario">Pre-Primario</option>
+                                    </optgroup>
+                                    <optgroup label="Primaria">
+                                        <option value="1ro">1er grado</option>
+                                        <option value="2do">2do grado</option>
+                                        <option value="3ro">3er grado</option>
+                                        <option value="4to">4to grado</option>
+                                        <option value="5to">5to grado</option>
+                                    </optgroup>
+                                </select>
+                            </div>
+                        </div>
+                        <div>
+                            <label for="contact-message"
+                                class="block text-xs tracking-widest uppercase text-jdpblue/55 dark:text-jdpcream/55 mb-2">Mensaje</label>
+                            <textarea id="contact-message" name="message" rows="5" required
+                                placeholder="¿En qué podemos ayudarte?"
+                                class="w-full bg-white/60 dark:bg-jdpcard/60 border border-jdpblue/10 dark:border-jdpcream/10 rounded-2xl px-5 py-4 text-jdpblue dark:text-jdpcream placeholder:text-jdpblue/35 dark:placeholder:text-jdpcream/35 dark:text-jdpcream/35 focus:outline-none focus:border-jdporange focus:bg-white dark:focus:bg-jdpcard transition-colors resize-none"></textarea>
+                        </div>
+                        <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 pt-2">
+                            <div class="space-y-1">
+                                <p class="text-sm text-jdpblue/70 dark:text-jdpcream/70 leading-snug">Te llevaremos a
+                                    WhatsApp con tu mensaje listo para enviar.</p>
+                                <p class="text-xs text-jdpblue/50 dark:text-jdpcream/50 leading-relaxed">Al enviar
+                                    aceptas que utilicemos tus datos para responder a tu consulta.</p>
+                            </div>
+                            <button type="submit"
+                                class="group inline-flex items-center gap-3 bg-jdporange hover:bg-jdpblue text-white font-medium px-7 py-4 rounded-full transition-colors shrink-0">
+                                <span>Enviar por WhatsApp</span>
+                                <span class="grid w-5 h-5 group-hover:translate-x-0.5 transition-transform">
+                                    <svg class="w-5 h-5" aria-hidden="true" viewBox="0 0 24 24" fill="currentColor">
+                                        <path
+                                            d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.71.306 1.263.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413" />
+                                    </svg>
+                                </span>
+                            </button>
+                        </div>
+                    </form>
+                    <p id="contact-form-status" role="status" aria-live="polite"
+                        class="hidden mt-5 text-sm text-jdpblue/70 dark:text-jdpcream/70 leading-relaxed"></p>
                 </div>
-                <div class="bg-jdpsoft dark:bg-jdpnight-soft rounded-3xl p-8">
-                    <p class="text-[11px] tracking-[0.32em] uppercase text-jdporange mb-4">Síguenos</p>
-                    <div class="flex items-center gap-3">
-                        <a href="#" aria-label="Facebook" class="grid place-items-center w-11 h-11 rounded-full bg-white dark:bg-jdpcard border border-jdpblue/10 dark:border-jdpcream/10 text-jdpblue dark:text-jdpcream hover:bg-jdpblue hover:text-jdpcream transition-colors">
-                            <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M22.675 0H1.325C.593 0 0 .593 0 1.325v21.351C0 23.408.593 24 1.325 24H12.82v-9.294H9.692V11.07h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.464.099 2.795.143v3.24h-1.918c-1.504 0-1.796.715-1.796 1.763v2.31h3.587l-.467 3.636h-3.12V24h6.116C23.407 24 24 23.408 24 22.676V1.325C24 .593 23.407 0 22.675 0z"/></svg>
-                        </a>
-                        <a href="#" aria-label="Instagram" class="grid place-items-center w-11 h-11 rounded-full bg-white dark:bg-jdpcard border border-jdpblue/10 dark:border-jdpcream/10 text-jdpblue dark:text-jdpcream hover:bg-jdpblue hover:text-jdpcream transition-colors">
-                            <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
-                        </a>
-                        <a href="mailto:jardindeprincipes7@gmail.com" aria-label="Correo" class="grid place-items-center w-11 h-11 rounded-full bg-white dark:bg-jdpcard border border-jdpblue/10 dark:border-jdpcream/10 text-jdpblue dark:text-jdpcream hover:bg-jdpblue hover:text-jdpcream transition-colors">
-                            <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l9 6 9-6M5 19h14a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2z"/></svg>
-                        </a>
+
+            </div>
+        </section>
+
+        <!-- ========== MAP ========== -->
+        <section class="py-16 lg:py-24">
+            <div class="max-w-7xl mx-auto px-5 lg:px-10">
+                <div class="flex flex-wrap items-end justify-between gap-6 mb-10">
+                    <div class="reveal max-w-xl">
+                        <p class="text-[11px] tracking-[0.32em] uppercase text-jdporange mb-4">El campus</p>
+                        <h2 class="font-display text-4xl md:text-5xl leading-[1] text-jdpblue dark:text-jdpcream">
+                            Visítanos en <em class="italic text-jdporange">Jardines del Norte.</em></h2>
                     </div>
+                    <a href="https://maps.app.goo.gl/B5uGThyab8qufXcL9" target="_blank" rel="noopener noreferrer"
+                        class="reveal reveal-delay-1 inline-flex items-center gap-2 text-sm font-medium border-b border-jdpblue/30 dark:border-jdpcream/30 pb-1 hover:border-jdpblue transition-colors">
+                        Abrir en Google Maps <span>→</span>
+                    </a>
                 </div>
-            </aside>
-
-            <!-- Form column -->
-            <div class="reveal reveal-delay-1">
-                <p class="text-[11px] tracking-[0.32em] uppercase text-jdporange mb-4">Escríbenos</p>
-                <h2 class="font-display text-4xl md:text-5xl leading-[1] mb-10">Cuéntanos sobre tu <em class="italic text-jdporange">familia.</em></h2>
-                <!-- Submission handler in /index.js builds a WhatsApp click-to-chat URL toward data-wa-number. -->
-                <form id="contact-form" data-wa-number="18292328384" action="#" method="post" class="space-y-6">
-                    <div class="grid sm:grid-cols-2 gap-5">
-                        <div>
-                            <label for="contact-name" class="block text-xs tracking-widest uppercase text-jdpblue/55 dark:text-jdpcream/55 mb-2">Nombre</label>
-                            <input type="text" id="contact-name" name="name" required autocomplete="name" placeholder="Tu nombre completo" class="w-full bg-white/60 dark:bg-jdpcard/60 border border-jdpblue/10 dark:border-jdpcream/10 rounded-2xl px-5 py-4 text-jdpblue dark:text-jdpcream placeholder:text-jdpblue/35 dark:placeholder:text-jdpcream/35 dark:text-jdpcream/35 focus:outline-none focus:border-jdporange focus:bg-white dark:focus:bg-jdpcard transition-colors">
-                        </div>
-                        <div>
-                            <label for="contact-email" class="block text-xs tracking-widest uppercase text-jdpblue/55 dark:text-jdpcream/55 mb-2">Correo</label>
-                            <input type="email" id="contact-email" name="email" required autocomplete="email" placeholder="tucorreo@ejemplo.com" class="w-full bg-white/60 dark:bg-jdpcard/60 border border-jdpblue/10 dark:border-jdpcream/10 rounded-2xl px-5 py-4 text-jdpblue dark:text-jdpcream placeholder:text-jdpblue/35 dark:placeholder:text-jdpcream/35 dark:text-jdpcream/35 focus:outline-none focus:border-jdporange focus:bg-white dark:focus:bg-jdpcard transition-colors">
-                        </div>
-                    </div>
-                    <div class="grid sm:grid-cols-2 gap-5">
-                        <div>
-                            <label for="contact-phone" class="block text-xs tracking-widest uppercase text-jdpblue/55 dark:text-jdpcream/55 mb-2">Teléfono</label>
-                            <input type="tel" id="contact-phone" name="phone" autocomplete="tel" placeholder="+1 (809) 000-0000" class="w-full bg-white/60 dark:bg-jdpcard/60 border border-jdpblue/10 dark:border-jdpcream/10 rounded-2xl px-5 py-4 text-jdpblue dark:text-jdpcream placeholder:text-jdpblue/35 dark:placeholder:text-jdpcream/35 dark:text-jdpcream/35 focus:outline-none focus:border-jdporange focus:bg-white dark:focus:bg-jdpcard transition-colors">
-                        </div>
-                        <div>
-                            <label for="contact-grade" class="block text-xs tracking-widest uppercase text-jdpblue/55 dark:text-jdpcream/55 mb-2">Grado de interés</label>
-                            <select id="contact-grade" name="grade" class="w-full bg-white/60 dark:bg-jdpcard/60 border border-jdpblue/10 dark:border-jdpcream/10 rounded-2xl px-5 py-4 text-jdpblue dark:text-jdpcream focus:outline-none focus:border-jdporange focus:bg-white dark:focus:bg-jdpcard transition-colors">
-                                <option value="">Selecciona...</option>
-                                <optgroup label="Nivel Inicial">
-                                    <option value="parvulos">Párvulos</option>
-                                    <option value="prekinder">Pre-Kinder</option>
-                                    <option value="kinder">Kinder</option>
-                                    <option value="preprimario">Pre-Primario</option>
-                                </optgroup>
-                                <optgroup label="Primaria">
-                                    <option value="1ro">1er grado</option>
-                                    <option value="2do">2do grado</option>
-                                    <option value="3ro">3er grado</option>
-                                    <option value="4to">4to grado</option>
-                                    <option value="5to">5to grado</option>
-                                </optgroup>
-                            </select>
-                        </div>
-                    </div>
-                    <div>
-                        <label for="contact-message" class="block text-xs tracking-widest uppercase text-jdpblue/55 dark:text-jdpcream/55 mb-2">Mensaje</label>
-                        <textarea id="contact-message" name="message" rows="5" required placeholder="¿En qué podemos ayudarte?" class="w-full bg-white/60 dark:bg-jdpcard/60 border border-jdpblue/10 dark:border-jdpcream/10 rounded-2xl px-5 py-4 text-jdpblue dark:text-jdpcream placeholder:text-jdpblue/35 dark:placeholder:text-jdpcream/35 dark:text-jdpcream/35 focus:outline-none focus:border-jdporange focus:bg-white dark:focus:bg-jdpcard transition-colors resize-none"></textarea>
-                    </div>
-                    <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 pt-2">
-                        <div class="space-y-1">
-                            <p class="text-sm text-jdpblue/70 dark:text-jdpcream/70 leading-snug">Te llevaremos a WhatsApp con tu mensaje listo para enviar.</p>
-                            <p class="text-xs text-jdpblue/50 dark:text-jdpcream/50 leading-relaxed">Al enviar aceptas que utilicemos tus datos para responder a tu consulta.</p>
-                        </div>
-                        <button type="submit" class="group inline-flex items-center gap-3 bg-jdporange hover:bg-jdpblue text-white font-medium px-7 py-4 rounded-full transition-colors shrink-0">
-                            <span>Enviar por WhatsApp</span>
-                            <span class="grid w-5 h-5 group-hover:translate-x-0.5 transition-transform">
-                                <svg class="w-5 h-5" aria-hidden="true" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.71.306 1.263.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413"/></svg>
-                            </span>
-                        </button>
-                    </div>
-                </form>
-                <p id="contact-form-status" role="status" aria-live="polite" class="hidden mt-5 text-sm text-jdpblue/70 dark:text-jdpcream/70 leading-relaxed"></p>
-            </div>
-
-        </div>
-    </section>
-
-    <!-- ========== MAP ========== -->
-    <section class="py-16 lg:py-24">
-        <div class="max-w-7xl mx-auto px-5 lg:px-10">
-            <div class="flex flex-wrap items-end justify-between gap-6 mb-10">
-                <div class="reveal max-w-xl">
-                    <p class="text-[11px] tracking-[0.32em] uppercase text-jdporange mb-4">El campus</p>
-                    <h2 class="font-display text-4xl md:text-5xl leading-[1] text-jdpblue dark:text-jdpcream">Visítanos en <em class="italic text-jdporange">Jardines del Norte.</em></h2>
+                <div
+                    class="reveal rounded-3xl overflow-hidden border border-jdpblue/10 dark:border-jdpcream/10 shadow-xl shadow-jdpblue/5">
+                    <iframe title="Mapa del Centro Educativo Jardín de Príncipes"
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2054.261796632893!2d-69.95457089118536!3d18.48398045933831!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8eaf8b6385bb7bf3%3A0x768eac095d00e2e9!2sCentro%20Educativo%20Jard%C3%ADn%20de%20Pr%C3%ADncipes!5e0!3m2!1sen!2sdo!4v1754158223648!5m2!1sen!2sdo"
+                        class="w-full h-[28rem]" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
-                <a href="https://maps.app.goo.gl/B5uGThyab8qufXcL9" target="_blank" rel="noopener noreferrer" class="reveal reveal-delay-1 inline-flex items-center gap-2 text-sm font-medium border-b border-jdpblue/30 dark:border-jdpcream/30 pb-1 hover:border-jdpblue transition-colors">
-                    Abrir en Google Maps <span>→</span>
-                </a>
             </div>
-            <div class="reveal rounded-3xl overflow-hidden border border-jdpblue/10 dark:border-jdpcream/10 shadow-xl shadow-jdpblue/5">
-                <iframe title="Mapa del Centro Educativo Jardín de Príncipes" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2054.261796632893!2d-69.95457089118536!3d18.48398045933831!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8eaf8b6385bb7bf3%3A0x768eac095d00e2e9!2sCentro%20Educativo%20Jard%C3%ADn%20de%20Pr%C3%ADncipes!5e0!3m2!1sen!2sdo!4v1754158223648!5m2!1sen!2sdo" class="w-full h-[28rem]" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- ========== ADMISSIONS QUICK PROCESS ========== -->
-    <section class="py-24 lg:py-32 bg-jdpsand dark:bg-jdpnight-2">
-        <div class="max-w-7xl mx-auto px-5 lg:px-10">
-            <div class="text-center max-w-3xl mx-auto mb-16">
-                <p class="reveal text-[11px] tracking-[0.32em] uppercase text-jdporange mb-4">El proceso</p>
-                <h2 class="reveal reveal-delay-1 font-display text-5xl md:text-6xl leading-[0.98] text-jdpblue dark:text-jdpcream">Así trabajamos <em class="italic text-jdporange">contigo.</em></h2>
+        <!-- ========== ADMISSIONS QUICK PROCESS ========== -->
+        <section class="py-24 lg:py-32 bg-jdpsand dark:bg-jdpnight-2">
+            <div class="max-w-7xl mx-auto px-5 lg:px-10">
+                <div class="text-center max-w-3xl mx-auto mb-16">
+                    <p class="reveal text-[11px] tracking-[0.32em] uppercase text-jdporange mb-4">El proceso</p>
+                    <h2
+                        class="reveal reveal-delay-1 font-display text-5xl md:text-6xl leading-[0.98] text-jdpblue dark:text-jdpcream">
+                        Así trabajamos <em class="italic text-jdporange">contigo.</em></h2>
+                </div>
+                <ol class="grid md:grid-cols-2 lg:grid-cols-4 gap-5">
+                    <li
+                        class="reveal bg-white dark:bg-jdpcard rounded-3xl p-7 border border-jdpblue/8 dark:border-jdpcream/8">
+                        <p class="font-display italic text-jdporange text-5xl leading-none">1</p>
+                        <h3 class="font-display text-xl mt-4 mb-2">Solicitud</h3>
+                        <p class="text-sm text-jdpblue/65 dark:text-jdpcream/65 leading-relaxed">Envía el formulario o
+                            llámanos. Te contactamos en menos de 24 horas hábiles.</p>
+                    </li>
+                    <li
+                        class="reveal reveal-delay-1 bg-white dark:bg-jdpcard rounded-3xl p-7 border border-jdpblue/8 dark:border-jdpcream/8">
+                        <p class="font-display italic text-jdporange text-5xl leading-none">2</p>
+                        <h3 class="font-display text-xl mt-4 mb-2">Entrevista</h3>
+                        <p class="text-sm text-jdpblue/65 dark:text-jdpcream/65 leading-relaxed">Visita el campus,
+                            conoce el equipo y hazle todas tus preguntas a quien decide.</p>
+                    </li>
+                    <li
+                        class="reveal reveal-delay-2 bg-white dark:bg-jdpcard rounded-3xl p-7 border border-jdpblue/8 dark:border-jdpcream/8">
+                        <p class="font-display italic text-jdporange text-5xl leading-none">3</p>
+                        <h3 class="font-display text-xl mt-4 mb-2">Evaluación</h3>
+                        <p class="text-sm text-jdpblue/65 dark:text-jdpcream/65 leading-relaxed">Una evaluación corta
+                            para conocer el nivel y los apoyos que pueda necesitar.</p>
+                    </li>
+                    <li class="reveal reveal-delay-3 bg-jdpblue text-jdpcream rounded-3xl p-7">
+                        <p class="font-display italic text-yellowish text-5xl leading-none">4</p>
+                        <h3 class="font-display text-xl mt-4 mb-2">Bienvenida</h3>
+                        <p class="text-sm text-white/70 leading-relaxed">Confirmación, calendario y guía de inicio.
+                            Empieza una nueva historia.</p>
+                    </li>
+                </ol>
             </div>
-            <ol class="grid md:grid-cols-2 lg:grid-cols-4 gap-5">
-                <li class="reveal bg-white dark:bg-jdpcard rounded-3xl p-7 border border-jdpblue/8 dark:border-jdpcream/8">
-                    <p class="font-display italic text-jdporange text-5xl leading-none">1</p>
-                    <h3 class="font-display text-xl mt-4 mb-2">Solicitud</h3>
-                    <p class="text-sm text-jdpblue/65 dark:text-jdpcream/65 leading-relaxed">Envía el formulario o llámanos. Te contactamos en menos de 24 horas hábiles.</p>
-                </li>
-                <li class="reveal reveal-delay-1 bg-white dark:bg-jdpcard rounded-3xl p-7 border border-jdpblue/8 dark:border-jdpcream/8">
-                    <p class="font-display italic text-jdporange text-5xl leading-none">2</p>
-                    <h3 class="font-display text-xl mt-4 mb-2">Entrevista</h3>
-                    <p class="text-sm text-jdpblue/65 dark:text-jdpcream/65 leading-relaxed">Visita el campus, conoce el equipo y hazle todas tus preguntas a quien decide.</p>
-                </li>
-                <li class="reveal reveal-delay-2 bg-white dark:bg-jdpcard rounded-3xl p-7 border border-jdpblue/8 dark:border-jdpcream/8">
-                    <p class="font-display italic text-jdporange text-5xl leading-none">3</p>
-                    <h3 class="font-display text-xl mt-4 mb-2">Evaluación</h3>
-                    <p class="text-sm text-jdpblue/65 dark:text-jdpcream/65 leading-relaxed">Una evaluación corta para conocer el nivel y los apoyos que pueda necesitar.</p>
-                </li>
-                <li class="reveal reveal-delay-3 bg-jdpblue text-jdpcream rounded-3xl p-7">
-                    <p class="font-display italic text-yellowish text-5xl leading-none">4</p>
-                    <h3 class="font-display text-xl mt-4 mb-2">Bienvenida</h3>
-                    <p class="text-sm text-white/70 leading-relaxed">Confirmación, calendario y guía de inicio. Empieza una nueva historia.</p>
-                </li>
-            </ol>
-        </div>
-    </section>
+        </section>
 
-    <!-- ========== FAQ ========== -->
-    <section class="py-24 lg:py-32">
-        <div class="max-w-4xl mx-auto px-5 lg:px-10">
-            <div class="text-center mb-14">
-                <p class="reveal text-[11px] tracking-[0.32em] uppercase text-jdporange mb-4">Preguntas frecuentes</p>
-                <h2 class="reveal reveal-delay-1 font-display text-5xl md:text-6xl leading-[0.98] text-jdpblue dark:text-jdpcream">Lo más <em class="italic text-jdporange">consultado.</em></h2>
+        <!-- ========== FAQ ========== -->
+        <section class="py-24 lg:py-32">
+            <div class="max-w-4xl mx-auto px-5 lg:px-10">
+                <div class="text-center mb-14">
+                    <p class="reveal text-[11px] tracking-[0.32em] uppercase text-jdporange mb-4">Preguntas frecuentes
+                    </p>
+                    <h2
+                        class="reveal reveal-delay-1 font-display text-5xl md:text-6xl leading-[0.98] text-jdpblue dark:text-jdpcream">
+                        Lo más <em class="italic text-jdporange">consultado.</em></h2>
+                </div>
+                <div class="divide-y divide-jdpblue/12">
+                    <details class="group py-6">
+                        <summary class="cursor-pointer list-none flex items-center justify-between gap-6">
+                            <span class="font-display text-xl md:text-2xl">¿En cuánto tiempo me responden?</span>
+                            <span aria-hidden="true"
+                                class="grid place-items-center w-8 h-8 rounded-full bg-jdporange/10 text-jdporange text-lg group-open:rotate-45 transition-transform">+</span>
+                        </summary>
+                        <p class="mt-5 text-jdpblue/70 dark:text-jdpcream/70 leading-relaxed">Respondemos en menos de 24
+                            horas hábiles. Si tu mensaje llega un fin de semana, lo verás en lunes.</p>
+                    </details>
+                    <details class="group py-6">
+                        <summary class="cursor-pointer list-none flex items-center justify-between gap-6">
+                            <span class="font-display text-xl md:text-2xl">¿Puedo visitar el campus antes de
+                                inscribirme?</span>
+                            <span aria-hidden="true"
+                                class="grid place-items-center w-8 h-8 rounded-full bg-jdporange/10 text-jdporange text-lg group-open:rotate-45 transition-transform">+</span>
+                        </summary>
+                        <p class="mt-5 text-jdpblue/70 dark:text-jdpcream/70 leading-relaxed">Por supuesto. De hecho lo
+                            recomendamos. Agéndala por teléfono o desde el formulario.</p>
+                    </details>
+                    <details class="group py-6">
+                        <summary class="cursor-pointer list-none flex items-center justify-between gap-6">
+                            <span class="font-display text-xl md:text-2xl">¿Qué documentos necesito?</span>
+                            <span aria-hidden="true"
+                                class="grid place-items-center w-8 h-8 rounded-full bg-jdporange/10 text-jdporange text-lg group-open:rotate-45 transition-transform">+</span>
+                        </summary>
+                        <p class="mt-5 text-jdpblue/70 dark:text-jdpcream/70 leading-relaxed">Acta de nacimiento, récord
+                            de calificaciones (si aplica) y carné de vacunas. Te enviamos la lista completa después de
+                            la entrevista.</p>
+                    </details>
+                    <details class="group py-6">
+                        <summary class="cursor-pointer list-none flex items-center justify-between gap-6">
+                            <span class="font-display text-xl md:text-2xl">¿Cuáles son los pagos?</span>
+                            <span aria-hidden="true"
+                                class="grid place-items-center w-8 h-8 rounded-full bg-jdporange/10 text-jdporange text-lg group-open:rotate-45 transition-transform">+</span>
+                        </summary>
+                        <p class="mt-5 text-jdpblue/70 dark:text-jdpcream/70 leading-relaxed">Compartimos el detalle de
+                            inscripción y mensualidad durante la entrevista. Las tarifas varían por nivel y servicios
+                            adicionales.</p>
+                    </details>
+                </div>
             </div>
-            <div class="divide-y divide-jdpblue/12">
-                <details class="group py-6">
-                    <summary class="cursor-pointer list-none flex items-center justify-between gap-6">
-                        <span class="font-display text-xl md:text-2xl">¿En cuánto tiempo me responden?</span>
-                        <span aria-hidden="true" class="grid place-items-center w-8 h-8 rounded-full bg-jdporange/10 text-jdporange text-lg group-open:rotate-45 transition-transform">+</span>
-                    </summary>
-                    <p class="mt-5 text-jdpblue/70 dark:text-jdpcream/70 leading-relaxed">Respondemos en menos de 24 horas hábiles. Si tu mensaje llega un fin de semana, lo verás en lunes.</p>
-                </details>
-                <details class="group py-6">
-                    <summary class="cursor-pointer list-none flex items-center justify-between gap-6">
-                        <span class="font-display text-xl md:text-2xl">¿Puedo visitar el campus antes de inscribirme?</span>
-                        <span aria-hidden="true" class="grid place-items-center w-8 h-8 rounded-full bg-jdporange/10 text-jdporange text-lg group-open:rotate-45 transition-transform">+</span>
-                    </summary>
-                    <p class="mt-5 text-jdpblue/70 dark:text-jdpcream/70 leading-relaxed">Por supuesto. De hecho lo recomendamos. Agéndala por teléfono o desde el formulario.</p>
-                </details>
-                <details class="group py-6">
-                    <summary class="cursor-pointer list-none flex items-center justify-between gap-6">
-                        <span class="font-display text-xl md:text-2xl">¿Qué documentos necesito?</span>
-                        <span aria-hidden="true" class="grid place-items-center w-8 h-8 rounded-full bg-jdporange/10 text-jdporange text-lg group-open:rotate-45 transition-transform">+</span>
-                    </summary>
-                    <p class="mt-5 text-jdpblue/70 dark:text-jdpcream/70 leading-relaxed">Acta de nacimiento, récord de calificaciones (si aplica) y carné de vacunas. Te enviamos la lista completa después de la entrevista.</p>
-                </details>
-                <details class="group py-6">
-                    <summary class="cursor-pointer list-none flex items-center justify-between gap-6">
-                        <span class="font-display text-xl md:text-2xl">¿Cuáles son los pagos?</span>
-                        <span aria-hidden="true" class="grid place-items-center w-8 h-8 rounded-full bg-jdporange/10 text-jdporange text-lg group-open:rotate-45 transition-transform">+</span>
-                    </summary>
-                    <p class="mt-5 text-jdpblue/70 dark:text-jdpcream/70 leading-relaxed">Compartimos el detalle de inscripción y mensualidad durante la entrevista. Las tarifas varían por nivel y servicios adicionales.</p>
-                </details>
-            </div>
-        </div>
-    </section>
+        </section>
 
     </main>
 
     <!-- ========== FOOTER ========== -->
     <footer class="bg-jdpdeep text-jdpcream pt-20 lg:pt-28 pb-10 relative overflow-hidden">
-        <span aria-hidden="true" class="pointer-events-none absolute -right-20 -bottom-32 font-display italic text-[28rem] leading-none opacity-[0.05] select-none">JdP</span>
+        <span aria-hidden="true"
+            class="pointer-events-none absolute -right-20 -bottom-32 font-display italic text-[28rem] leading-none opacity-[0.05] select-none">JdP</span>
         <div class="relative max-w-7xl mx-auto px-5 lg:px-10">
             <div class="grid lg:grid-cols-[1.4fr_1fr_1fr_1fr] gap-10 lg:gap-16 pb-14 border-b border-white/10">
                 <div>
-                    <a href="./index.html" class="inline-flex items-center group" aria-label="Centro Educativo Jardín de Príncipes — Inicio">
+                    <a href="./index.html" class="inline-flex items-center group"
+                        aria-label="Centro Educativo Jardín de Príncipes — Inicio">
                         <span class="bg-jdpcream rounded-xl px-3 py-1.5">
-                            <img src="../assets/logo-horizontal.png" alt="Centro Educativo Jardín de Príncipes" class="h-9 sm:h-10 w-auto group-hover:opacity-80 transition-opacity" width="220" height="60">
+                            <img src="../assets/logo-horizontal.png" alt="Centro Educativo Jardín de Príncipes"
+                                class="h-9 sm:h-10 w-auto group-hover:opacity-80 transition-opacity" width="220"
+                                height="60">
                         </span>
                     </a>
                     <p class="mt-6 text-white/65 leading-relaxed max-w-sm">
-                        Centro educativo cristiano en Santo Domingo. Formando mano, mente y corazón desde 2011. Nueva etapa como Colegio Jardín de Príncipes.
+                        Centro educativo cristiano en Santo Domingo. Formando manos, mente y corazón desde 2011. Nueva
+                        etapa como Colegio Jardín de Príncipes.
                     </p>
                     <div class="mt-6 flex items-center gap-3">
-                        <a href="#" aria-label="Facebook" class="grid place-items-center w-10 h-10 rounded-full border border-white/15 hover:bg-jdporange hover:border-jdporange transition-colors">
-                            <svg class="w-4 h-4" aria-hidden="true" viewBox="0 0 24 24" fill="currentColor"><path d="M22.675 0H1.325C.593 0 0 .593 0 1.325v21.351C0 23.408.593 24 1.325 24H12.82v-9.294H9.692V11.07h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.464.099 2.795.143v3.24h-1.918c-1.504 0-1.796.715-1.796 1.763v2.31h3.587l-.467 3.636h-3.12V24h6.116C23.407 24 24 23.408 24 22.676V1.325C24 .593 23.407 0 22.675 0z"/></svg>
+                        <a href="#" aria-label="Facebook"
+                            class="grid place-items-center w-10 h-10 rounded-full border border-white/15 hover:bg-jdporange hover:border-jdporange transition-colors">
+                            <svg class="w-4 h-4" aria-hidden="true" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M22.675 0H1.325C.593 0 0 .593 0 1.325v21.351C0 23.408.593 24 1.325 24H12.82v-9.294H9.692V11.07h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.464.099 2.795.143v3.24h-1.918c-1.504 0-1.796.715-1.796 1.763v2.31h3.587l-.467 3.636h-3.12V24h6.116C23.407 24 24 23.408 24 22.676V1.325C24 .593 23.407 0 22.675 0z" />
+                            </svg>
                         </a>
-                        <a href="#" aria-label="Instagram" class="grid place-items-center w-10 h-10 rounded-full border border-white/15 hover:bg-jdporange hover:border-jdporange transition-colors">
-                            <svg class="w-4 h-4" aria-hidden="true" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+                        <a href="#" aria-label="Instagram"
+                            class="grid place-items-center w-10 h-10 rounded-full border border-white/15 hover:bg-jdporange hover:border-jdporange transition-colors">
+                            <svg class="w-4 h-4" aria-hidden="true" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" />
+                            </svg>
                         </a>
-                        <a href="mailto:jardindeprincipes7@gmail.com" aria-label="Correo" class="grid place-items-center w-10 h-10 rounded-full border border-white/15 hover:bg-jdporange hover:border-jdporange transition-colors">
-                            <svg class="w-4 h-4" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l9 6 9-6M5 19h14a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2z"/></svg>
+                        <a href="mailto:jardindeprincipes7@gmail.com" aria-label="Correo"
+                            class="grid place-items-center w-10 h-10 rounded-full border border-white/15 hover:bg-jdporange hover:border-jdporange transition-colors">
+                            <svg class="w-4 h-4" aria-hidden="true" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M3 8l9 6 9-6M5 19h14a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2z" />
+                            </svg>
                         </a>
                     </div>
                 </div>
@@ -332,8 +463,10 @@
                     <ul class="space-y-3 text-sm">
                         <li><a href="./index.html" class="ul-grow text-white/70 hover:text-white">Inicio</a></li>
                         <li><a href="./about_us.html" class="ul-grow text-white/70 hover:text-white">Nosotros</a></li>
-                        <li><a href="./index.html#programas" class="ul-grow text-white/70 hover:text-white">Programas</a></li>
-                        <li><a href="./index.html#admisiones" class="ul-grow text-white/70 hover:text-white">Admisiones</a></li>
+                        <li><a href="./index.html#programas"
+                                class="ul-grow text-white/70 hover:text-white">Programas</a></li>
+                        <li><a href="./index.html#admisiones"
+                                class="ul-grow text-white/70 hover:text-white">Admisiones</a></li>
                         <li><a href="./contact.html" class="ul-grow text-white/70 hover:text-white">Contacto</a></li>
                     </ul>
                 </div>
@@ -343,7 +476,8 @@
                     <ul class="space-y-3 text-sm text-white/70">
                         <li>Jardines del Norte<br>C. Luxemburgo #5A<br>Santo Domingo D.N.</li>
                         <li><a href="tel:+18096361065" class="ul-grow hover:text-white">+1 (809) 636-1065</a></li>
-                        <li><a href="mailto:jardindeprincipes7@gmail.com" class="ul-grow hover:text-white break-all">jardindeprincipes7@gmail.com</a></li>
+                        <li><a href="mailto:jardindeprincipes7@gmail.com"
+                                class="ul-grow hover:text-white break-all">jardindeprincipes7@gmail.com</a></li>
                     </ul>
                 </div>
 
@@ -354,7 +488,8 @@
                         <li class="flex justify-between"><span>Sábado</span><span>Cerrado</span></li>
                         <li class="flex justify-between"><span>Domingo</span><span>Cerrado</span></li>
                     </ul>
-                    <a href="./contact.html" class="mt-6 inline-flex items-center gap-2 text-yellowish text-sm font-medium border-b border-yellowish/40 hover:border-yellowish pb-1 transition-colors">
+                    <a href="./contact.html"
+                        class="mt-6 inline-flex items-center gap-2 text-yellowish text-sm font-medium border-b border-yellowish/40 hover:border-yellowish pb-1 transition-colors">
                         Agendar visita →
                     </a>
                 </div>
@@ -362,16 +497,22 @@
 
             <div class="flex flex-col md:flex-row items-center justify-between gap-4 pt-8 text-xs text-white/45">
                 <p>&copy; 2025 Centro Educativo Jardín de Príncipes · Todos los derechos reservados</p>
-                <p>Diseño y desarrollo por <a href="https://github.com/NappyNexus" target="_blank" rel="noopener noreferrer" class="text-white/70 hover:text-white">Gabriel Soriano</a></p>
+                <p>Diseño y desarrollo por <a href="https://github.com/NappyNexus" target="_blank"
+                        rel="noopener noreferrer" class="text-white/70 hover:text-white">Gabriel Soriano</a></p>
             </div>
         </div>
 
-        <button id="backToTopBtn" type="button" aria-label="Volver arriba" class="fixed bottom-6 right-6 z-40 grid place-items-center w-12 h-12 rounded-full bg-jdporange text-white shadow-xl shadow-jdpblue/20 opacity-0 pointer-events-none transition-all duration-300 hover:bg-yellowish hover:text-jdpblue dark:hover:text-jdpcream">
-            <svg class="w-5 h-5" aria-hidden="true" viewBox="0 0 20 20" fill="currentColor"><path d="M10 17a.75.75 0 0 1-.75-.75V5.56L5.53 9.28a.75.75 0 0 1-1.06-1.06l5-5a.75.75 0 0 1 1.06 0l5 5a.75.75 0 1 1-1.06 1.06l-3.72-3.72v10.69A.75.75 0 0 1 10 17Z"/></svg>
+        <button id="backToTopBtn" type="button" aria-label="Volver arriba"
+            class="fixed bottom-6 right-6 z-40 grid place-items-center w-12 h-12 rounded-full bg-jdporange text-white shadow-xl shadow-jdpblue/20 opacity-0 pointer-events-none transition-all duration-300 hover:bg-yellowish hover:text-jdpblue dark:hover:text-jdpcream">
+            <svg class="w-5 h-5" aria-hidden="true" viewBox="0 0 20 20" fill="currentColor">
+                <path
+                    d="M10 17a.75.75 0 0 1-.75-.75V5.56L5.53 9.28a.75.75 0 0 1-1.06-1.06l5-5a.75.75 0 0 1 1.06 0l5 5a.75.75 0 1 1-1.06 1.06l-3.72-3.72v10.69A.75.75 0 0 1 10 17Z" />
+            </svg>
         </button>
     </footer>
 
     <script src="../index.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js" defer></script>
 </body>
+
 </html>
